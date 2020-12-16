@@ -3,7 +3,7 @@ For this winternship, we are building out an GUI that is an explorer for the pub
 
 ### Wintern Leads Points of Contact
 
-Slack us, find us in person, ask us anything!
+Slack us or set up a video chat to ask us anything!
 
 Backend - Grace, Gabriel, Diana, Tyler, Tanner 
 Frontend - David, Kevin, Kathy, Makayla, JP  
