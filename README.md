@@ -1,21 +1,21 @@
-# 2020 Winternship Public API Explorer
-For this winternship, we are building a proof of concept for a public API explorer. Users can interface with the different endpoints, or access information from them more easily without needing to run curl requests. 
+# 2021 Winternship Public API Explorer
+For this winternship, we are building out an GUI that is an explorer for the public facing Bitly API. Users can interface with the different endpoints, or access information from them more easily without needing to run cURL requests. 
 
 ### Wintern Leads Points of Contact
 
 Slack us, find us in person, ask us anything!
 
-Backend - Grace, Gabriel, Diana  
-Frontend - David, Kevin  
+Backend - Grace, Gabriel, Diana, Tyler, Tanner 
+Frontend - David, Kevin, Kathy, Makayla, JP  
 QA - Pawan  
 
 ### Gitpod Setup & Saving Work to Github
-1. Open a workspace in gitpod by going to `https://gitpod.io/github.com/bitly/winterns2020` or add the chrome extension (which adds the GitPod button to your Github account)
-2. Create a new branch off of master `git checkout -b <YOUR BRANCH>`
+1. Open a workspace in gitpod by going to `https://gitpod.io/github.com/bitly/winterns2021` or add the chrome extension (which adds the GitPod button to your Github account)
+2. Create a new branch off of main `git checkout -b <YOUR BRANCH NAME>`
 3. Make your changes
-4. Commit changes to Github using the commands `git add <file names> `, `git commit -m "commit message"`, `git push --set-upstream origin <YOUR BRANCH>` (this --set-upstream parameter will only have to
-be used the first time you push your branch to the remote, from then on you can just do `git push`)
-5. On winterns2020 repo in Github, navigate to `branches`, find your branch, and click on the open pull request button. 
+4. Commit changes to Github using the commands `git add <file names> ` (or `git add -A` to add all changes), `git commit -m "commit message"`, `git push --set-upstream origin <YOUR BRANCH>` (this --set-upstream parameter will only have to
+be used the first time you push your branch to the remote, from then on you can just do `git push origin <YOUR BRANCH NAME>`)
+5. On winterns2021 repo in Github, navigate to `branches`, find your branch, and click on the open pull request button. 
 
 ### Run Locally 
 1. Make sure that you are in the directory with the `app.py` file (you can determine this by typing `ls -l` into the command line to list the files your current directory
