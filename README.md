@@ -5,9 +5,9 @@ For this winternship, we are building out an GUI that is an explorer for the pub
 
 Slack us or set up a video chat to ask us anything!
 
-Backend - Grace, Gabriel, Diana, Tyler, Tanner 
-Frontend - David, Kevin, Kathy, Makayla, JP  
-QA - Pawan  
+* Backend - Grace, Gabriel, Diana, Tyler, Tanner 
+* Frontend - David, Kevin, Kathy, Makayla, JP  
+* QA - Pawan  
 
 ### Gitpod Setup & Saving Work to Github
 1. Open a workspace in gitpod by going to `https://gitpod.io/github.com/bitly/winterns2021` or add the chrome extension (which adds the GitPod button to your Github account)
