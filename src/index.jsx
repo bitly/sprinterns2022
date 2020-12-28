@@ -20,8 +20,8 @@ const App = () => {
 
     return (
       <>
-        <div className="header"> {/*  dark blue full width banner code begins  */}
-            <h1>Bitly API Explorer</h1>
+        <div className="header">
+          <h1>Bitly API Explorer</h1>
         </div>
         <div className="main">
           <div className="sidebar">
@@ -40,10 +40,10 @@ const App = () => {
         </div>
         <div className="center">
           <div className="centerButtons">
-              <button className='methodButton getbutton'  onClick={() => toggleButton("GET")}>Get</button>
-              <button className='methodButton postbutton' onClick={() => toggleButton("POST")}>Post</button>
-              <button className='methodButton patchbutton' onClick={() => toggleButton("PATCH")}>Patch</button>
-              <button className='methodButton deletebutton' onClick={() => toggleButton("DELETE")}>Delete</button>
+            <button className='methodButton getbutton'  onClick={() => toggleButton("GET")}>Get</button>
+            <button className='methodButton postbutton' onClick={() => toggleButton("POST")}>Post</button>
+            <button className='methodButton patchbutton' onClick={() => toggleButton("PATCH")}>Patch</button>
+            <button className='methodButton deletebutton' onClick={() => toggleButton("DELETE")}>Delete</button>
           </div>
           <div className="centerCard">
             {
