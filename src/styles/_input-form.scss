@@ -1,0 +1,78 @@
+.inputForms{
+  position: fixed;
+  left: 400px;
+  top: 150px;
+  
+  .endpointBox{
+      width:100%;
+      height: 20px;
+  }
+
+  .authTokenBox{
+      width: 100%;
+      height: 20px;
+  }
+
+  .keybox{
+      width: 100%;
+      height: 20px;
+  }
+  .Valuebox{
+      width: 500px;
+      height: 20px;
+  }
+
+  .add{
+    background-color: #023044; 
+    border: none;
+    color: white;
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 3px;
+    left: -60px;
+    top: 127px;
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .submit{
+    background-color: #023044; 
+    border: none;
+    color: white;
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 3px;
+    left: 760px;
+    top: 450px;
+    outline: none;
+    cursor: pointer;
+    position: fixed;
+  }
+  .resetbutton {
+    background-color: #023044; 
+    border: none;
+    color: white;
+    padding: 4px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 3px;
+    left: 363px;
+    top: 340px;
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .methodButton {
+      margin-right: 2rem;
+  }
+}

@@ -1,3 +1,4 @@
+
 module.exports = {
     entry: [
         './src/index.jsx'
@@ -10,13 +11,16 @@ module.exports = {
                 use: ['babel-loader']
             },
             {
-                test:/\.css$/,
-                use:['style-loader','css-loader']
+              test: /\.scss$/,
+              use: [
+                'style-loader', 'css-loader', 'sass-loader'
+              ]
             }
         ],
     },
     output: {
         path: __dirname + '/static',
         filename: 'bundle.js'
-    }
+    },
+    watch: true
 };

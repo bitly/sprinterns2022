@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/main.scss';
 import axios from 'axios';
 import Form from './Form.jsx';
 import KVInputs from './KVInputs.jsx';
+
+if (module.hot) {
+    console.log('hot module');
+}
 
 const App = () => {
     const { useState } = React;

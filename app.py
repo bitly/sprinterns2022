@@ -9,7 +9,7 @@ app.secret_key = "secret"
  
 @app.route("/", methods = ['GET'])
 def hello():
-    hi = "Hello Winterns Test. Katya."
+    hi = "hello world. Winterns are the best."
     return render_template('app.html', text=hi)
 
 

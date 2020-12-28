@@ -1,0 +1,72 @@
+.getbutton {
+  background-color: #139c2a; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  /* left: 142px; */
+  /* left: 440px;
+  top: 68px;
+  position: absolute; */
+  outline: none;
+  cursor: pointer;
+}
+.postbutton {
+  background-color: #38a9e4; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  /* left: 236px; */
+  /* left: 560px;
+  top: 68px;
+  position: absolute; */
+  outline: none;
+  cursor: pointer;
+}
+.patchbutton {
+  background-color: #ea6a1b; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  /* left: 336px; */
+  /* left: 680px;
+  top: 68px;
+  position: absolute; */
+  outline: none;
+  cursor: pointer;
+}
+.deletebutton {
+  background-color: #e43c3c; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block solid transparent;
+  font-size: 16px;
+  border-radius: 12px;
+  /* left: 445px; */
+  /* left:800px;
+  top: 68px;
+  position: absolute; */
+  outline: none;
+  cursor: pointer;
+}
+.container{
+  display: flex; /* or inline-flex */
+  /* justify-content:center; */
+ }

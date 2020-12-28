@@ -1,0 +1,14 @@
+@import 'logo.scss';
+@import 'banner.scss';
+@import 'sidebar.scss';
+@import 'api-buttons.scss';
+@import 'center-card.scss';
+@import 'input-form.scss';
+@import 'results-box.scss';
+
+.main {
+    display: flex;
+    width: 98vw;
+    height: 100vh;
+
+}
