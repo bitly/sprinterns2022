@@ -1,5 +1,6 @@
 import React from 'react';
 import AndreasComponent from './AndreasComponent.jsx';
+import TajrasComponent from './TajrasComponent.jsx';
 
 const ExampleComponent = ({bioToShow, color='red'}) => {
   const { useState } = React;
@@ -15,7 +16,7 @@ const ExampleComponent = ({bioToShow, color='red'}) => {
         <p>{bioToShow}</p>
 
         {/* { bioToShow === 'Dana' && <DanasComponent /> } */}
-        {/* { bioToShow === 'Tajra' && <TajrasComponent /> } */}
+         { bioToShow === 'Tajra' && <TajrasComponent /> } 
         {/* { bioToShow === 'Lara' && <LarasComponent /> } */}
         { bioToShow === 'Andrea' && <AndreasComponent /> }
         {/* { bioToShow === 'Roma' && <RomasComponent /> } */}
