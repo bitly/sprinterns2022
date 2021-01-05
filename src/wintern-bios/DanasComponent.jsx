@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ExampleComponent = ({bioToShow, color='red'}) => {
+const DanasComponent = ({bioToShow, color='red'}) => {
   const { useState } = React;
 
   const [showStateEx, setShowStateEx] = useState(false);
@@ -9,17 +9,10 @@ const ExampleComponent = ({bioToShow, color='red'}) => {
 
 
   return (
-    <div className='changeClassName'>
-        <p className={color}>Random Number: {randomNum}</p>
-        <p>{bioToShow}</p>
-
-        {/* { bioToShow === 'Dana' && <DanasComponent /> } */}
-        {/* { bioToShow === 'Tajra' && <TajrasComponent /> } */}
-        {/* { bioToShow === 'Lara' && <LarasComponent /> } */}
-        {/* { bioToShow === 'Andrea' && <AndreasComponent /> } */}
-        {/* { bioToShow === 'Roma' && <RomasComponent /> } */}
+    <div className='danasBio'>
+    <p>Hello there!</p> 
     </ div>
   );
 }
 
-export default ExampleComponent;
+export default DanasComponent;
