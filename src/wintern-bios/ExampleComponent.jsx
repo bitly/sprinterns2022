@@ -1,10 +1,7 @@
 import React from 'react';
-<<<<<<< HEAD
 import LarasComponent from './LarasComponent.jsx';
-=======
 import AndreasComponent from './AndreasComponent.jsx';
 import TajrasComponent from './TajrasComponent.jsx';
->>>>>>> 6a9ec0c3aa6d125498d949479ba19bab8bb3e81c
 
 const ExampleComponent = ({bioToShow, color='red'}) => {
   const { useState } = React;
