@@ -1,4 +1,5 @@
 import React from 'react';
+import DanasComponent from './DanasComponent.jsx';
 
 const ExampleComponent = ({bioToShow, color='red'}) => {
   const { useState } = React;
@@ -9,16 +10,17 @@ const ExampleComponent = ({bioToShow, color='red'}) => {
 
 
   return (
-    <>
+    <div className='changeClassName'>
         <p className={color}>Random Number: {randomNum}</p>
         <p>{bioToShow}</p>
+        <DanasComponent />
 
         {/* { bioToShow === 'Dana' && <DanasComponent /> } */}
         {/* { bioToShow === 'Tajra' && <TajrasComponent /> } */}
         {/* { bioToShow === 'Lara' && <LarasComponent /> } */}
         {/* { bioToShow === 'Andrea' && <AndreasComponent /> } */}
         {/* { bioToShow === 'Roma' && <RomasComponent /> } */}
-    </>
+    </ div>
   );
 }
 
