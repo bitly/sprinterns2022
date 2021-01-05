@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LarasComponent = ({bioToShow, color='red'}) => {
+const TajrasComponent = ({bioToShow, color='red'}) => {
   const { useState } = React;
 
   const [showStateEx, setShowStateEx] = useState(false);
@@ -9,10 +9,12 @@ const LarasComponent = ({bioToShow, color='red'}) => {
 
 
   return (
-    <div className='larasbio'>
-       <p> Hellooooooo</p>
+    <div className='tajrabio'>
+    <p>Hi
+
+    </p>
     </ div>
   );
 }
 
-export default LarasComponent;
+export default TajrasComponent;
