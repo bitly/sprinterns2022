@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/main.scss';
 import Form from './Form.jsx';
+import ExampleComponent from './wintern-bios/ExampleComponent.jsx';
 
 const App = () => {
     const { useState } = React;
@@ -10,6 +11,7 @@ const App = () => {
     const [endpoint, setEndpoint] = useState('');
     const [showForm, setShowForm] = useState(false);
     const [showIntro, setShowIntro] = useState(true);
+    const [showBio, setShowBio] = useState('');
 
     const toggleButton = (method, endpoint) => {
       setMethod(method);
@@ -17,6 +19,10 @@ const App = () => {
       setShowForm(true);
       setShowIntro(false);
     }
+
+    const shouldShowBio = showBio.length > 0;
+    console.log('showBio', showBio);
+    
 
     return (
       <>
@@ -36,6 +42,11 @@ const App = () => {
             <a href="#" onClick={() => toggleButton("PATCH",'/user')}><span className="Patch">Update</span> a User</a>
             <a href="#" onClick={() => toggleButton("PATCH",'/groups/{group_guid}')}><span className="Patch">Update</span> a Group</a>
             <a href="#" onClick={() => toggleButton("DELETE",'/groups/{group_guid}')}><span className="Delete">Delete</span> a Group</a>
+            <a href="#" onClick={() => setShowBio('Andrea')}>Andrea</a>
+            <a href="#" onClick={() => setShowBio('Tajra')}>Tajra</a>
+            <a href="#" onClick={() => setShowBio('Roma')}>Roma</a>
+            <a href="#" onClick={() => setShowBio('Lara')}>Lara</a>
+            <a href="#" onClick={() => setShowBio('Dana')}>Dana</a>
           </div>
         </div>
         <div className="center">
@@ -47,7 +58,7 @@ const App = () => {
           </div>
           <div className="centerCard">
             {
-              showIntro && <div className="intro">
+              showIntro && !shouldShowBio && <div className="intro">
                 <p>
                   Introduction: Welcome to the Bitly API! If you'd like to use Bitly to shorten, brand, share, or retrieve data from links programmatically, you've come to the right place. If you're interested in integrating
                 </p>
@@ -57,10 +68,15 @@ const App = () => {
                 <p>
                   We currently provide our documentation in the form of an OpenAPI 2.0 document. We do not support any code-generation at this time but feel free to use the specification if you would like.
                 </p> 
+                <ExampleComponent myProp={'myProp'} color={'blue'} />
+                <ExampleComponent myProp={'myProp'} />
+                <ExampleComponent myProp={'myProp'} />
+                <ExampleComponent myProp={'myProp'} />
               </div>
             }
           </div>
-          { showForm && <Form endpoint={endpoint} method={method} /> }
+          { showForm && !shouldShowBio && <Form endpoint={endpoint} method={method} /> }
+          { showBio && <ExampleComponent bioToShow={showBio} /> }
           </div>
         </div>
         <img className= "logo" alt="bitly logo"src="https://cdn.iconscout.com/icon/free/png-256/bitly-1-432498.png"/>
