@@ -1,10 +1,6 @@
 import React from 'react';
 
-<<<<<<< HEAD
-const ExampleComponent = ({bioToShow, color='red'}) => {
-=======
 const DanasComponent = ({bioToShow, color='red'}) => {
->>>>>>> dd1792fddae729194f1ba2dd4742a6208ba45fbb
   const { useState } = React;
 
   const [showStateEx, setShowStateEx] = useState(false);
@@ -13,26 +9,13 @@ const DanasComponent = ({bioToShow, color='red'}) => {
 
 
   return (
-<<<<<<< HEAD
-    <div className='changeClassName'>
-        <p className={color}>Random Number: {randomNum}</p>
-        <p>{bioToShow}</p>
-
-        {/* { bioToShow === 'Dana' && <DanasComponent /> } */}
-        {/* { bioToShow === 'Tajra' && <TajrasComponent /> } */}
-        {/* { bioToShow === 'Lara' && <LarasComponent /> } */}
-        {/* { bioToShow === 'Andrea' && <AndreasComponent /> } */}
-        {/* { bioToShow === 'Roma' && <RomasComponent /> } */}
-=======
     <div className='danasBio'>
-    <p>Hello there!</p> 
->>>>>>> dd1792fddae729194f1ba2dd4742a6208ba45fbb
-    </ div>
+        <p>Hello there!</p> 
+        <img className= "dana" alt="Dana Fishman"src="https://bit.ly/3onMGFx"/>
+        <img className= "caticorn" alt="very cute kitty"src="https://www.flaticon.com/svg/static/icons/svg/3468/3468377.svg"/>
+        <img className= "pride" alt="lgbt"src="https://www.flaticon.com/svg/static/icons/svg/2210/2210724.svg"/>
+    </ div> 
   );
 }
 
-<<<<<<< HEAD
-export default ExampleComponent;
-=======
 export default DanasComponent;
->>>>>>> dd1792fddae729194f1ba2dd4742a6208ba45fbb
