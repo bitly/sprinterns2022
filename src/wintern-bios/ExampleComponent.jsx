@@ -21,7 +21,7 @@ const ExampleComponent = ({bioToShow, color='red'}) => {
         { bioToShow === 'Tajra' && <TajrasComponent /> } 
         { bioToShow === 'Lara' && <LarasComponent /> } 
         { bioToShow === 'Andrea' && <AndreasComponent /> }
-        { bioToShow === 'Roma' && <RomasComponent /> }}
+        { bioToShow === 'Roma' && <RomasComponent /> }
     </ div>
   );
 }
