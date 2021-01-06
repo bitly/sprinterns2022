@@ -3,6 +3,7 @@ import RomasComponent from './RomasComponent.jsx';
 import LarasComponent from './LarasComponent.jsx';
 import AndreasComponent from './AndreasComponent.jsx';
 import TajrasComponent from './TajrasComponent.jsx';
+import DanasComponent from './DanasComponent.jsx';
 
 const ExampleComponent = ({bioToShow, color='red'}) => {
   const { useState } = React;
