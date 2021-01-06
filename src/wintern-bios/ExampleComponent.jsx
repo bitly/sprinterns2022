@@ -1,4 +1,5 @@
 import React from 'react';
+import RomasComponent from './RomasComponent.jsx';
 import LarasComponent from './LarasComponent.jsx';
 import AndreasComponent from './AndreasComponent.jsx';
 import TajrasComponent from './TajrasComponent.jsx';
@@ -20,9 +21,10 @@ const ExampleComponent = ({bioToShow, color='red'}) => {
         { bioToShow === 'Tajra' && <TajrasComponent /> } 
         { bioToShow === 'Lara' && <LarasComponent /> } 
         { bioToShow === 'Andrea' && <AndreasComponent /> }
-        {/* { bioToShow === 'Roma' && <RomasComponent /> } */}
+        { bioToShow === 'Roma' && <RomasComponent /> }
     </ div>
   );
 }
+
 
 export default ExampleComponent;
