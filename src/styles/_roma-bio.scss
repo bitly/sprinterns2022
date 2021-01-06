@@ -1,0 +1,18 @@
+.romabio{
+    .valorant{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin-left: -200px;
+        width: 300px;
+        margin-top: -200px;
+        height: 300px;
+    }
+    p{
+        text-align: center;
+        &.testtag {
+            text-align: right;
+        }
+    }
+
+}
