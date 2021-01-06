@@ -27,4 +27,5 @@ const ExampleComponent = ({bioToShow, color='red'}) => {
   );
 }
 
+
 export default ExampleComponent;
