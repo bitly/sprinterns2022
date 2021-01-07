@@ -1,3 +1,31 @@
+.dana-bio{
+    color: #3b85ed;
+    font-family: Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    .title{
+        color: #7842f5;
+        font-style: Courier, cursive;
+        font-weight: bold;
+    } 
+    hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    }
+
+    hr:after {
+        background: #fff;
+        content: '§';
+        padding: 0 4px;
+        position: relative;
+        top: -13px;
+    }
+}
+
 .dana{
     position: absolute;
     max-width: 15%;
@@ -5,7 +33,6 @@
     left: 800px;
     top: 100px;
 }
-
 .caticorn{
     position: absolute;
     width: 40px;
@@ -13,7 +40,6 @@
     left: 60px;
     top: 16px;
 }
-
 .pride{
     position: absolute;
     width: 40px;

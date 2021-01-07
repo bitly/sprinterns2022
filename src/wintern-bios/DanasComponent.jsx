@@ -9,7 +9,9 @@ const DanasComponent = ({bioToShow, color='red'}) => {
 
 
   return (
-    <div className='danasBio'>
+    <div className='dana-bio'>
+        <h1 className='title'> Dana Fishman </h1>
+        <hr/>
         <p>Hello there!</p> 
         <img className= "dana" alt="Dana Fishman"src="https://bit.ly/3onMGFx"/>
         <img className= "caticorn" alt="very cute kitty"src="https://www.flaticon.com/svg/static/icons/svg/3468/3468377.svg"/>
