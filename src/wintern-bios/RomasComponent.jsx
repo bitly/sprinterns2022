@@ -12,7 +12,7 @@ const RomasComponent = ({bioToShow, color='red'}) => {
     <div className='romabio'>
        
         <p>{bioToShow}</p>
-        <p>Roma Cooper</p>
+        <h1>Roma Cooper</h1>
         <img className="valorant" alt="test image"src="https://riot.com/2Lm40MF"/>
         <hr/>
         <p className="testtag">About Me</p>

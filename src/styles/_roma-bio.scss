@@ -1,4 +1,11 @@
 .romabio{
+    background-image: url("https://d1kdq4z3qhht46.cloudfront.net/uploads/2019/08/Adventures_from_Moominvalley_1990_Moomintroll_TV.jpg");
+    background-color: #06ff00;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     .valorant{
         // position: relative;
         // top: 50%;
@@ -13,6 +20,7 @@
     }
     p{
         text-align: center;
+        color: #ffffff;
         // &.testtag {
         //     text-align: right;
         // }
@@ -32,7 +40,10 @@
         padding: 0 4px;
         position: relative;
         top: -13px;
-}
+    }
+    h1{
+        text-align: center;
+    }
 
 
 }
