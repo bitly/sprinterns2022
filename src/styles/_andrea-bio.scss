@@ -6,4 +6,20 @@
     h1{
         text-align: center;
     }
+
+    .paraLeft{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    .paraCenter{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .paraRight{
+         display: flex;
+         flex-wrap: wrap;
+         text-align: right;
+    }
 } 
