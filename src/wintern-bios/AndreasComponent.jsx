@@ -1,4 +1,5 @@
 import React from 'react';
+import img from '../assets/bio-photos/bio-pic_Andrea.jpg';
 
 const AndreasComponent = ({bioToShow, color='red'}) => {
   const { useState } = React;
@@ -13,7 +14,7 @@ const AndreasComponent = ({bioToShow, color='red'}) => {
         <div className='andreasBio'>
             <h1>Bio: Andrea K Cajamarca</h1>
 
-            <img src="https://placekitten.com/200/300" />
+            <img src={img} />
             <div className = "paraLeft">
             <p>My name is Andrea K Cajamarca</p>
             <p>About Me: I am 21-years-old. I am a Junior in CUNY Hunter College. My major is English, concentrated on Creative Writing; minor in Computer Science. Fun Fact: I have plenty! I am the third oldest of 7 kids. I have a 5-year-old cat named Khloe! I know two other languages (Spanish, and Japanese).</p>
