@@ -19,7 +19,11 @@ const TajrasComponent = ({bioToShow, color='red'}) => {
         <h4 class="titleone"> FUN FACTS </h4>
         <li> I speak 5 languages fluently, which are: Bosnian, Serbian, Croatian (they are pretty similar, but have some small differences in accents), German, and English.</li>
         <li> I have 3 dogs. An English Springer Spaniel, 13 years old, named Dzina. A Chichon (Chihuahua mixed with Bishon), 2 years old, named Bella. A Yorkie, 4 years old, named Beko. </li>
+<<<<<<< HEAD
         <li> My favorite meal are tacos because the country I come from, there are no tacos. Can you imagine :( ? </li>
+=======
+        <li> My favorite meal are tacos because the country I come from, there are no tacos. Can you imagine:( ? </li>
+>>>>>>> 407d97a62c7c5d447de738dca0a841ba666c110e
         </ul>
         </div>
     </ div>
