@@ -1,5 +1,7 @@
 .andreaBGI{
     background-image: url("https://images.unsplash.com/photo-1609940829412-4a0919604ac0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80");
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 .andreasBio{
 
@@ -8,18 +10,37 @@
     }
 
     .paraLeft{
-        display: flex;
-        flex-wrap: wrap;
-        text-align: left;
+        border: solid 1px black;
+        position: absolute;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        text-align: justify;
     }
     .paraCenter{
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
+        border: solid 1px black;
+        left: 50%;
+        position: absolute;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        text-align: justify;
     }
     .paraRight{
-         display: flex;
-         flex-wrap: wrap;
-         text-align: right;
+        border: solid 1px black;
+        position: absolute;
+        right: 100px;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        text-align: justify;
+    }
+    .andreaImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        height: auto;
+        border: 10px solid #ddd;
     }
 } 
