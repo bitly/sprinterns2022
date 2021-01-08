@@ -18,7 +18,7 @@ const LarasComponent = ({bioToShow, color='red'}) => {
                     <img className='laraimage' src={img}/>
                 </div>
                     <div class="flip-box-back-">
-                        <h2>Bitly Engineering Intern</h2>
+                        <h2 class="backimg"> Bitly Engineering Intern</h2>
                         </div>
                 </div>
                 </div>

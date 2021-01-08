@@ -54,15 +54,18 @@
 
             .flip-box-back- {
             background-color: transparent;
-            color: transparent;
             transform: rotateY(180deg);
+            }
+
+            .backimg{
+                color:blue;
             }
   
      .first{
         color:#086d9c;
         font: italic small-caps bold 40px/30px Georgia, serif;
         text-align: center;
-        margin-top: 300px;
+        margin-top: 400px;
     }
 
     .title{
