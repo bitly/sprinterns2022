@@ -13,7 +13,7 @@ const AndreasComponent = ({bioToShow, color='red'}) => {
     <div className = "andreaBGI">  
         <div className='andreasBio'>
             <div class="container">
-  <             div class="jumbotron">
+                <div class="jumbotron">
                     <h1>Bio: Andrea K Cajamarca</h1>
                     <img className = "andreaImg" src={img} />
                 </div>
