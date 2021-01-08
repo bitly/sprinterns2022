@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@font-face{
+  font-family: 'Varela';
+  font-style: normal;
+  font-size: 100px;
+  src: url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+}
 .romabio{
-    background-image: url("https://d1kdq4z3qhht46.cloudfront.net/uploads/2019/08/Adventures_from_Moominvalley_1990_Moomintroll_TV.jpg");
+    background-image: url("https://cdn.discordapp.com/attachments/757364835271835648/767187717628624907/icon.png");
     background-color: #06ff00;
     
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
-    .valorant{
+    .selfportrait{
 
         display: block;
         height: 300px;
@@ -14,16 +21,23 @@
 
     }
     p{
+         -webkit-text-stroke: .2px black;
         text-align: center;
         color: #ffffff;
+        font-family: 'Varela', sans-serif;
+        
         // &.testtag {
         //     text-align: right;
         // }
     }
+    h1{
+        color: white;
+         -webkit-text-stroke: .2px black;
+    }
     hr {
         border: none;
-        border-top: 3px double #333;
-        color: #333;
+        border-top: 3px double rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
         overflow: visible;
         text-align: center;
         height: 5px;
