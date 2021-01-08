@@ -1,12 +1,12 @@
- import React from 'react';
+import React from 'react';
 import img from '../assets/bio-photos/tajra.jpg';
 
 const TajrasComponent = ({bioToShow, color='red'}) => {
   const { useState } = React;
 
-//   const [showStateEx, setShowStateEx] = useState(false);
+  const [showStateEx, setShowStateEx] = useState(false);
 
-//   const randomNum = Math.random();
+  const randomNum = Math.random();
 
 
   return (
