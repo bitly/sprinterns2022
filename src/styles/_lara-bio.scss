@@ -13,19 +13,59 @@
     font-size: 200%;
 
     .laraimage{
-        width: 500px;
-        height: 380px;
-        padding-top: 27px;
-        padding-right: 40%;
-        padding-left: 18%;
-        padding-bottom: 30px;
-       
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 30px;
+        box-shadow: 10px 10px;
     }
 
-    .first{
-        color:#2258f5;
+            .flip-box {
+            background-color: transparent;
+            perspective: 1500px;
+            }
+
+            .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+            }
+
+            .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+            }
+
+            .flip-box-front, .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            }
+
+            .flip-box-front {
+            background-color: transparent;
+            color: black;
+            }
+
+            .flip-box-back- {
+            background-color: transparent;
+            transform: rotateY(180deg);
+            }
+
+            .backimg{
+                color:blue;
+            }
+  
+     .first{
+        color:#086d9c;
         font: italic small-caps bold 40px/30px Georgia, serif;
         text-align: center;
+        margin-top: 400px;
     }
 
     .title{
@@ -33,5 +73,4 @@
         font-style: Courier, cursive;
         font-weight: bold;
     }
-  
 }
