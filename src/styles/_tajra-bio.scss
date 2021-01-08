@@ -4,48 +4,59 @@
  color:rgb(17, 68, 145);
  font-family: Verdana, Geneva, Tahoma, sans-serif;
  font-weight: bold;
+ padding-bottom:50px;
  }
+.bigtitleme{
+ color: rgb(43, 128, 226);
+ display: block;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size: 1.5em;
+ margin-block-start: 0em;
+    margin-block-end: 5em;
+    margin-inline-start: 40px;
+    margin-inline-end: 0px;
+    font-weight: bold
+    }
 
 .prvitext{
     background-color: cornflowerblue;
     color: darkblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: block;
-    margin-block-start:-13em;
+    margin-block-start:-22em;
     margin-block-end: 4em;
     margin-inline-start: 280px;
     margin-inline-end: 50px;
     
 } 
  
-.titleone{
+.funfacts{
+     .titleone{
     color: rgb(135, 216, 97);
     text-align: center;
     font-family: monospace;
     font-size: xxx-large;
     display: block;
-    margin-block-start: 19em;
+    margin-block-start:15em;
     margin-block-end: -0.005em;
     margin-inline-end: auto;
-
-}
-.funfacts{
+    }
     color:rgb(175, 223, 137);
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     background-color: rgb(16, 114, 57);
-    display: block;
-    margin-block-start: -7em;
-    margin-block-end: -29em;
-    margin-inline-end: auto;
+    // display: block;
+    // margin-block-start: -7em;
+    // margin-block-end: -29em;
+    // margin-inline-end: auto;
+    padding-bottom: 20px;
+
 }
 .mojaslika{
      border-radius: 50%;
      width: 250px;
     height: 250px;
-    text-align: center;
-
-     
+    
 
 }
 .ostatak{

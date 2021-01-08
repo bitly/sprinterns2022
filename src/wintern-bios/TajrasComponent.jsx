@@ -5,17 +5,15 @@ const TajrasComponent = ({bioToShow, color='red'}) => {
   const { useState } = React;
 
   const [showStateEx, setShowStateEx] = useState(false);
-
   const randomNum = Math.random();
 
 
   return (
     <div className='tajrabio'>
     <img className='mojaslika' src={img}/>
-    <div>
-    <p class='prvitext'> Hi, everyone! My name is Tajra Sinanagic and I am 19 years old. I am a freshman at Kingsborough Community College, who is currently a major in Liberal Arts, but from Spring 2021 I will be majoring in Computer Science. </p>
+    <h2 className='bigtitleme'>Tajra Sinanagic</h2>
+    <p class='prvitext'> Hi, everyone! I am your new wintern in Software Engineering for 2021! I am a freshman at Kingsborough Community College, who is currently a major in Liberal Arts, but from Spring 2021 I will be majoring in Computer Science. </p>
      <p className='ostatak'>How I would describe myself is that I am someone who is always passionate about learning. One good advice my high school English teacher told me is,"Knowledge is the key that opens all doors!". I always liked this advice or some would call it saying because I find it to be true. There is never an end to our knowledge, so it means we can always upgrade ourselves as a software does too :D. Human softwares, maybe? </p>
-    </div>
     <span class='mismali' title="Chuck Norris writes code...that optimizes itself.">Move your mouse over me for a funny fact!</span>
        <div className="funfacts">
         <ul>
@@ -26,6 +24,23 @@ const TajrasComponent = ({bioToShow, color='red'}) => {
         <li> My favorite colors are blue and green, as you might have noticed, and the Northern Lights are definitely something I want to see because I am into stargazing and find fascination in astronomy. </li>
         </ul>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
     </ div>
 
   );
