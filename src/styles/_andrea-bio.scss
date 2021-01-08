@@ -4,14 +4,20 @@
     border-radius: 4px;
 }
 .andreasBio{
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    .flex-container{
+        justify-content: space-evenly;
+    }
 
     h1{
         text-align: center;
     }
-
     .paraLeft{
         border: solid 1px black;
-        position: absolute;
+        //position: absolute;
         padding: 10px;
         width: 200px;
         height: 200px;
@@ -20,7 +26,7 @@
     .paraCenter{
         border: solid 1px black;
         left: 50%;
-        position: absolute;
+        //position: absolute;
         padding: 10px;
         width: 200px;
         height: 200px;
@@ -28,7 +34,7 @@
     }
     .paraRight{
         border: solid 1px black;
-        position: absolute;
+        //position: absolute;
         right: 100px;
         padding: 10px;
         width: 200px;
