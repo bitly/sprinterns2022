@@ -12,12 +12,17 @@ const RomasComponent = ({bioToShow, color='red'}) => {
     <div className='romabio'>
        
         <p>{bioToShow}</p>
-        <img className="selfportrait" alt="test image"src="https://i.imgur.com/Eb9wkez.png"/>
+        <div className="hovertest">
+            <img className="selfportrait" alt="test image"src="https://i.imgur.com/Eb9wkez.png"/>
+            <p className="hovertext">This is a self portrait of me from a month or two ago.</p>
+
+        </div>
+        
+        
         <h1>Roma Cooper</h1>
         <hr/>
         <p className="testtag">About Me</p>
         <p>Hey there! My name is Roma! </p>
-        
         <p>My pronouns are she/they.</p>
         <p>I'm a sophomore at Brooklyn College majoring in Computer Science.</p>
         <hr/>
