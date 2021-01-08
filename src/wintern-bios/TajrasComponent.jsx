@@ -1,4 +1,5 @@
 import React from 'react';
+import img from '../assets/bio-photos/tajra.jpg';
 
 const TajrasComponent = ({bioToShow, color='red'}) => {
   const { useState } = React;
@@ -10,9 +11,10 @@ const TajrasComponent = ({bioToShow, color='red'}) => {
 
   return (
     <div className='tajrabio'>
-    <img className="pas" alt="bio picture" src="https://i.pinimg.com/originals/79/e4/24/79e4248767ff83f10fa175ef26adbbec.jpg" weight="350" height="350"></img>
+    <img className='mojaslika' src={img}/>
     <div>
     <p class='prvitext'> Hi, everyone! My name is Tajra Sinanagic and I am 19 years old. I am a freshman at Kingsborough Community College, who is currently a major in Liberal Arts, but from Spring 2021 I will be majoring in Computer Science. </p>
+     <p className='ostatak'>How I would describe myself is that I am someone who is always passionate about learning. One good advice my high school English teacher told me is,"Knowledge is the key that opens all doors!". I always liked this advice or some would call it saying because I find it to be true. There is never an end to our knowledge, so it means we can always upgrade ourselves as a software does too :D. Human softwares, maybe? </p>
     </div>
        <div className="funfacts">
         <ul>
@@ -25,6 +27,6 @@ const TajrasComponent = ({bioToShow, color='red'}) => {
     </ div>
 
   );
-}
+        }
 
 export default TajrasComponent;

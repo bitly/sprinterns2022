@@ -1,16 +1,35 @@
 
 .larabio{
-    color: #3b85ed;
-    font-family: Verdana, sans-serif;
+    background-image: url('https://bit.ly/3ntcrTz');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 5px solid black;
+        padding: 20px;
+    
+    color:#475a91;
+    font-family: 'Brush Script MT', cursive;
     font-style: normal;
     font-weight: normal;
+    font-size: 200%;
+
+    .laraimage{
+        width: 500px;
+        height: 380px;
+        padding-top: 27px;
+        padding-right: 40%;
+        padding-left: 18%;
+        padding-bottom: 30px;
+       
+    }
 
     .first{
-        color:pink;
+        color:#2258f5;
+        font: italic small-caps bold 40px/30px Georgia, serif;
+        text-align: center;
     }
 
     .title{
-        color: #7842f5;
+        color:#29022b;
         font-style: Courier, cursive;
         font-weight: bold;
     }
