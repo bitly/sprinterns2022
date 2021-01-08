@@ -24,23 +24,7 @@ const TajrasComponent = ({bioToShow, color='red'}) => {
         <li> My favorite colors are blue and green, as you might have noticed, and the Northern Lights are definitely something I want to see because I am into stargazing and find fascination in astronomy. </li>
         </ul>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         
-
     </ div>
 
   );
