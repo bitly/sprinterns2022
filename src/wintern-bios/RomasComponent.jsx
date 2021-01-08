@@ -13,24 +13,24 @@ const RomasComponent = ({bioToShow, color='red'}) => {
        
         <p>{bioToShow}</p>
         <h1>Roma Cooper</h1>
-        <img className="valorant" alt="test image"src="https://riot.com/2Lm40MF"/>
+        <img className="valorant" alt="test image"src="https://i.imgur.com/Eb9wkez.png"/>
         <hr/>
         <p className="testtag">About Me</p>
-        <p>Hey I'm Roma I like to play a total of three video games and this is the one im playing right now this is just placeholder</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p>Hey there! My name is Roma! </p>
+        
+        <p>My pronouns are she/they.</p>
+        <p>I'm a sophomore at Brooklyn College majoring in Computer Science.</p>
         <hr/>
         <p>Things That I Like</p>
-        <p>bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh  </p>
-        <p>bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh  </p>
-        <p>bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh  </p>
-        <p>bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh  </p>
+        <p>Games! I love playing Valorant, Overwatch, and Minecraft. Even though I only play a total of three games, I never get exhausted of them, so it's not a problem. </p>
+        <p>I also love drawing and have recently been working a lot on my digital art!</p>
+        <p>I also love all my friends!!!</p>
+        
         <hr/>
-        <p>What I Learned In Boating School Today Is</p>
-        <p>bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh  </p>
-        <p>bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh  </p>
-        <p>bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh  </p>
-        <p>bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh  </p>
+        <p>What I Want To Be When I Grow Up?</p>
+        <p>I'm still not sure! Is that an okay thing to admit at age 19? That I still haven't completely mapped out exactly what it is</p>
+        <p>that I want to accomplish in life by this tender age? All I know is that I'm really curious about Computer Science things and Graphic Design! </p>
+    
         <hr/>
 
         
