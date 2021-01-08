@@ -15,8 +15,6 @@ const ExampleComponent = ({bioToShow, color='red'}) => {
 
   return (
     <div className='changeClassName'>
-        <p className={color}>Random Number: {randomNum}</p>
-        <p>{bioToShow}</p>
 
         { bioToShow === 'Dana' && <DanasComponent /> }
         { bioToShow === 'Tajra' && <TajrasComponent /> } 
