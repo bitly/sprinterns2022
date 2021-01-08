@@ -11,7 +11,7 @@
     color: darkblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: block;
-    margin-block-start:-20em;
+    margin-block-start:-11em;
     margin-block-end: 5em;
     margin-inline-start: 280px;
     margin-inline-end: 50px;
@@ -35,7 +35,27 @@
     font-size: large;
     background-color: rgb(16, 114, 57);
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: -39em;
-    margin-inline-end: auto;}
+    margin-block-start: -5em;
+    margin-block-end: -29em;
+    margin-inline-end: auto;
+}
+.mojaslika{
+     border-radius: 50%;
+     width: 250px;
+    height: 250px;
+    text-align: center;
+
+     
+
+}
+.ostatak{
+    background-color: rgba(35, 53, 209, 0.719) ;
+    color: rgb(145, 184, 228);
+    margin-block-start: -3em;
+    margin-block-end: 1em;
+    margin-inline-start: 260px;
+    margin-inline-end: 30px;
+}
+
+
 
