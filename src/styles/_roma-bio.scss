@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@font-face{
+  font-family: 'Varela';
+  font-style: normal;
+  font-size: 100px;
+  src: url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+}
+.romabio{
+    background-image: url("https://cdn.discordapp.com/attachments/757364835271835648/767187717628624907/icon.png");
+    background-color: #06ff00;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .selfportrait{
+
+        display: block;
+        height: 300px;
+        margin: auto;
+
+    }
+    .hovertext{
+         visibility: hidden;
+    }
+    .hovertest:hover .hovertext {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    p{
+         -webkit-text-stroke: .2px black;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Varela', sans-serif;
+        
+        &.testtag {
+            font-size: 150%;
+        }
+        
+    }
+    h1{
+        color: white;
+         -webkit-text-stroke: .2px black;
+    }
+    hr {
+        border: none;
+        border-top: 3px double rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+    }
+
+    hr:after {
+        background: #fff;
+        
+        padding: 0 4px;
+        position: relative;
+        top: -13px;
+    }
+    h1{
+        text-align: center;
+    }
+
+
+}
