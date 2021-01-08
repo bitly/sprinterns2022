@@ -12,8 +12,17 @@ const LarasComponent = ({bioToShow, color='red'}) => {
   return (
        <div className='larabio'>
            <h1 className='title'> Lara Choudhury </h1>
-                <img className='laraimage' src={img}/>
-            <div>
+                <div class="flip-box">
+                <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img className='laraimage' src={img}/>
+                </div>
+                    <div class="flip-box-back-">
+                        <h2>Bitly Engineering Intern</h2>
+                        </div>
+                </div>
+                </div>
+                <div>
                 <p className='first'> HI! Welcome to my Bio! </p>
                 <p> I am Lara Choudhury. I am 19 years old. I am an upper sophmore at John Jay College of Criminal Justice. 
                     Majoring in Computer Science and Information Security.</p>
