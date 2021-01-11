@@ -6,12 +6,13 @@
   src: url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
 }
 .romabio{
-    background-image: url("https://cdn.discordapp.com/attachments/757364835271835648/767187717628624907/icon.png");
-    background-color: #06ff00;
+    background-image: url("https://cdn.discordapp.com/attachments/757364835271835648/798326062390968360/icon_transparent.png");
+    
     
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
     
     .selfportrait{
 
@@ -20,38 +21,39 @@
         margin: auto;
 
     }
-    .overlay{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #008CBA;
-    }
-    .hovertext{
-         color: white;
-         font-size: 20px;
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         -webkit-transform: translate(-50%, -50%);
-         -ms-transform: translate(-50%, -50%);
-         transform: translate(-50%, -50%);
-         text-align: center;
-    }
-    .hovertest:hover .hovertext {
-        opacity: 1;
-    }
+    // .overlay{
+    //     position: absolute;
+    //     top: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    //     height: 100%;
+    //     width: 100%;
+    //     opacity: 0;
+    //     transition: .5s ease;
+    //     background-color: #008CBA;
+    // }
+    // .hovertext{
+    //      color: white;
+    //      font-size: 20px;
+    //      position: absolute;
+    //      top: 50%;
+    //      left: 50%;
+    //      -webkit-transform: translate(-50%, -50%);
+    //      -ms-transform: translate(-50%, -50%);
+    //      transform: translate(-50%, -50%);
+    //      text-align: center;
+    // }
+    // .hovertest:hover .hovertext {
+    //     opacity: 1;
+    // }
     
     p{
-         -webkit-text-stroke: .2px black;
+        -webkit-text-stroke: .2px black;
         text-align: center;
         color: #ffffff;
         font-family: 'Varela', sans-serif;
+        opacity: 1;
         
         &.testtag {
             font-size: 150%;

@@ -12,12 +12,13 @@ const RomasComponent = ({bioToShow, color='red'}) => {
     <div className='romabio'>
        
         <p>{bioToShow}</p>
-        <div className="hovertest">
+        
+        {/* <div className="hovertest"> */}
             <img className="selfportrait" alt="test image"src="https://i.imgur.com/Eb9wkez.png"/>
-            <div className = "overlay">
+            {/* <div className = "overlay">
                 <div className="hovertext">test</div>
             </div>
-        </div>
+        </div> */}
         
         
         <h1>Roma Cooper</h1>
