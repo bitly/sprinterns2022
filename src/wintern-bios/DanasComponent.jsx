@@ -30,6 +30,8 @@ const DanasComponent = ({bioToShow, color='red'}) => {
                     <div class="text">
                         <h2>Dana Fishman</h2> 
                         <h3>World's Coolest Person</h3>
+                    </div>
+                    <div class="text2">
                         <hr/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
