@@ -14,8 +14,9 @@ const RomasComponent = ({bioToShow, color='red'}) => {
         <p>{bioToShow}</p>
         <div className="hovertest">
             <img className="selfportrait" alt="test image"src="https://i.imgur.com/Eb9wkez.png"/>
-            <p className="hovertext">This is a self portrait of me from a month or two ago.</p>
-
+            <div className = "overlay">
+                <div className="hovertext">test</div>
+            </div>
         </div>
         
         
