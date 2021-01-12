@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import{
+     HashRouter as Router,
+     Switch,
+     Route,
+     Link
+} from "react-router-dom";
 import './styles/main.scss';
 import Form from './Form.jsx';
 import ExampleComponent from './wintern-bios/ExampleComponent.jsx';
+import RomasComponent from './wintern-bios/RomasComponent.jsx';
 
 const App = () => {
     const { useState } = React;
@@ -25,11 +32,12 @@ const App = () => {
     
 
     return (
-      <>
-        <div className="header">
+    //   <>
+      <Router>
+        {/* <div className="header">
           <h1>Bitly API Explorer</h1>
-        </div>
-        <div className="main">
+        </div> */}
+        {/* <div className="main">
           <div className="sidebar">
             <div className="sidenav">
             <a href="#" onClick={() => toggleButton("GET",'/bitlinks/{Your_bitlink}')}><span className="Get">Retrieve</span> a Bitlink</a>
@@ -79,8 +87,39 @@ const App = () => {
           { showBio && <ExampleComponent bioToShow={showBio} /> }
           </div>
         </div>
-        <img className= "logo" alt="bitly logo"src="https://cdn.iconscout.com/icon/free/png-256/bitly-1-432498.png"/>
-      </> 
+        <img className= "logo" alt="bitly logo"src="https://cdn.iconscout.com/icon/free/png-256/bitly-1-432498.png"/> */}
+        {/* <div> */}
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+             <li>
+              <Link to="/Roma">Roma</Link>
+            </li>
+            
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+          </ul>
+        </nav>
+
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/about">
+            <ExampleComponent myProp={'myProp'} />
+          </Route>
+          <Route path="/Roma">
+              <RomasComponent />
+          </Route>
+          <Route path="/">
+            <ExampleComponent myProp={'myProp'} />
+          </Route>
+        </Switch>
+      {/* </div> */}
+    </Router>
+    //   </> 
     );
 }
 
