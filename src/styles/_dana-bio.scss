@@ -8,30 +8,18 @@
   src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 }
 
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .showcase {
     position: absolute;
     right: 0;
-    width: 65%;
-    min-height: 100vh;
+    width: 78.2%;
+    height: 53.5vh;
     padding: 50px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     background-image: url('https://www.scdn.co/i/connect/header-spikes-sm.jpg');
     transition: 0.5s;
-    z-index: 2;
+    z-index: 1;
 }
 
 .container {
@@ -66,10 +54,10 @@ svg:not(:root) {
     transition: fill .3s ease-in-out, transform .3s ease-in-out, color .3s ease-in-out;
     transition: fill .3s ease-in-out, transform .3s ease-in-out, color .3s ease-in-out, -webkit-transform .3s ease-in-out;
     border-radius: 50%;
-    -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.13);
-    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 0 0 12px 5px rgba(0, 0, 0);
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0);
     margin-bottom: -26px;
-    margin-top: -26px;
+    margin-top: 377px;
 }
 
 .btn-scroll {
@@ -81,7 +69,7 @@ svg:not(:root) {
 
 .btn-scroll-arrow svg {
     display: block;
-    height: 47%;
+    height: 50%;
     width: 100%;
     position: relative;
     fill: currentColor;
@@ -118,18 +106,21 @@ a:-webkit-any-link {
 
     .text
     {
-    position: relative;
-    z-index: 10;
+        position: absolute;
+        z-index: 10;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: end;
     }
 
     .text h2
     {
-    font-size: 5em;
-    font-weight: 1000;
-    color: #fff;
-    line-height: 1em;
-    text-transform: uppercase;
+        font-size: 7em;
+        font-weight: 1000;
+        color: #fff;
+        line-height: 1em;
     }
+
     .text h3
     {
     font-size: 4em;
@@ -160,23 +151,32 @@ a:-webkit-any-link {
     letter-spacing: 2px;
     transition: 0.2s;
     }
-    hr {
-    border: none;
-    border-top: 3px double #fff;
-    color: #fff;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
+    
+    .text a:hover{
+        letter-spacing: 6px;
     }
 
+    .text2 {
+        position: relative;
+        z-index: 10;
+        top: 500px;
+        color: #2D46B9;
+        font-weight: 600;
+    }
+    hr {
+        border: none;
+        border-top: 5px double #2D46B9;
+        color: #2D46B9;
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+    }
     hr:after {
-        background: #ea6a1b;
+        background: #fff;
+        content: '§';
         padding: 0 4px;
         position: relative;
         top: -13px;
-    }
-    .text a:hover{
-  letter-spacing: 6px;
     }
 }
 
@@ -184,20 +184,55 @@ a:-webkit-any-link {
     position: absolute;
     max-width: 15%;
     height: auto;
-    left: 800px;
-    top: 100px;
+    top: 80px;
+    right: 50px;
+    z-index: 2;
 }
 .caticorn{
     position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 10px;
-    top: 16px;
+    width: 70px;
+    height: 70px;
+    left: 631px;
+    top: 470px;
 }
 .pride{
     position: absolute;
     width: 40px;
     height: 40px;
-    left: 55px;
-    top: 16px;
+    left: 680px;
+    top: 480px;
+}
+
+.imageInn {
+display: inline;
+position: relative;
+pointer-events: auto;
+cursor: pointer;
+right: -50px;
+top: -350px;
+z-index: 3;
+}
+
+.hoverImg {
+    visibility: hidden;
+}
+
+.imageInn:hover .hoverImg {
+    visibility: visible;
+    pointer-events: none;
+}
+
+.hoverImg {
+    display: flex;
+    position: absolute;
+    top: 233px;
+    left: 1085px;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 4vw;
+    height: 4vh;
 }
