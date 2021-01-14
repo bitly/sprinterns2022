@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {Link} from "react-router-dom";
 import './styles/main.scss';
 import Form from './Form.jsx';
-import ExampleComponent from './wintern-bios/ExampleComponent.jsx';
+import Bio from './wintern-bios/Bio.jsx';
 
 const Home = ({bioToShow}) => {
     const { useState } = React;
@@ -66,15 +66,15 @@ const Home = ({bioToShow}) => {
                 <p>
                   We currently provide our documentation in the form of an OpenAPI 2.0 document. We do not support any code-generation at this time but feel free to use the specification if you would like.
                 </p> 
-                <ExampleComponent myProp={'myProp'} color={'blue'} />
-                <ExampleComponent myProp={'myProp'} />
-                <ExampleComponent myProp={'myProp'} />
-                <ExampleComponent myProp={'myProp'} />
+                <Bio myProp={'myProp'} color={'blue'} />
+                <Bio myProp={'myProp'} />
+                <Bio myProp={'myProp'} />
+                <Bio myProp={'myProp'} />
               </div>
             }
           </div>
           { (showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} /> }
-          { shouldShowBio && <ExampleComponent bioToShow={bioToShow} /> }
+          { shouldShowBio && <Bio bioToShow={bioToShow} /> }
           </div>
         </div>
         <img className= "logo" alt="bitly logo"src="https://cdn.iconscout.com/icon/free/png-256/bitly-1-432498.png"/>
