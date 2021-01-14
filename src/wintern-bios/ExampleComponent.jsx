@@ -4,6 +4,7 @@ import LarasComponent from './LarasComponent.jsx';
 import AndreasComponent from './AndreasComponent.jsx';
 import TajrasComponent from './TajrasComponent.jsx';
 import DanasComponent from './DanasComponent.jsx';
+import CommentsComponent from './CommentsComponent.jsx';
 
 const ExampleComponent = ({bioToShow, color='red'}) => {
   const { useState } = React;
@@ -21,6 +22,8 @@ const ExampleComponent = ({bioToShow, color='red'}) => {
         { bioToShow === 'Lara' && <LarasComponent /> } 
         { bioToShow === 'Andrea' && <AndreasComponent /> }
         { bioToShow === 'Roma' && <RomasComponent /> }
+        { bioToShow === 'Comments' && <CommentsComponent /> }
+       
     </ div>
   );
 }

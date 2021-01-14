@@ -8,10 +8,7 @@ const CommentsComponent = ({bioToShow, color='red'}) => {
 
 
   return (
-    <div className='commentsset'>
-    
-    
-        </div>
+    <div className='commentsset'></div>
 
   );
         }
