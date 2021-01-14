@@ -7,11 +7,8 @@ import ExampleComponent from './wintern-bios/ExampleComponent.jsx';
 import RomasComponent from './wintern-bios/RomasComponent.jsx';
 import LarasComponent from './wintern-bios/LarasComponent.jsx';
 
-
 const Home = ({view}) => {
-    console.log('I AM THE VIEW',view);
     const { useState } = React;
-
     const [method, setMethod] = useState('');
     const [endpoint, setEndpoint] = useState('');
     const [showForm, setShowForm] = useState(false);
@@ -31,8 +28,6 @@ const Home = ({view}) => {
 
     return (
         <>
-    
-
         <div className="header">
           <h1>Bitly API Explorer</h1>
         </div>
@@ -54,7 +49,6 @@ const Home = ({view}) => {
             <Link to="/Roma">Roma</Link>
             <Link to="/Lara">Lara</Link>
             <Link to="/Dana">Dana</Link>
-            
           </div>
         </div>
         <div className="center">
@@ -83,16 +77,13 @@ const Home = ({view}) => {
               </div>
             }
           </div>
-          { showForm && !shouldShowBio && <Form endpoint={endpoint} method={method} /> }
+          { (showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} /> }
           { shouldShowBio && <ExampleComponent bioToShow={view} /> }
           </div>
         </div>
         <img className= "logo" alt="bitly logo"src="https://cdn.iconscout.com/icon/free/png-256/bitly-1-432498.png"/>
         </>
-
- 
     );
 }
 
 export default Home;
-
