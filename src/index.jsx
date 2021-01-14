@@ -7,9 +7,6 @@ import{
      Link
 } from "react-router-dom";
 import './styles/main.scss';
-import Form from './Form.jsx';
-import ExampleComponent from './wintern-bios/ExampleComponent.jsx';
-import RomasComponent from './wintern-bios/RomasComponent.jsx';
 import Home from './Home.jsx';
 
 const App = () => {
@@ -18,22 +15,22 @@ const App = () => {
       <Router>
         <Switch>
           <Route path="/Lara">
-            <Home view="Lara"/>
+            <Home bioToShow="Lara"/>
           </Route>
           <Route path="/Andrea">
-            <Home view="Andrea"/>
+            <Home bioToShow="Andrea"/>
           </Route>
           <Route path="/Dana">
-            <Home view="Dana"/>
+            <Home bioToShow="Dana"/>
           </Route>
           <Route path="/Tajra">
-            <Home view="Tajra"/>
+            <Home bioToShow="Tajra"/>
           </Route>
           <Route path="/Roma">
-              <Home view="Roma" />
+              <Home bioToShow="Roma" />
           </Route>
           <Route path="/">
-            <Home view ="" />
+            <Home bioToShow="" />
           </Route>
         </Switch>
     </Router>

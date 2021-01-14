@@ -4,16 +4,14 @@ import {Link} from "react-router-dom";
 import './styles/main.scss';
 import Form from './Form.jsx';
 import ExampleComponent from './wintern-bios/ExampleComponent.jsx';
-import RomasComponent from './wintern-bios/RomasComponent.jsx';
-import LarasComponent from './wintern-bios/LarasComponent.jsx';
 
-const Home = ({view}) => {
+const Home = ({bioToShow}) => {
     const { useState } = React;
     const [method, setMethod] = useState('');
     const [endpoint, setEndpoint] = useState('');
     const [showForm, setShowForm] = useState(false);
     const [showIntro, setShowIntro] = useState(true);
-    const [showBio, setShowBio] = useState(view);
+    
 
     const toggleButton = (method, endpoint) => {
       setMethod(method);
@@ -22,7 +20,7 @@ const Home = ({view}) => {
       setShowIntro(false);
     }
 
-    const shouldShowBio = view.length > 0;
+    const shouldShowBio = bioToShow.length > 0;
     
     return (
         <>
@@ -76,7 +74,7 @@ const Home = ({view}) => {
             }
           </div>
           { (showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} /> }
-          { shouldShowBio && <ExampleComponent bioToShow={view} /> }
+          { shouldShowBio && <ExampleComponent bioToShow={bioToShow} /> }
           </div>
         </div>
         <img className= "logo" alt="bitly logo"src="https://cdn.iconscout.com/icon/free/png-256/bitly-1-432498.png"/>
