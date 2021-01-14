@@ -13,30 +13,9 @@ import RomasComponent from './wintern-bios/RomasComponent.jsx';
 import Home from './Home.jsx';
 
 const App = () => {
-    // const { useState } = React;
-
-    // const [method, setMethod] = useState('');
-    // const [endpoint, setEndpoint] = useState('');
-    // const [showForm, setShowForm] = useState(false);
-    // const [showIntro, setShowIntro] = useState(true);
-    // const [showBio, setShowBio] = useState('');
-
-    // const toggleButton = (method, endpoint) => {
-    //   setMethod(method);
-    //   setEndpoint(endpoint);
-    //   setShowForm(true);
-    //   setShowIntro(false);
-    // }
-
-    // const shouldShowBio = showBio.length > 0;
-    // console.log('showBio', showBio);
-    
-
     return (
 
       <Router>
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/Lara">
             <Home view="Lara"/>
@@ -58,7 +37,6 @@ const App = () => {
           </Route>
         </Switch>
     </Router>
-    
     );
 }
 

@@ -23,9 +23,7 @@ const Home = ({view}) => {
     }
 
     const shouldShowBio = view.length > 0;
-    console.log('shouldShowBio', shouldShowBio);
     
-
     return (
         <>
         <div className="header">
