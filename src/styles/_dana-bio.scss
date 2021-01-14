@@ -204,23 +204,20 @@ a:-webkit-any-link {
 }
 
 .imageInn {
-  position: relative;
-  float: left;
-  pointer-events: auto;
-  cursor: pointer;
-  right: -50px;
-  top: -350px;
-  z-index: 3;
+display: inline;
+position: relative;
+pointer-events: auto;
+cursor: pointer;
+right: -50px;
+top: -350px;
+z-index: 3;
 }
 
 .hoverImg {
     visibility: hidden;
 }
-.hoverImg2 {
-    visibility: hidden;
-}
 
-body:not(.mobile) .imageInn:hover + .hoverImg2 {
+.imageInn:hover .hoverImg {
     visibility: visible;
     pointer-events: none;
 }
@@ -228,8 +225,8 @@ body:not(.mobile) .imageInn:hover + .hoverImg2 {
 .hoverImg {
     display: flex;
     position: absolute;
-    top: 231px;
-    left: 1087px;
+    top: 233px;
+    left: 1085px;
     transform: translate(-50%, -50%);
     z-index: 4;
     pointer-events: none;
@@ -238,35 +235,4 @@ body:not(.mobile) .imageInn:hover + .hoverImg2 {
     justify-content: center;
     width: 4vw;
     height: 4vh;
-}
-
-.hoverImg2 {
-    display: flex;
-    position: absolute;
-    top: 196px;
-    left: 1118px;
-    transform: translate(-50%, -50%);
-    z-index: 4;
-    pointer-events: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 7vw;
-    height: 7vh;
-}
-
-.hoverImg2 img {
-    max-width: 100% !important;
-    max-height: 100% !important;
-    width: auto !important;
-    height: auto !important;
-    margin-bottom: 0;
-}
-
-.hoverImg2 img {
-    max-width: 100% !important;
-    max-height: 100% !important;
-    width: auto !important;
-    height: auto !important;
-    margin-bottom: 0;
 }

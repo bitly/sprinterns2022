@@ -40,15 +40,10 @@ const DanasComponent = ({bioToShow, color='red'}) => {
                     </div>
                 </div>
                 <div class="imageInn">
-                    <img src="http://l.wigflip.com/WV4yTWTg/wigflip-ds.gif" alt="Default Image"/>
+                    <img src="http://l.wigflip.com/WV4yTWTg/wigflip-ds.gif" />
                 </div>
-                <div class="fancy">
-    <                div class="hoverImg">
-                        <img src="https://www.flaticon.com/svg/vstatic/svg/424/424483.svg?token=exp=1610418449~hmac=135a0c05acd8d82f7c76c41e5712d035" alt="Profile Image"/>
-                    </div>
-                    <div class="hoverImg2">
-                        <img src="https://www.flaticon.com/svg/vstatic/svg/1426/1426077.svg?token=exp=1610427242~hmac=555aecc5ff05011c29c2bf7cad1adbbb" alt="Profile Image"/>
-                    </div>
+                <div class="hoverImg">
+                    <img src="https://www.flaticon.com/svg/vstatic/svg/539/539828.svg?token=exp=1610650979~hmac=6463ac924a0e06b3f1ccee63ce3e4dab" />
                 </div>
             </section>
         </div> 
