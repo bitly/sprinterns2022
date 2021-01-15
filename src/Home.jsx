@@ -32,7 +32,7 @@ const Home = ({bioToShow}) => {
     </button>
     <div class="dropdown-contenttwo">
       <a href="#">Meet The Team</a>
-      <a href="#">Help Center</a>
+      <a href="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/Comments">Help Center</a>
       <a href="#">Space</a>
     </div>
     
@@ -48,7 +48,7 @@ const Home = ({bioToShow}) => {
     </div>
   </div>
 </div>
-         <h1>Bitly API Explorer</h1>
+         {/* <h3>Bitly API Explorer</h3> */}
         </div>
         <div className="main">
           <div className="sidebar">
