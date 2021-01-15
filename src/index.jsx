@@ -29,6 +29,9 @@ const App = () => {
           <Route path="/Roma">
               <Home bioToShow="Roma" />
           </Route>
+           <Route path="/Comments">
+            <Home bioToShow="Comments" />
+          </Route>
           <Route path="/">
             <Home bioToShow="" />
           </Route>

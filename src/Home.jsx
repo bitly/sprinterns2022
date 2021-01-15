@@ -25,7 +25,30 @@ const Home = ({bioToShow}) => {
     return (
         <>
         <div className="header">
-          <h1>Bitly API Explorer</h1>
+            <div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Home
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-contenttwo">
+      <a href="#">Meet The Team</a>
+      <a href="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/Comments">Help Center</a>
+      <a href="#">Space</a>
+    </div>
+    
+  </div>
+ <div class="dropdownone">
+    <button class="dropbtnone">API
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-contentone">
+      <a href="#">What is API?</a>
+      <a href="#">Example of API</a>
+      <a href="#">API Explorer</a>
+    </div>
+  </div>
+</div>
+         {/* <h3>Bitly API Explorer</h3> */}
         </div>
         <div className="main">
           <div className="sidebar">
@@ -45,6 +68,7 @@ const Home = ({bioToShow}) => {
             <Link to="/Roma">Roma</Link>
             <Link to="/Lara">Lara</Link>
             <Link to="/Dana">Dana</Link>
+            <Link to="/Comments">Comments</Link>
           </div>
         </div>
         <div className="center">
@@ -77,7 +101,7 @@ const Home = ({bioToShow}) => {
           { shouldShowBio && <Bio bioToShow={bioToShow} /> }
           </div>
         </div>
-        <img className= "logo" alt="bitly logo"src="https://cdn.iconscout.com/icon/free/png-256/bitly-1-432498.png"/>
+        <a href="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/"><img className= "logo" alt="bitly logo"src="https://docrdsfx76ssb.cloudfront.net/static/1610484866/pages/wp-content/uploads/2019/02/bitly.png"/></a>
         </>
     );
 }
