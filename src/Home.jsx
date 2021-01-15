@@ -25,7 +25,7 @@ const Home = ({bioToShow}) => {
     return (
         <>
         <div className="header">
-          <h1>Bitly API Explorer</h1>
+         <h1>Bitly API Explorer</h1>
         </div>
         <div className="main">
           <div className="sidebar">
