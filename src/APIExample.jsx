@@ -3,14 +3,32 @@ import * as ReactDOM from 'react-dom'
 
 const App = () => {
   const [height, setHeight] = React.useState(0);
+  //change smileyCount and setSmileyCount, not needed
   const [smileyCount, setSmileyCount] = React.useState(0);
 
   const measuredRef = React.useCallback(node => {
     if (node !== null) {
       setHeight(node.getBoundingClientRect().height);
     }
-  }, [smileyCount]);
+  }, [smileyCount]); //here too
 
+   //David's example:
+   //traditional promise-based way to get data using fetch()
+    const getData = () => {
+        var title= $("input[name='title']").val();
+    fetch(
+      "https://api.themoviedb.org/3/search/movie?query=" + title + "&api_key=a11be34c1389ded0caa97d40a55dfe00")
+            .then(function(response) {
+              const data = response.json(); 
+              console.log('response', data);
+        });
+    };
+
+  //reminder:
+        //change div class to className
+        //fix array, the code below should not appear when the page loads
+        //format javascript above to not only work but fit the overall site's code
+        //remove all of smiley code, it should not continually add :) when you click on the button
   return (
     <div>
       <h1 ref={measuredRef}><div>Hello, world</div>{new Array(smileyCount).fill('').map(() =>  <div class="movieData">
@@ -44,7 +62,7 @@ const App = () => {
     </div>
   );
 }
-
+ 
 ReactDOM.render(
   <div className="App">
     <App/>
