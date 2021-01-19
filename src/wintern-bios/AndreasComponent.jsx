@@ -1,5 +1,7 @@
 import React from 'react';
 import img from '../assets/bio-photos/bio-pic_Andrea.jpg';
+//import APIExample from '../APIExample';
+import APIExample from '/workspace/winterns2021/src/APIExample.jsx';
 
 const AndreasComponent = ({bioToShow, color='red'}) => {
   const { useState } = React;
@@ -10,7 +12,8 @@ const AndreasComponent = ({bioToShow, color='red'}) => {
 
 
   return (
-    <div className = "andreaBGI">  
+    <div className = "andreaBGI">
+        <APIExample/>
             <h1>Bio: Andrea K Cajamarca</h1>
             <img className = "andreaImg" src={img} />
 
