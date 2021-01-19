@@ -24,12 +24,6 @@ def close_connection(exception):
     if db is not None:
         db.close()
 
-@app.route("/get_comments", methods = ['GET'])
-def get_comments():
-    query = "select * from comments"
-    query_results = query_db(query)
-    return json.dumps(query_results)
-
 def query_db(query, args=(), one=False):
     cur = get_db().execute(query, args)
     rv = cur.fetchall()
@@ -41,6 +35,12 @@ def dict_factory(cursor, row):
     for idx, col in enumerate(cursor.description):
         d[col[0]] = row[idx]
     return d
+
+@app.route("/get_comments", methods = ['GET'])
+def get_comments():
+    query = "select * from comments"
+    query_results = query_db(query)
+    return json.dumps(query_results)
 
 @app.route("/", methods = ['GET'])
 def hello():
