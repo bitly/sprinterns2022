@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
-const App = () => {
+const APIExample = () => {
   const [height, setHeight] = React.useState(0);
   //change smileyCount and setSmileyCount, not needed
   const [smileyCount, setSmileyCount] = React.useState(0);
@@ -63,9 +63,4 @@ const App = () => {
   );
 }
  
-ReactDOM.render(
-  <div className="App">
-    <App/>
-  </div>,
-  document.getElementById('root')
-);
+export default APIExample;
