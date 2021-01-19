@@ -28,13 +28,7 @@ def close_connection(exception):
 def get_comments():
     query = "select * from comments"
     query_results = query_db(query)
-    print(query_results)
-
-    # hi = "hello world. Winterns are the best."
-    # return render_template('app.html', text=hi)
-
-
-
+    return json.dumps(query_results)
 
 def query_db(query, args=(), one=False):
     cur = get_db().execute(query, args)
@@ -47,10 +41,6 @@ def dict_factory(cursor, row):
     for idx, col in enumerate(cursor.description):
         d[col[0]] = row[idx]
     return d
-
-
-
-
 
 @app.route("/", methods = ['GET'])
 def hello():
