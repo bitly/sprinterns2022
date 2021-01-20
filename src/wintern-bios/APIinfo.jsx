@@ -1,38 +1,67 @@
 import React from 'react';
+import { useAttribute } from 'react';
+import { useState } from 'react';
 
 const APIinfo = ({bioToShow, color='red'}) => {
     const { useState } = React;
 
     const [showStateEx, setShowStateEx] = useState(false);
 
-    const randomNum = Math.random();
+    const randomNum = Math.random();const items = document.querySelectorAll(".accordion button");
 
+    function toggleAccordion() {
+    const itemToggle = this.getAttribute('aria-expanded');
+
+    for (i = 0; i < items.length; i++) {
+        items[i].setAttribute('aria-expanded', 'false');
+    }
+
+    if (itemToggle == 'false') {
+        this.setAttribute('aria-expanded', 'true');
+    }
+    }
+    items.forEach(item => item.addEventListener('click', toggleAccordion));
     return (
         <>
-        <img className= "speech-bubble" alt="what is an api" src="https://i.pixelspeechbubble.com/bQ6wPCRy/pixel-speech-bubble.gif"/>
-        <img className= "wintern-chauncey" alt="confused chaunce" src="https://bit.ly/3bYJZqW"/>
-        <div id="wrapper">
-            <ul>
-                <li>
-                    <input type="checkbox" checked/>
-                    <i></i>
-                    <h2>What is Lorem Ipsum ?</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </li>
-                <li>
-                    <input type="checkbox" checked/>
-                    <i></i>
-                    <h2>Why do we use it ?</h2>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                </li>
-                <li>
-                    <input type="checkbox" checked/>
-                    <i></i>
-                    <h2>Wher we can it ?</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-                </li>
-            </ul>
+        <img className="wintern-chauncey" alt="confused chauncey" src="https://bit.ly/3bYJZqW"/>
+        <img className="speech-bubble" alt="whats an api" src="https://i.pixelspeechbubble.com/bQ6wPCRy/pixel-speech-bubble.gif"/>
+        <div className="container">
+            <h2>Frequently Asked Questions</h2>
+            <div className="accordion">
+                <div className="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false"><span className="accordion-title">Why is the moon sometimes out during the day?</span><span className="icon" aria-hidden="true"></span></button>
+                    <div className="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                </div>
+                <div className="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false"><span className="accordion-title">Why is the sky blue?</span><span className="icon" aria-hidden="true"></span></button>
+                    <div className="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                </div>
+                <div className="accordion-item">
+                    <button id="accordion-button-3" aria-expanded="false"><span className="accordion-title">Will we ever discover aliens?</span><span className="icon" aria-hidden="true"></span></button>
+                    <div className="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                </div>
+                <div className="accordion-item">
+                    <button id="accordion-button-4" aria-expanded="false"><span className="accordion-title">How much does the Earth weigh?</span><span className="icon" aria-hidden="true"></span></button>
+                    <div className="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                </div>
+                <div className="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false"><span className="accordion-title">How do airplanes stay up?</span><span className="icon" aria-hidden="true"></span></button>
+                    <div className="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <p>Still confused? Watch this video (Thanks David).</p>
+        <iframe width="420" height="315"src="https://www.youtube.com/watch?v=s7wmiS2mSXY"/>
         </>
     );
 }
