@@ -8,6 +8,7 @@ import DanasComponent from './DanasComponent.jsx';
 import CommentsComponent from './CommentsComponent.jsx';
 import APIExample from './APIExample.jsx';
 import Meetteam from './Meetteam.jsx';
+import APIinfo from './APIinfo.jsx';
 
 const Bio = ({bioToShow, color='red'}) => {
   const { useState } = React;
@@ -28,6 +29,7 @@ const Bio = ({bioToShow, color='red'}) => {
         { bioToShow === 'Comments' && <CommentsComponent /> }
         { bioToShow === 'APIExample' && <APIExample /> }
         { bioToShow === 'Meetteam' && <Meetteam /> }
+        {bioToShow === 'APIinfo' && <APIinfo /> }
        
     </ div>
   );
