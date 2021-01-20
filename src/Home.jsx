@@ -99,11 +99,31 @@ const Home = ({bioToShow}) => {
               
             }
           </div>
+          <div className="footer"> 
+           <div className="footertext">
+            <p class="center-links">
+              <a class="ft link-1" href="#">Home &emsp; </a>
+              <a class="ft link-2" href="#">&emsp; &emsp; About &emsp; </a>
+              <a class="ft link-3" href="#">&emsp; &emsp; Help &emsp; </a>
+              <a class="ft link-4" href="#">&emsp; &emsp; Legal &emsp; </a>
+              <a class="ft link-5" href="#">&emsp; &emsp; Contact &emsp; </a>
+            </p>
+                <a href="#" className="fa fa-facebook"></a>
+                <a href="#" className="fa fa-twitter"></a>
+                <a href="#" className="fa fa-github"></a>
+                <a href="#" className="fa fa-instagram"></a>
+                <a href="#" className="fa fa-linkedin"></a>
+            </div>
+            <p class="under-text"> Bitly Winterns &copy; 2021</p>
+        </div>	        
+       
+
           { (showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} /> }
           { shouldShowBio && <Bio bioToShow={bioToShow} /> }
           </div>
-        </div>
+        
         <a href="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/"><img className= "logo" alt="bitly logo"src="https://docrdsfx76ssb.cloudfront.net/static/1610484866/pages/wp-content/uploads/2019/02/bitly.png"/></a>
+        </div>
         </>
     );
 }

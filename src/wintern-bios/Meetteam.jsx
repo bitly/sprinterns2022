@@ -13,6 +13,7 @@ const Meetteam = ({bioToShow, color='red'}) => {
 
   return (
      <> 
+     <div className="biocards">
     <p>This is the team's page!</p>
     {/* CARD ONE */}
     <div className="cardtajra">
@@ -67,6 +68,7 @@ const Meetteam = ({bioToShow, color='red'}) => {
     <form action="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/Roma" method="get" target="_blank">
          <button type="submit">Click me</button>
       </form>
+  </div>
   </div>
   </div>
     </>
