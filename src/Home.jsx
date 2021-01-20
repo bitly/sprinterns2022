@@ -123,7 +123,7 @@ const Home = ({bioToShow}) => {
                 <a href="#" className="fa fa-instagram"></a>
                 <a href="#" className="fa fa-linkedin"></a>
             </div>
-            <p class="under-text"> Bitly Winterns &copy; 2021</p>
+            <p className="under-text"> Bitly Winterns &copy; 2021</p>
         </div>	        
 
           { (showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} /> }
