@@ -1,6 +1,5 @@
 import React from 'react';
-
-
+import {Link} from "react-router-dom";
 const Meetteam = ({bioToShow, color='red'}) => {
   const { useState } = React;
 
@@ -19,9 +18,11 @@ const Meetteam = ({bioToShow, color='red'}) => {
     <div className="container">
     <h4><b>Tajra Sinanagic</b></h4>
     <p className="introduction">Software Engineering Intern</p>
-    <form action="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/Tajra" method="get" target="_blank">
-         <button type="submit">Click me</button>
-      </form>
+     <Link to="/Tajra">
+     <button type="button">
+          Click Me!
+     </button>
+     </Link>
   </div>
   </div>
   {/* CARD TWO */}
@@ -30,9 +31,11 @@ const Meetteam = ({bioToShow, color='red'}) => {
     <div className="container">
     <h4><b>Andrea Cajamarca</b></h4>
     <p className="introduction">Software Engineering Intern</p>
-    <form action="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/Andrea" method="get" target="_blank">
-         <button type="submit">Click me</button>
-      </form>
+    <Link to="/Andrea">
+     <button type="button">
+          Click Me!
+     </button>
+     </Link>
   </div>
   </div>
   {/* CARD THREE */}
@@ -41,9 +44,11 @@ const Meetteam = ({bioToShow, color='red'}) => {
     <div className="container">
     <h4><b>Lara Choudhury</b></h4>
     <p className="introduction">Software Engineering Intern</p>
-    <form action="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/Lara" method="get" target="_blank">
-         <button type="submit">Click me</button>
-      </form>
+    <Link to="/Lara">
+     <button type="button">
+          Click Me!
+     </button>
+     </Link>
   </div>
   </div>
   {/* CARD FOUR */}
@@ -52,9 +57,11 @@ const Meetteam = ({bioToShow, color='red'}) => {
     <div className="container">
     <h4><b>Dana Fishman</b></h4>
     <p className="introduction">Software Engineering Intern</p>
-    <form action="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/Dana" method="get" target="_blank">
-         <button type="submit">Click me</button>
-      </form>
+    <Link to="/Dana">
+     <button type="button">
+          Click Me!
+     </button>
+     </Link>
   </div>
   </div>
   {/* CARD FIVE */}
@@ -63,9 +70,11 @@ const Meetteam = ({bioToShow, color='red'}) => {
     <div className="container">
     <h4><b>Roma Cooper</b></h4>
     <p className="introduction">Software Engineering Intern</p>
-    <form action="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/Roma" method="get" target="_blank">
-         <button type="submit">Click me</button>
-      </form>
+    <Link to="/Roma">
+     <button type="button">
+          Click Me!
+     </button>
+     </Link>
   </div>
   </div>
   </div>

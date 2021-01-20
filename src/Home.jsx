@@ -31,9 +31,8 @@ const Home = ({bioToShow}) => {
       {/* <i class="fa fa-caret-down"></i> */}
     </button>
     <div class="dropdown-contenttwo">
-      <a href="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/Meetteam">Meet The Team</a>
-      <a href="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/Comments">Help Center</a>
-      <a href="#">Space</a>
+      <Link to="/Meetteam">Meet The Team</Link>
+      <Link to="/Comments">Help Center</Link>
     </div>
     
   </div>
@@ -42,8 +41,8 @@ const Home = ({bioToShow}) => {
       {/* <i class="fa fa-caret-down"></i> */}
     </button>
     <div class="dropdown-contentone">
-      <a href="#">What is API?</a>
-      <a href="#">Example of API</a>
+      <Link to="/APIinfo">What is API?</Link>
+      <Link to="/APIExample">Example of API</Link>
       <a href="#">API Explorer</a>
     </div>
   </div>
