@@ -31,7 +31,7 @@ const Home = ({bioToShow}) => {
       {/* <i class="fa fa-caret-down"></i> */}
     </button>
     <div class="dropdown-contenttwo">
-      <a href="#">Meet The Team</a>
+      <a href="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/Meetteam">Meet The Team</a>
       <a href="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/Comments">Help Center</a>
       <a href="#">Space</a>
     </div>
