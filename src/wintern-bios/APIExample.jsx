@@ -28,7 +28,6 @@ const getMovie = () => {
             <h1 className="categoryTitle">Title</h1>
           <input type="text" className= "userInput" onChange={(event) => setTitle(event.target.value) }/>
           <input type="submit" className= "userInput" onClick={() => getMovie() }/>
-            {title}
           </form>
           {data && (<img className = "poster" src = {'https://image.tmdb.org/t/p/w500/' + data.poster_path}></img>)}
           {data && (<p>Title: {data.title}</p>)}
