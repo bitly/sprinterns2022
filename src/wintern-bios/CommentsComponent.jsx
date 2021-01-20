@@ -1,13 +1,26 @@
 import React from 'react';
+import axios from 'axios'
 
 const CommentsComponent = ({bioToShow, color='red'}) => {
   const { useState } = React;
 
-  const [showStateEx, setShowStateEx] = useState(false);
-  const randomNum = Math.random();
+  const [thing, setThing] = useState('cat');
+
+
+
+  const clickThing = () => {
+    axios
+      .get('/get_comments')
+      .then((res) => {   
+        console.log('res', res);
+        setThing(res.data[0].comment)
+      })   
+      .catch((err) => console.log('error', err))
+  } 
 
 
   return (
+      <>
      <form>
       <div>
         <label>Name</label>
@@ -19,8 +32,11 @@ const CommentsComponent = ({bioToShow, color='red'}) => {
         <label>Comment</label>
         <input type="text" name="comment" required />
       </div>
-      <button type="submit">Post</button>
+      <button onClick={() => clickThing()} type="submit">Post</button>
     </form>
+    {thing}
+    <button onClick={clickThing}>plz push</button>
+    </>
       );
 }
 
