@@ -34,7 +34,8 @@ const App = () => {
           </Route>
           <Route path="/APIExample">
             <Home bioToShow="APIExample" />
-           <Route path="/Meetteam">
+          </Route>
+          <Route path="/Meetteam">
             <Home bioToShow="Meetteam" />
           </Route>
           <Route path="/">
