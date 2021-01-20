@@ -47,7 +47,9 @@ const Home = ({bioToShow}) => {
          {/* <h3>Bitly API Explorer</h3> */}
         </div>
         <div className="main">
+    
           <div className="sidebar">
+        
             <div className="sidenav">
             <a href="#" onClick={() => toggleButton("GET",'/bitlinks/{Your_bitlink}')}><span className="Get">Retrieve</span> a Bitlink</a>
             <a href="#" onClick={() => toggleButton("GET",'/bitlinks/{Your_bitlink}/clicks')}><span className="Get">GET</span> clicks for a Bitlink</a>
@@ -59,7 +61,7 @@ const Home = ({bioToShow}) => {
             <a href="#" onClick={() => toggleButton("PATCH",'/user')}><span className="Patch">Update</span> a User</a>
             <a href="#" onClick={() => toggleButton("PATCH",'/groups/{group_guid}')}><span className="Patch">Update</span> a Group</a>
             <a href="#" onClick={() => toggleButton("DELETE",'/groups/{group_guid}')}><span className="Delete">Delete</span> a Group</a>
-            <Link to="/Andrea">Andrea</Link>
+            {/* <Link to="/Andrea">Andrea</Link>
             <Link to="/Tajra">Tajra</Link>
             <Link to="/Roma">Roma</Link>
             <Link to="/Lara">Lara</Link>
@@ -67,7 +69,7 @@ const Home = ({bioToShow}) => {
             <Link to="/Comments">Comments</Link>
             <Link to="/APIExample">API Example</Link>
             <Link to="/Meetteam">Meet The Team</Link>
-            <Link to="/APIinfo">What even is an API?</Link>
+            <Link to="/APIinfo">What even is an API?</Link> */}
           </div>
         </div>
         <div className="center">
@@ -95,6 +97,7 @@ const Home = ({bioToShow}) => {
                 <Bio myProp={'myProp'} />
               </div>
               
+              
             }
           </div>
           <div className="footer"> 
@@ -120,7 +123,7 @@ const Home = ({bioToShow}) => {
           { shouldShowBio && <Bio bioToShow={bioToShow} /> }
           </div>
         
-        <a href="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/"><img className= "logo" alt="bitly logo"src="https://docrdsfx76ssb.cloudfront.net/static/1610484866/pages/wp-content/uploads/2019/02/bitly.png"/></a>
+        <Link to="/Home"><img className= "logo" alt="bitly logo"src="https://docrdsfx76ssb.cloudfront.net/static/1610484866/pages/wp-content/uploads/2019/02/bitly.png"/></Link>
         </div>
         </>
     );
