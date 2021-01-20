@@ -1,10 +1,24 @@
 .categoryTitle {
-  font-family: 'Poller One', cursive;
   font-size: 24px;
   font-weight: bold;
+  text-align: center;
   padding-bottom:5px;
   padding-top: 15px;
   
+}
+
+.api-form {
+   margin: auto;
+   left: 50%;
+   top: 50%;
+}
+
+.poster {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 50%;
 }
 
 p {
