@@ -7,6 +7,8 @@ const DanasComponent = ({bioToShow, color='red'}) => {
 
     const randomNum = Math.random();
 
+
+
     return (
         <div className='dana-bio'>
             <section class="showcase">

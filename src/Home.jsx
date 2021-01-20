@@ -25,23 +25,23 @@ const Home = ({bioToShow}) => {
     return (
         <>
         <div className="header">
-            <div class="navbar">
-  <div class="dropdown">
-    <button class="dropbtn">Home
+            <div className="navbar">
+  <div className="dropdown">
+    <button className="dropbtn">Home
       {/* <i class="fa fa-caret-down"></i> */}
     </button>
-    <div class="dropdown-contenttwo">
+    <div className="dropdown-contenttwo">
       <a href="#">Meet The Team</a>
       <a href="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/Comments">Help Center</a>
       <a href="#">Space</a>
     </div>
     
   </div>
- <div class="dropdownone">
-    <button class="dropbtnone">API
+ <div className="dropdownone">
+    <button className="dropbtnone">API
       {/* <i class="fa fa-caret-down"></i> */}
     </button>
-    <div class="dropdown-contentone">
+    <div className="dropdown-contentone">
       <a href="#">What is API?</a>
       <a href="#">Example of API</a>
       <a href="#">API Explorer</a>
@@ -69,7 +69,9 @@ const Home = ({bioToShow}) => {
             <Link to="/Lara">Lara</Link>
             <Link to="/Dana">Dana</Link>
             <Link to="/Comments">Comments</Link>
+            <Link to="/APIExample">API Example</Link>
             <Link to="/Meetteam">Meet The Team</Link>
+            <Link to="/APIinfo">What even is an API?</Link>
           </div>
         </div>
         <div className="center">
@@ -96,17 +98,24 @@ const Home = ({bioToShow}) => {
                 <Bio myProp={'myProp'} />
                 <Bio myProp={'myProp'} />
               </div>
-              
             }
-          </div>
+        </div>
+            <div className="card">
+              <img className="card-img-top" src="Lara_Image.jpg" alt="Card image cap" ></img>
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" className="btn btn-primary">Go somewhere </a>
+              </div>
+          </div> 
           <div className="footer"> 
            <div className="footertext">
-            <p class="center-links">
-              <a class="ft link-1" href="#">Home &emsp; </a>
-              <a class="ft link-2" href="#">&emsp; &emsp; About &emsp; </a>
-              <a class="ft link-3" href="#">&emsp; &emsp; Help &emsp; </a>
-              <a class="ft link-4" href="#">&emsp; &emsp; Legal &emsp; </a>
-              <a class="ft link-5" href="#">&emsp; &emsp; Contact &emsp; </a>
+            <p className="center-links">
+              <a className="ft link-1" href="#"> Home </a>
+              <a className="ft link-2" href="#"> About </a>
+              <a className="ft link-3" href="#"> Help </a>
+              <a className="ft link-4" href="#"> Legal </a>
+              <a className="ft link-5" href="#"> Contact </a>
             </p>
                 <a href="#" className="fa fa-facebook"></a>
                 <a href="#" className="fa fa-twitter"></a>
@@ -116,7 +125,6 @@ const Home = ({bioToShow}) => {
             </div>
             <p class="under-text"> Bitly Winterns &copy; 2021</p>
         </div>	        
-       
 
           { (showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} /> }
           { shouldShowBio && <Bio bioToShow={bioToShow} /> }
