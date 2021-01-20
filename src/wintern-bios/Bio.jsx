@@ -6,6 +6,7 @@ import AndreasComponent from './AndreasComponent.jsx';
 import TajrasComponent from './TajrasComponent.jsx';
 import DanasComponent from './DanasComponent.jsx';
 import CommentsComponent from './CommentsComponent.jsx';
+import APIExample from './APIExample.jsx';
 import Meetteam from './Meetteam.jsx';
 import APIinfo from './APIinfo.jsx';
 
@@ -26,6 +27,7 @@ const Bio = ({bioToShow, color='red'}) => {
         { bioToShow === 'Andrea' && <AndreasComponent /> }
         { bioToShow === 'Roma' && <RomasComponent /> }
         { bioToShow === 'Comments' && <CommentsComponent /> }
+        { bioToShow === 'APIExample' && <APIExample /> }
         { bioToShow === 'Meetteam' && <Meetteam /> }
         {bioToShow === 'APIinfo' && <APIinfo /> }
        

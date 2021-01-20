@@ -10,7 +10,7 @@ const AndreasComponent = ({bioToShow, color='red'}) => {
 
 
   return (
-    <div className = "andreaBGI">  
+    <div className = "andreaBGI">
             <h1>Bio: Andrea K Cajamarca</h1>
             <img className = "andreaImg" src={img} />
 
