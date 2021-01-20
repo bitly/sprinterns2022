@@ -40,9 +40,8 @@ const CommentsComponent = ({bioToShow, color='red'}) => {
     </form>
     {comments.map((comment, index) => (
           <div key={index}>
-            {comment.comment}
-            {comment.created}
-            {comment.email}
+          <p className="commentFormat">{comment.full_name} <span className="Date">{comment.created}</span> </p> 
+          <p>{comment.comment} </p>   
           </div>
         ))}
     {/* <p>{thing}</p> */}
