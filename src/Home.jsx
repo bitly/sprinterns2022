@@ -28,7 +28,7 @@ const Home = ({bioToShow}) => {
             <div class="navbar">
   <div class="dropdown">
     <button class="dropbtn">Home
-      <i class="fa fa-caret-down"></i>
+      {/* <i class="fa fa-caret-down"></i> */}
     </button>
     <div class="dropdown-contenttwo">
       <a href="#">Meet The Team</a>
@@ -39,7 +39,7 @@ const Home = ({bioToShow}) => {
   </div>
  <div class="dropdownone">
     <button class="dropbtnone">API
-      <i class="fa fa-caret-down"></i>
+      {/* <i class="fa fa-caret-down"></i> */}
     </button>
     <div class="dropdown-contentone">
       <a href="#">What is API?</a>
@@ -69,6 +69,7 @@ const Home = ({bioToShow}) => {
             <Link to="/Lara">Lara</Link>
             <Link to="/Dana">Dana</Link>
             <Link to="/Comments">Comments</Link>
+            <Link to="/Meetteam">Meet The Team</Link>
           </div>
         </div>
         <div className="center">
@@ -95,6 +96,7 @@ const Home = ({bioToShow}) => {
                 <Bio myProp={'myProp'} />
                 <Bio myProp={'myProp'} />
               </div>
+              
             }
           </div>
           { (showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} /> }
