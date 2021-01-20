@@ -42,6 +42,8 @@ def get_comments():
     query_results = query_db(query)
     return json.dumps(query_results)
 
+
+
 @app.route("/", methods = ['GET'])
 def hello():
     hi = "hello world. Winterns are the best."

@@ -7,6 +7,7 @@ import TajrasComponent from './TajrasComponent.jsx';
 import DanasComponent from './DanasComponent.jsx';
 import CommentsComponent from './CommentsComponent.jsx';
 import Meetteam from './Meetteam.jsx';
+import APIinfo from './APIinfo.jsx';
 
 const Bio = ({bioToShow, color='red'}) => {
   const { useState } = React;
@@ -26,6 +27,7 @@ const Bio = ({bioToShow, color='red'}) => {
         { bioToShow === 'Roma' && <RomasComponent /> }
         { bioToShow === 'Comments' && <CommentsComponent /> }
         { bioToShow === 'Meetteam' && <Meetteam /> }
+        {bioToShow === 'APIinfo' && <APIinfo /> }
        
     </ div>
   );
