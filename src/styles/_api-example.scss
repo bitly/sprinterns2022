@@ -8,9 +8,15 @@
 }
 
 .api-form {
-   margin: auto;
-   left: 50%;
-   top: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.userInput {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .poster {
