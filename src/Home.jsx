@@ -71,6 +71,7 @@ const Home = ({bioToShow}) => {
             <Link to="/Comments">Comments</Link>
             <Link to="/APIExample">API Example</Link>
             <Link to="/Meetteam">Meet The Team</Link>
+            <Link to="/APIinfo">What even is an API?</Link>
           </div>
         </div>
         <div className="center">

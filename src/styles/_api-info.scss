@@ -1,0 +1,98 @@
+body {
+  color: #393f57;
+  font-size:120%;
+}
+
+h1 {
+  color: #00ab91;
+  line-height:1.1;
+}
+
+h2 {
+  line-height:1.1;
+}
+
+p {
+  line-height:1.4;
+}
+
+header .bars {
+	display: block;
+	height: 5px;
+	margin: 0;
+	overflow: hidden;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+}
+header .bars ul {
+	margin: 0;
+	padding: 0;
+}
+header .bars ul li {
+	display: block;
+	float: left;
+	height: 5px;
+	overflow: hidden;
+	width: 20%;
+}
+header .bars .cor-1 {
+	background: #ED5565;
+}
+header .bars .cor-2 {
+	background: #f59120;
+}
+header .bars .cor-3 {
+	background: #FCBB42;
+}
+header .bars .cor-4 {
+	background: #94c23d;
+}
+header .bars .cor-5 {
+	background-color: #3498db;
+}
+
+header .header-title {
+  background: #00ab91;
+  height: 200px;
+  color: #efefef;
+  line-height: 200px;
+  text-align: center;
+  font-size: 28px;
+  font-weight:bold;
+}
+
+section {
+  margin:0 auto;
+  padding-top:2.5%;
+  padding-bottom:2.5%;
+  max-width:600px;
+}
+
+section:first-child:last-child {
+  padding-top:5%;
+  padding-bottom:5%;
+}
+
+section.content-block {
+  font-family:'proxima-nova-soft';
+}
+section.content-block p {
+  font-weight:500;
+}
+
+footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+	header .bars {
+		position: inherit;
+	}
+}
