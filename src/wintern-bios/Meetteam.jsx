@@ -3,6 +3,7 @@ import img from '../assets/bio-photos/tajra.jpg';
 import img2 from '../assets/bio-photos/bio-pic_Andrea.jpg';
 import img3 from '../assets/bio-photos/Lara_Image.jpg';
 
+
 const Meetteam = ({bioToShow, color='red'}) => {
   const { useState } = React;
 
