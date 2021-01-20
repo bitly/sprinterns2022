@@ -26,21 +26,18 @@ const Home = ({bioToShow}) => {
         <>
         <div className="header">
             <div class="navbar">
-  <div class="dropdown">
-    <button class="dropbtn">Home
-      {/* <i class="fa fa-caret-down"></i> */}
+  <div className="dropdown">
+    <button className="dropbtn">Home
     </button>
-    <div class="dropdown-contenttwo">
+    <div className="dropdown-contenttwo">
       <Link to="/Meetteam">Meet The Team</Link>
       <Link to="/Comments">Help Center</Link>
     </div>
-    
   </div>
- <div class="dropdownone">
-    <button class="dropbtnone">API
-      {/* <i class="fa fa-caret-down"></i> */}
+ <div className="dropdownone">
+    <button className="dropbtnone">API
     </button>
-    <div class="dropdown-contentone">
+    <div className="dropdown-contentone">
       <Link to="/APIinfo">What is API?</Link>
       <Link to="/APIExample">Example of API</Link>
       <a href="#">API Explorer</a>
