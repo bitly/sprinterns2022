@@ -1,8 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {Link} from "react-router-dom";
- import { useState } from 'react';
-import './styles/main.scss';
+import { useState } from 'react';
 
 const APIExample = () => {
   const { useState } = React;
@@ -32,7 +29,7 @@ const getMovie = () => {
           <input type="submit" id="button" onClick={() => getMovie() }/>
             {title}
           </form>
-          {data && (<p>{data.poster_path}</p>) } 
+          {/* {data && (<img src='https://image.tmdb.org/t/p/w500/' + {data.poster_path}+ >)}  */}
           {data && (<p>{data.title}</p>)}
           {data && (<p>{data.original_language}</p>) }
           {data && (<p>{data.release_date}</p>) }

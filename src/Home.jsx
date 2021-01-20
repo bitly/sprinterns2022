@@ -69,6 +69,7 @@ const Home = ({bioToShow}) => {
             <Link to="/Lara">Lara</Link>
             <Link to="/Dana">Dana</Link>
             <Link to="/Comments">Comments</Link>
+            <Link to="/APIExample">API Example</Link>
           </div>
         </div>
         <div className="center">
