@@ -69,6 +69,7 @@ const Home = ({bioToShow}) => {
             <Link to="/Lara">Lara</Link>
             <Link to="/Dana">Dana</Link>
             <Link to="/Comments">Comments</Link>
+            <Link to="/Meetteam">Meet The Team</Link>
           </div>
         </div>
         <div className="center">
@@ -95,6 +96,7 @@ const Home = ({bioToShow}) => {
                 <Bio myProp={'myProp'} />
                 <Bio myProp={'myProp'} />
               </div>
+              
             }
           </div>
           <div className="footer"> 
