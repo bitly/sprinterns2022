@@ -12,13 +12,8 @@ const DanasComponent = ({bioToShow, color='red'}) => {
 
     return (
         <div className='dana-bio'>
-<<<<<<< HEAD
-            <section className="showcase">
-                <img className= "dana" alt="Dana Fishman"src="https://bit.ly/3onMGFx"/>
-=======
             <section class="showcase">
-                <img className= "dana" alt="Dana Fishman"src={img}/>
->>>>>>> c72f428dd078ef7b43e8201ca03329212e343988
+                <img className= "dana" src={img} alt="Dana Fishman"/>
                 <img className= "caticorn" alt="very cute kitty"src="https://www.flaticon.com/svg/static/icons/svg/3468/3468377.svg"/>
                 <img className= "pride" alt="lgbt"src="https://www.flaticon.com/svg/static/icons/svg/2210/2210724.svg"/>
                 <div className="container">
