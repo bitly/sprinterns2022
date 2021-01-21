@@ -19,7 +19,7 @@ function Home({ bioToShow }) {
     return (
         <>
         <div className="header">
-            <div class="navbar">
+            <div className="navbar">
   <div className="dropdown">
     <button className="dropbtn">Home
     </button>

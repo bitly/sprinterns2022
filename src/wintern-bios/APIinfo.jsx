@@ -1,6 +1,9 @@
 import React from 'react';
 import { useAttribute } from 'react';
 import { useState } from 'react';
+import chauncey from '../assets/miscellaneous/chauncey.jpg';
+import speech from '../assets/miscellaneous/pixel-speech-bubble.gif';
+
 
 const APIinfo = ({bioToShow, color='red'}) => {
     const { useState } = React;
@@ -23,8 +26,8 @@ const APIinfo = ({bioToShow, color='red'}) => {
     items.forEach(item => item.addEventListener('click', toggleAccordion));
     return (
         <>
-        <img className="wintern-chauncey" alt="confused chauncey" src="https://bit.ly/3bYJZqW"/>
-        <img className="speech-bubble" alt="whats an api" src="https://i.pixelspeechbubble.com/bQ6wPCRy/pixel-speech-bubble.gif"/>
+        <img className="wintern-chauncey" alt="confused chauncey" src={chauncey}/>
+        <img className="speech-bubble" alt="whats an api" src={speech}/>
         <div className="container">
             <h2>Frequently Asked Questions</h2>
             <div className="accordion">
