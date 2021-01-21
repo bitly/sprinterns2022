@@ -1,98 +1,158 @@
-body {
-  color: #393f57;
-  font-size:120%;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.wintern-chauncey {
+    animation: float 4s ease-in-out infinite;
+    width: 600px;
+    width: 656px;
+    position: relative;
+    top: 100px;
 }
 
-h1 {
-  color: #00ab91;
-  line-height:1.1;
+.speech-bubble {
+    animation: float 4s ease-in-out infinite;
+    width: 600px;
+    position: relative;
+    left: 271px;
+    top: -300px;
+}
+
+@keyframes float {
+  0% {
+
+    transform: translateY(0px);
+  }
+  50% {
+    
+    transform: translateY(-10px);
+  }
+  100% {
+    
+    transform: translateY(0px);
+  }
+}
+
+$bg: #fff;
+$text: #7288a2;
+$gray: #4d5974;
+$lightgray: #e5e5e5;
+$blue: #03b5d2;
+
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: $bg;
+  color: $gray;
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+
+.accordion {
+  .accordion-item {
+    border-bottom: 1px solid $lightgray;
+    button[aria-expanded='true'] {
+      border-bottom: 1px solid $blue;
+    }
+  }
+  button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: $text;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+    &:hover, &:focus {
+      cursor: pointer;
+      color: $blue;
+      &::after {
+        cursor: pointer;
+        color: $blue;
+        border: 1px solid $blue;
+      }
+    }
+    .accordion-title {
+      padding: 1em 1.5em 1em 0;
+    }
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 22px;
+      height: 22px;
+      border: 1px solid;
+      border-radius: 22px;
+      &::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+      }
+    }
+  }
+  button[aria-expanded='true'] {
+    color: $blue;
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    + .accordion-content {
+      opacity: 1;
+      max-height: 9em;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+    }
+  }
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 2em 0;
+    }
+  }
 }
 
 h2 {
-  line-height:1.1;
-}
-
-p {
-  line-height:1.4;
-}
-
-header .bars {
-	display: block;
-	height: 5px;
-	margin: 0;
-	overflow: hidden;
-	position: fixed;
-	text-align: center;
-	top: 0;
-	width: 100%;
-}
-header .bars ul {
-	margin: 0;
-	padding: 0;
-}
-header .bars ul li {
-	display: block;
-	float: left;
-	height: 5px;
-	overflow: hidden;
-	width: 20%;
-}
-header .bars .cor-1 {
-	background: #ED5565;
-}
-header .bars .cor-2 {
-	background: #f59120;
-}
-header .bars .cor-3 {
-	background: #FCBB42;
-}
-header .bars .cor-4 {
-	background: #94c23d;
-}
-header .bars .cor-5 {
-	background-color: #3498db;
-}
-
-header .header-title {
-  background: #00ab91;
-  height: 200px;
-  color: #efefef;
-  line-height: 200px;
-  text-align: center;
-  font-size: 28px;
-  font-weight:bold;
-}
-
-section {
-  margin:0 auto;
-  padding-top:2.5%;
-  padding-bottom:2.5%;
-  max-width:600px;
-}
-
-section:first-child:last-child {
-  padding-top:5%;
-  padding-bottom:5%;
-}
-
-section.content-block {
-  font-family:'proxima-nova-soft';
-}
-section.content-block p {
-  font-weight:500;
-}
-
-footer {
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-}
-
-@media screen and (max-width: 960px) {
-	header .bars {
-		position: inherit;
-	}
+    color: #f65103;
+    position: relative;
+    left: -40px;
 }
