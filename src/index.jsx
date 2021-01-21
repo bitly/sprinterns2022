@@ -41,6 +41,9 @@ const App = () => {
           <Route path="/APIinfo">
             <Home bioToShow="APIinfo" />
           </Route>
+          <Route path="/CardsComponent">
+            <Home bioToShow="CardsComponent" />
+          </Route>
           <Route path="/">
             <Home bioToShow="" />
           </Route>

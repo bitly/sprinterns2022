@@ -4,21 +4,15 @@ import {Link} from "react-router-dom";
 import './styles/main.scss';
 import Form from './Form.jsx';
 import Bio from './wintern-bios/Bio.jsx';
+import CardsComponent from './wintern-bios/CardsComponent.jsx';
 
-const Home = ({bioToShow}) => {
-    const { useState } = React;
-    const [method, setMethod] = useState('');
-    const [endpoint, setEndpoint] = useState('');
-    const [showForm, setShowForm] = useState(false);
-    const [showIntro, setShowIntro] = useState(true);
-    
+function Home({ bioToShow }) {
+  const { useState } = React;
+  const [method, setMethod] = useState('');
+  const [endpoint, setEndpoint] = useState('');
+  const [showForm, setShowForm] = useState(false);
+  const [showIntro, setShowIntro] = useState(true);
 
-    const toggleButton = (method, endpoint) => {
-      setMethod(method);
-      setEndpoint(endpoint);
-      setShowForm(true);
-      setShowIntro(false);
-    }
 
     const shouldShowBio = bioToShow.length > 0;
     
@@ -74,66 +68,58 @@ const Home = ({bioToShow}) => {
         </div>
         <div className="center">
           {!shouldShowBio && <div className="centerButtons">
-            <button className='methodButton getbutton'  onClick={() => toggleButton("GET")}>Get</button>
+            <button className='methodButton getbutton' onClick={() => toggleButton("GET")}>Get</button>
             <button className='methodButton postbutton' onClick={() => toggleButton("POST")}>Post</button>
             <button className='methodButton patchbutton' onClick={() => toggleButton("PATCH")}>Patch</button>
             <button className='methodButton deletebutton' onClick={() => toggleButton("DELETE")}>Delete</button>
-          </div> }
+          </div>}
           <div className="centerCard">
-            {
-              showIntro && !shouldShowBio && <div className="intro">
-                <p>
-                  Introduction: Welcome to the Bitly API! If you'd like to use Bitly to shorten, brand, share, or retrieve data from links programmatically, you've come to the right place. If you're interested in integrating
-                </p>
-                <p>
-                  your app or software platform with Bitly, you'll need to register and authenticate your service with our API. To do so please contact us at API_sales@bit.ly
-                </p> 
-                <p>
-                  We currently provide our documentation in the form of an OpenAPI 2.0 document. We do not support any code-generation at this time but feel free to use the specification if you would like.
-                </p> 
-                <Bio myProp={'myProp'} color={'blue'} />
-                <Bio myProp={'myProp'} />
-                <Bio myProp={'myProp'} />
-               <Bio myProp={'myProp'} />
-              </div>
-            }
-        </div>
-            {/* <div className="card">
-              <img className="card-img-top" src="Lara_Image.jpg" alt="Card image cap" ></img>
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere </a>
-              </div>
-          </div> */}
-          <div className="footer"> 
-           <div className="footertext">
-            <p className="center-links">
-              <a className="ft link-1" href="#"> Home </a>
-              <a className="ft link-2" href="#"> About </a>
-              <a className="ft link-3" href="#"> Help </a>
-              <a className="ft link-4" href="#"> Legal </a>
-              <a className="ft link-5" href="#"> Contact </a>
-            </p>
-                <a href="#" className="fa fa-facebook"></a>
-                <a href="#" className="fa fa-twitter"></a>
-                <a href="#" className="fa fa-github"></a>
-                <a href="#" className="fa fa-instagram"></a>
-                <a href="#" className="fa fa-linkedin"></a>
+            {showIntro && !shouldShowBio && <div className="intro">
+              <p>
+                Introduction: Welcome to the Bitly API!If you'd like to use Bitly to shorten, brand, share, or retrieve data from links programmatically, you've come to the right place.If you're interested in integrating
+              </p>
+              <p>
+                     your app or software platform with Bitly, you'll need to register and authenticate your service with our API. To do so please contact us at API_sales@bit.ly
+              </p>
+              <p>
+                We currently provide our documentation in the form of an OpenAPI 2.0 document.We do not support any code-generation at this time but feel free to use the specification if you would like.
+              </p>
+              <Bio myProp={'myProp'} color={'blue'} />
+              <Bio myProp={'myProp'} />
+              <Bio myProp={'myProp'} />
+              <Bio myProp={'myProp'} />
+            </div> }
+            </div>
+          <div className="footer">
+            <div className="footertext">
+              <p className="center-links">
+                <a className="ft link-1" href="#"> Home </a>
+                <a className="ft link-2" href="#"> About </a>
+                <a className="ft link-3" href="#"> Help </a>
+                <a className="ft link-4" href="#"> Legal </a>
+                <a className="ft link-5" href="#"> Contact </a>
+              </p>
+              <a href="#" className="fa fa-facebook"></a>
+              <a href="#" className="fa fa-twitter"></a>
+              <a href="#" className="fa fa-github"></a>
+              <a href="#" className="fa fa-instagram"></a>
+              <a href="#" className="fa fa-linkedin"></a>
             </div>
             <p className="under-text"> Bitly Winterns &copy; 2021</p>
-        </div>	        
-
-          { (showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} /> }
-          { shouldShowBio && <Bio bioToShow={bioToShow} /> }
           </div>
-        <Link to="/Home"><img className= "logo" alt="bitly logo"src="https://docrdsfx76ssb.cloudfront.net/static/1610484866/pages/wp-content/uploads/2019/02/bitly.png"/></Link>
-        </div>
-        
-        
 
-        </>
-    );
-}
+          {(showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} />}
+          {shouldShowBio && <Bio bioToShow={bioToShow} />}
+          {!shouldShowBio && <CardsComponent />}
+
+         
+ 
+          </div>
+          <Link to="/Home"><img className= "logo" alt="bitly logo"src="https://docrdsfx76ssb.cloudfront.net/static/1610484866/pages/wp-content/uploads/2019/02/bitly.png"/></Link>
+        </div>
+    </>
+  );
+        
+ }
 
 export default Home;
