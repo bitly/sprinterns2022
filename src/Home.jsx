@@ -99,15 +99,14 @@ const Home = ({bioToShow}) => {
               
               
             }
-          </div>
           <div className="footer"> 
            <div className="footertext">
-            <p class="center-links">
-              <a class="ft link-1" href="#">Home &emsp; </a>
-              <a class="ft link-2" href="#">&emsp; &emsp; About &emsp; </a>
-              <a class="ft link-3" href="#">&emsp; &emsp; Help &emsp; </a>
-              <a class="ft link-4" href="#">&emsp; &emsp; Legal &emsp; </a>
-              <a class="ft link-5" href="#">&emsp; &emsp; Contact &emsp; </a>
+            <p className="center-links">
+              <a className="ft link-1" href="#"> Home </a>
+              <a className="ft link-2" href="#"> About </a>
+              <a className="ft link-3" href="#"> Help </a>
+              <a className="ft link-4" href="#"> Legal </a>
+              <a className="ft link-5" href="#"> Contact </a>
             </p>
                 <a href="#" className="fa fa-facebook"></a>
                 <a href="#" className="fa fa-twitter"></a>
@@ -115,8 +114,12 @@ const Home = ({bioToShow}) => {
                 <a href="#" className="fa fa-instagram"></a>
                 <a href="#" className="fa fa-linkedin"></a>
             </div>
-            <p class="under-text"> Bitly Winterns &copy; 2021</p>
+            <p className="under-text"> Bitly Winterns &copy; 2021</p>
         </div>	        
+
+          { (showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} /> }
+          { shouldShowBio && <Bio bioToShow={bioToShow} /> }
+          </div>    
        
 
           { (showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} /> }
