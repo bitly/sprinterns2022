@@ -1,22 +1,26 @@
 import React from 'react';
-import axios from 'axios'
+import axios from 'axios';
+const { useState, useEffect } = React; 
 
 const CommentsComponent = ({bioToShow, color='red'}) => {
-  const { useState } = React;
 
-  const [thing, setThing] = useState('cat');
+  
 
+  const [comments, setComments] = useState([]);
 
-
-  const clickThing = () => {
+  const clickComments = () => {
     axios
       .get('/get_comments')
       .then((res) => {   
         console.log('res', res);
-        setThing(res.data[0].comment)
+        setComments(res.data)
       })   
       .catch((err) => console.log('error', err))
   } 
+  useEffect(() => {
+    clickComments()
+  }, []);
+
 
 
   return (
@@ -32,10 +36,16 @@ const CommentsComponent = ({bioToShow, color='red'}) => {
         <label>Comment</label>
         <input type="text" name="comment" required />
       </div>
-      <button onClick={() => clickThing()} type="submit">Post</button>
+      <button onClick={() => clickComments()} type="submit">Post</button>
     </form>
-    {thing}
-    <button onClick={clickThing}>plz push</button>
+    {comments.map((comment, index) => (
+          <div key={index}>
+          <p className="commentFormat">{comment.full_name} <span className="Date">{comment.created}</span> </p> 
+          <p>{comment.comment} </p>   
+          </div>
+        ))}
+    {/* <p>{thing}</p> */}
+    <button onClick={clickComments}>plz push</button>
     </>
       );
 }
