@@ -123,18 +123,18 @@
         will-change: opacity, max-height;
         }
     }
-    .accordion-content {
-        opacity: 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: opacity 200ms linear, max-height 200ms linear;
-        will-change: opacity, max-height;
-        p {
-        font-size: 1rem;
-        font-weight: 300;
-        margin: 2em 0;
-        }
-    }
+    // .accordion-content {
+    //     // opacity: 0;
+    //     // max-height: 0;
+    //     // overflow: hidden;
+    //     // transition: opacity 200ms linear, max-height 200ms linear;
+    //     // will-change: opacity, max-height;
+    //     // p {
+    //     // font-size: 1rem;
+    //     // font-weight: 300;
+    //     // margin: 2em 0;
+    // //     }
+    //     }
     }
 
     h2 {

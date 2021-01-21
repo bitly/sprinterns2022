@@ -32,11 +32,11 @@ const APIinfo = ({bioToShow, color='red'}) => {
 
     }
     const items = [
-        {id: "accordion-button-1", title: "Why is the moon sometimes out during the day?", content: "Why is the moon sometimes out during the day?"},
-        {id: "accordion-button-2", title: "Why is the moon sometimes out during the day?", content: "Why is the moon sometimes out during the day?"},
-        {id: "accordion-button-3", title: "Why is the moon sometimes out during the day?", content: "Why is the moon sometimes out during the day?"},
-        {id: "accordion-button-4", title: "Why is the moon sometimes out during the day?", content: "Why is the moon sometimes out during the day?"},
-        {id: "accordion-button-5", title: "Why is the moon sometimes out during the day?", content: "Why is the moon sometimes out during the day?"}
+        {id: "accordion-button-1", title: "Why is the moon sometimes out during the day?", content:"hi"},
+        {id: "accordion-button-2", title: "Why is the moon sometimes out during the day?", content:"hi"},
+        {id: "accordion-button-3", title: "Why is the moon sometimes out during the day?", content:"hi"},
+        {id: "accordion-button-4", title: "Why is the moon sometimes out during the day?", content:"hi"},
+        {id: "accordion-button-5", title: "Why is the moon sometimes out during the day?", content:"hi"}
         ]
 
 
