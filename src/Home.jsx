@@ -94,11 +94,18 @@ const Home = ({bioToShow}) => {
                 <Bio myProp={'myProp'} color={'blue'} />
                 <Bio myProp={'myProp'} />
                 <Bio myProp={'myProp'} />
-                <Bio myProp={'myProp'} />
+               <Bio myProp={'myProp'} />
               </div>
-              
-              
             }
+        </div>
+            {/* <div className="card">
+              <img className="card-img-top" src="Lara_Image.jpg" alt="Card image cap" ></img>
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" className="btn btn-primary">Go somewhere </a>
+              </div>
+          </div> */}
           <div className="footer"> 
            <div className="footertext">
             <p className="center-links">
@@ -119,12 +126,10 @@ const Home = ({bioToShow}) => {
 
           { (showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} /> }
           { shouldShowBio && <Bio bioToShow={bioToShow} /> }
-          </div> 
-          <div>
+          </div>
         <Link to="/Home"><img className= "logo" alt="bitly logo"src="https://docrdsfx76ssb.cloudfront.net/static/1610484866/pages/wp-content/uploads/2019/02/bitly.png"/></Link>
         </div>
-        </div>
-        </div>
+        
         
 
         </>
