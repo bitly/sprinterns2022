@@ -42,7 +42,14 @@ def get_comments():
     query_results = query_db(query)
     return json.dumps(query_results)
 
-
+@app.route("/add_comment", methods = ['POST'])
+def add_comment():
+    full_name = request.json['full_name']
+    email = request.json['email']
+    comment = request.json['comment']
+    query = "insert into comments (full_name, email, comment) values({},{},{})".format(full_name, email, comment)
+    query_results = query_db(query)
+    return 201
 
 @app.route("/", methods = ['GET'])
 def hello():

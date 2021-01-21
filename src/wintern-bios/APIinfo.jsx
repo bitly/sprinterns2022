@@ -8,64 +8,71 @@ import speech from '../assets/miscellaneous/pixel-speech-bubble.gif';
 const APIinfo = ({bioToShow, color='red'}) => {
     const { useState } = React;
 
-    const [showStateEx, setShowStateEx] = useState(false);
+    // const [showStateEx, setShowStateEx] = useState(false);
 
-    const randomNum = Math.random();const items = document.querySelectorAll(".accordion button");
+    const randomNum = Math.random();
+    // const items = document.querySelectorAll(".accordion button");
 
-    function toggleAccordion() {
-    const itemToggle = this.getAttribute('aria-expanded');
+    // function toggleAccordion() {
+    // const itemToggle = this.getAttribute('aria-expanded');
 
-    for (i = 0; i < items.length; i++) {
-        items[i].setAttribute('aria-expanded', 'false');
+    // for (i = 0; i < items.length; i++) {
+    //     items[i].setAttribute('aria-expanded', 'false');
+    // }
+
+    // if (itemToggle == 'false') {
+    //     this.setAttribute('aria-expanded', 'true');
+    // }
+    // }
+    // items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+    const toggleClick = () => {
+        //expand to show content
+        
+
+    }
+    const items = [
+        {id: "accordion-button-1", title: "Why is the moon sometimes out during the day?", content:"hi"},
+        {id: "accordion-button-2", title: "Why is the moon sometimes out during the day?", content:"hi"},
+        {id: "accordion-button-3", title: "Why is the moon sometimes out during the day?", content:"hi"},
+        {id: "accordion-button-4", title: "Why is the moon sometimes out during the day?", content:"hi"},
+        {id: "accordion-button-5", title: "Why is the moon sometimes out during the day?", content:"hi"}
+        ]
+
+
+    const AccordionItem = (props) => {
+        const [showContent, setShowContent] = useState(false)
+        console.log(props.id, "showContent", showContent)
+        const toggleContent = () => setShowContent(!showContent)
+
+        return( 
+        <div className="accordion-item">
+            <div className="accordion-button">
+                <button id={props.id} onClick = {toggleContent}><span className="accordion-title">{props.title}</span><span className="icon"></span></button>
+                {showContent ? (<div className="accordion-content">
+                    <p>{props.content}</p>
+                </div>): null} 
+            </div>
+        </div>)
     }
 
-    if (itemToggle == 'false') {
-        this.setAttribute('aria-expanded', 'true');
-    }
-    }
-    items.forEach(item => item.addEventListener('click', toggleAccordion));
     return (
-        <>
+        <div className="api-info">
         <img className="wintern-chauncey" alt="confused chauncey" src={chauncey}/>
         <img className="speech-bubble" alt="whats an api" src={speech}/>
         <div className="container">
             <h2>Frequently Asked Questions</h2>
             <div className="accordion">
-                <div className="accordion-item">
-                    <button id="accordion-button-1" aria-expanded="false"><span className="accordion-title">Why is the moon sometimes out during the day?</span><span className="icon" aria-hidden="true"></span></button>
-                    <div className="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                    </div>
-                </div>
-                <div className="accordion-item">
-                    <button id="accordion-button-2" aria-expanded="false"><span className="accordion-title">Why is the sky blue?</span><span className="icon" aria-hidden="true"></span></button>
-                    <div className="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                    </div>
-                </div>
-                <div className="accordion-item">
-                    <button id="accordion-button-3" aria-expanded="false"><span className="accordion-title">Will we ever discover aliens?</span><span className="icon" aria-hidden="true"></span></button>
-                    <div className="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                    </div>
-                </div>
-                <div className="accordion-item">
-                    <button id="accordion-button-4" aria-expanded="false"><span className="accordion-title">How much does the Earth weigh?</span><span className="icon" aria-hidden="true"></span></button>
-                    <div className="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                    </div>
-                </div>
-                <div className="accordion-item">
-                    <button id="accordion-button-5" aria-expanded="false"><span className="accordion-title">How do airplanes stay up?</span><span className="icon" aria-hidden="true"></span></button>
-                    <div className="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                    </div>
-                </div>
+                {items.map(
+                    (item, i)=>(<AccordionItem key={i} id={item.id} onClick={item.onClick} title={item.title} content={item.content} />)
+                )}
             </div>
         </div>
+        <div className="video">
         <p>Still confused? Watch this video (Thanks David).</p>
-        <iframe width="420" height="315"src="https://www.youtube.com/watch?v=s7wmiS2mSXY"/>
-        </>
+        <iframe width="420" height="315"src="https://www.youtube.com/embed/s7wmiS2mSXY"/>
+        </div>
+        </div>
     );
 }
 
