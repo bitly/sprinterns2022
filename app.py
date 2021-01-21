@@ -49,7 +49,7 @@ def add_comment():
     comment = request.json['comment']
     query = "insert into comments (full_name, email, comment) values({},{},{})".format(full_name, email, comment)
     query_results = query_db(query)
-    # return json.dumps(query_results)
+    return 201
 
 @app.route("/", methods = ['GET'])
 def hello():

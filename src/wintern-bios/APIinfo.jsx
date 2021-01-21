@@ -47,15 +47,17 @@ const APIinfo = ({bioToShow, color='red'}) => {
 
         return( 
         <div className="accordion-item">
-            <button id={props.id} onClick = {toggleContent}><span className="accordion-title">{props.title}</span><span className="icon"></span></button>
-            {showContent ? (<div className="accordion-content">
-                <p>{props.content}</p>
-            </div>): null} 
+            <div className="accordion-button">
+                <button id={props.id} onClick = {toggleContent}><span className="accordion-title">{props.title}</span><span className="icon"></span></button>
+                {showContent ? (<div className="accordion-content">
+                    <p>{props.content}</p>
+                </div>): null} 
+            </div>
         </div>)
     }
 
     return (
-        <>
+        <div className="api-info">
         <img className="wintern-chauncey" alt="confused chauncey" src={chauncey}/>
         <img className="speech-bubble" alt="whats an api" src={speech}/>
         <div className="container">
@@ -66,9 +68,11 @@ const APIinfo = ({bioToShow, color='red'}) => {
                 )}
             </div>
         </div>
+        <div className="video">
         <p>Still confused? Watch this video (Thanks David).</p>
         <iframe width="420" height="315"src="https://www.youtube.com/embed/s7wmiS2mSXY"/>
-        </>
+        </div>
+        </div>
     );
 }
 
