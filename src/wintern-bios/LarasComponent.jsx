@@ -13,13 +13,13 @@ const LarasComponent = ({bioToShow, color='red'}) => {
        <div className='larabio'>
            <h1 className='title'> &ensp; Lara Choudhury </h1>
                 <p className='sub'> &emsp; &emsp; Bitly Engineering Intern</p>
-                <div class="flip-box">
-                 <div class="flip-box-inner">
-                    <div class="flip-box-front">
+                <div className="flip-box">
+                 <div className="flip-box-inner">
+                    <div className="flip-box-front">
                         <img className='laraimage' src={img}/>
                     </div>
-                    <div class="flip-box-back-">
-                        <h2 class="backimg"> Fun Fact: </h2>
+                    <div className="flip-box-back-">
+                        <h2 className="backimg"> Fun Fact: </h2>
                             <p>This picture was taken </p>
                             <p>in Cancun, Mexico where I went just</p>
                             <p>right before the pandemic.</p>

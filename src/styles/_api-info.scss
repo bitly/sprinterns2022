@@ -45,16 +45,6 @@ $blue: #03b5d2;
   }
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  background: $bg;
-  color: $gray;
-  display: flex;
-  min-height: 100vh;
-}
-
 .container {
   margin: 0 auto;
   padding: 4rem;

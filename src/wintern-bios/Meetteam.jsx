@@ -1,5 +1,10 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import dana from '../assets/meet-the-team-icons/DanaBioImage.jpg';
+import roma from '../assets/meet-the-team-icons/RomaBioImage.jpg';
+import lara from '../assets/meet-the-team-icons/LaraBioImage.jpg';
+import tajra from '../assets/meet-the-team-icons/TajraBioPic.jpg';
+import andrea from '../assets/meet-the-team-icons/AndreaBioPic.jpg';
 const Meetteam = ({bioToShow, color='red'}) => {
   const { useState } = React;
 
@@ -15,7 +20,7 @@ const Meetteam = ({bioToShow, color='red'}) => {
     <p className="biotitlepage">Hello! This is the team that is responsible for creating this awesome page for your use! Meet us by clicking on "Find out more".</p>
     <div className="bckgclrforcard">
     <div className="cardtajra">
-    <img className="tajrasimage" src="https://bit.ly/3bVDJQD"></img>
+    <img className="tajrasimage" src={tajra}></img>
     <div className="container">
     <h4 className="personname">Tajra Sinanagic</h4>
     <div className="introcardsbiot">
@@ -31,7 +36,7 @@ const Meetteam = ({bioToShow, color='red'}) => {
   </div>
   {/* CARD TWO */}
   <div className="cardandrea">
-    <img className="andreasimage" src="https://bit.ly/3sJKaw8"></img>
+    <img className="andreasimage" src={andrea}></img>
     <div className="container">
     <h4 className="personname">Andrea Cajamarca</h4>
     <div className="introcardsbioa">
@@ -46,7 +51,7 @@ const Meetteam = ({bioToShow, color='red'}) => {
   </div>
   {/* CARD THREE */}
   <div className="cardlara">
-    <img className="larasimage" src="https://bit.ly/3qvm8mC"></img>
+    <img className="larasimage" src={lara}></img>
     <div className="container">
     <h4 className="personname">Lara Choudhury</h4>
     <div className="introcardsbiol">
@@ -62,7 +67,7 @@ const Meetteam = ({bioToShow, color='red'}) => {
   </div>
   {/* CARD FOUR */}
   <div className="carddana">
-    <img className="danasimage" src="https://bit.ly/36131ZE"></img>
+    <img className="danasimage" src={dana}></img>
     <div className="container">
     <h4 className="personname">Dana Fishman</h4>
     <div className="introcardsbiod">
@@ -77,7 +82,7 @@ const Meetteam = ({bioToShow, color='red'}) => {
   </div>
   {/* CARD FIVE */}
   <div className="cardroma">
-    <img className="romasimage" src="https://bit.ly/2Y05pLO"></img>
+    <img className="romasimage" src={roma}></img>
     <div className="container">
     <h4 className="personname">Roma Cooper</h4>
     <div className="introcardsbior">
