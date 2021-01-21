@@ -11,13 +11,14 @@ const Meetteam = ({bioToShow, color='red'}) => {
   return (
      <> 
      <div className="biocards">
-    <p className="biotitlepage">This is the team's page!</p>
-    {/* CARD ONE */}
+    <h1 className="bigtitleay">Meet The Team</h1>
+    <p className="biotitlepage">Hello! This is the team that is responsible for creating this awesome page for your use! Meet us by clicking on "Find out more".</p>
+    <div className="bckgclrforcard">
     <div className="cardtajra">
     <img className="tajrasimage" src="https://bit.ly/3bVDJQD"></img>
     <div className="container">
     <h4 className="personname">Tajra Sinanagic</h4>
-    <div className="introcardsbio">
+    <div className="introcardsbiot">
     <p className="introduction">Software Engineering Intern</p>
     <p className="aboutmecards">Multilingual who loves math, coding, dogs, and stars.</p>
     </div>
@@ -33,7 +34,7 @@ const Meetteam = ({bioToShow, color='red'}) => {
     <img className="andreasimage" src="https://bit.ly/3sJKaw8"></img>
     <div className="container">
     <h4 className="personname">Andrea Cajamarca</h4>
-    <div className="introcardsbio">
+    <div className="introcardsbioa">
     <p className="introduction">Software Engineering Intern</p>
     <p className="aboutmecards">Writer, Coder, and a College student troubleshooting my college career. </p></div>
     <Link to="/Andrea">
@@ -48,8 +49,9 @@ const Meetteam = ({bioToShow, color='red'}) => {
     <img className="larasimage" src="https://bit.ly/3qvm8mC"></img>
     <div className="container">
     <h4 className="personname">Lara Choudhury</h4>
-    <div className="introcardsbio">
+    <div className="introcardsbiol">
     <p className="introduction">Software Engineering Intern</p>
+    <p className="aboutmecards">Multicultural student with a passion for coding, cyber security, and web design.</p>
     </div>
     <Link to="/Lara">
      <button className="findmorebtn" type="button">
@@ -63,8 +65,8 @@ const Meetteam = ({bioToShow, color='red'}) => {
     <img className="danasimage" src="https://bit.ly/36131ZE"></img>
     <div className="container">
     <h4 className="personname">Dana Fishman</h4>
-    <div className="introcardsbio">
-    <p className="introduction">Software Engineering Intern</p>
+    <div className="introcardsbiod">
+    <p className="introductiond">Software Engineering Intern</p>
     <p className="aboutmecards">Professional, all-knowing wintern in theory; forever-learning, sometimes-somewhat-confused wintern in practice. Oh, and a fan of Chauncey (especially his company swag socks)</p></div>
     <Link to="/Dana">
      <button className="findmorebtn" type="button">
@@ -78,7 +80,7 @@ const Meetteam = ({bioToShow, color='red'}) => {
     <img className="romasimage" src="https://bit.ly/2Y05pLO"></img>
     <div className="container">
     <h4 className="personname">Roma Cooper</h4>
-    <div className="introcardsbio">
+    <div className="introcardsbior">
     <p className="introduction">Software Engineering Intern</p>
     <p className="aboutmecards">Hey there! My name is Roma! My pronouns are she/they. I'm a sophomore at Brooklyn College majoring in Computer Science.</p>
     </div>
@@ -87,6 +89,7 @@ const Meetteam = ({bioToShow, color='red'}) => {
          Find out more!
      </button>
      </Link>
+  </div>
   </div>
   </div>
   </div>

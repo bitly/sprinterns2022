@@ -23,7 +23,7 @@
 
 .biotitlepage{
     color:darkblue;
-    font-size:100%;
+    font-size:25px;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -124,10 +124,17 @@
     background-color: rgb(35, 94, 184);
     color:lightskyblue;
     padding-top:5em;
+    .bigtitleay{
+        color:white;
+        text-align:center;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         background-color: #EE6123;
+    }
 }
 .personname{
     color:white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 .findmorebtn{
           background-color: #EE6123;
@@ -137,17 +144,95 @@
           padding: 10px 10px 10px 10px
           
         }
-.introcardsbio{
+.introcardsbiot{
     position:relative;
     text-align:justify;
     font-family: Arial, Helvetica, sans-serif; 
     margin:auto;
     margin-top: -5em;
-    border: solid 1px white;
+    margin-left: 18em;
+    font-weight:bold;
       .introduction{
-    color:darkblue; 
+    color:rgb(43, 96, 150); 
+    font-size:18px;
     }
     .aboutmecards{
         color:lightskyblue;
+        font-size:14px;
     }
     }
+    .introcardsbioa{
+    position:relative;
+    text-align:justify;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin:auto;
+    margin-top: -5em;
+    margin-left: 13.5em;
+    font-weight:bold;
+    
+      .introduction{
+    color:rgb(43, 96, 150); 
+    font-size:18px;
+    }
+    .aboutmecards{
+        color:lightskyblue;
+        font-size:14px;
+    }
+    }
+    .introcardsbiol{
+    position:relative;
+    text-align:justify;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin:auto;
+    margin-top: -5em;
+    margin-left: 13.5em;
+    font-weight:bold;
+    
+      .introduction{
+    color:rgb(43, 96, 150); 
+    font-size:18px;
+    }
+    .aboutmecards{
+        color:lightskyblue;
+        font-size:14px;
+    }
+    }
+    .introcardsbiod{
+    position:relative;
+    text-align:justify;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin:auto;
+    margin-top: -5em;
+    font-weight:bold;
+      .introductiond{
+    color:rgb(43, 96, 150); 
+    margin-left: -10em;
+    font-size:18px;
+    }
+    .aboutmecards{
+        color:lightskyblue;
+        font-size:14px;
+    }
+    }
+    .introcardsbior{
+    position:relative;
+    text-align:justify;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin:auto;
+    margin-top: -5em;
+    margin-left: 7em;
+    font-weight:bold;
+    
+      .introduction{
+    color:rgb(43, 96, 150); 
+    font-size:18px;
+    }
+    .aboutmecards{
+        color:lightskyblue;
+        font-size:14px;
+    }
+    }
+    .bckgclrforcard{
+        background-color: rgb(4, 18, 63);
+    }
+
