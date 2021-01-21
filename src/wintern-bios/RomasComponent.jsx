@@ -1,4 +1,5 @@
 import React from 'react';
+import img from '../assets/bio-photos/self portrait-01.png';
 
 const RomasComponent = ({bioToShow, color='red'}) => {
   const { useState } = React;
@@ -14,7 +15,7 @@ const RomasComponent = ({bioToShow, color='red'}) => {
         <p>{bioToShow}</p>
         
         {/* <div className="hovertest"> */}
-            <img className="selfportrait" alt="test image"src="https://i.imgur.com/Eb9wkez.png"/>
+            <img className="selfportrait" alt="test image"src={img}/>
             {/* <div className = "overlay">
                 <div className="hovertext">test</div>
             </div>
