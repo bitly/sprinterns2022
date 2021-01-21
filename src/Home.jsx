@@ -97,8 +97,29 @@ function Home({ bioToShow }) {
               <Bio myProp={'myProp'} />
               <Bio myProp={'myProp'} />
             </div> }
+            </div>
+          <div className="footer">
+            <div className="footertext">
+              <p className="center-links">
+                <a className="ft link-1" href="#"> Home </a>
+                <a className="ft link-2" href="#"> About </a>
+                <a className="ft link-3" href="#"> Help </a>
+                <a className="ft link-4" href="#"> Legal </a>
+                <a className="ft link-5" href="#"> Contact </a>
+              </p>
+              <a href="#" className="fa fa-facebook"></a>
+              <a href="#" className="fa fa-twitter"></a>
+              <a href="#" className="fa fa-github"></a>
+              <a href="#" className="fa fa-instagram"></a>
+              <a href="#" className="fa fa-linkedin"></a>
+            </div>
+            <p className="under-text"> Bitly Winterns &copy; 2021</p>
           </div>
-          <div className='bio-cards'>
+
+          {(showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} />}
+          {shouldShowBio && <Bio bioToShow={bioToShow} />}
+          {!shouldShowBio &&    
+           (<div className='bio-cards'>
           <div className="row">
           <div className="column">
           <div className="card card-1">
@@ -140,28 +161,9 @@ function Home({ bioToShow }) {
             </div>
             </div>
           </div>
-          <div className="footer">
-            <div className="footertext">
-              <p className="center-links">
-                <a className="ft link-1" href="#"> Home </a>
-                <a className="ft link-2" href="#"> About </a>
-                <a className="ft link-3" href="#"> Help </a>
-                <a className="ft link-4" href="#"> Legal </a>
-                <a className="ft link-5" href="#"> Contact </a>
-              </p>
-              <a href="#" className="fa fa-facebook"></a>
-              <a href="#" className="fa fa-twitter"></a>
-              <a href="#" className="fa fa-github"></a>
-              <a href="#" className="fa fa-instagram"></a>
-              <a href="#" className="fa fa-linkedin"></a>
-            </div>
-            <p className="under-text"> Bitly Winterns &copy; 2021</p>
+         )
+          }
           </div>
-
-          {(showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} />}
-          {shouldShowBio && <Bio bioToShow={bioToShow} />}
-        </div>
-
         <a href="https://5000-f90c103f-207a-4a06-b5f7-18ea2ff191af.ws-us03.gitpod.io/#/"><img className="logo" alt="bitly logo" src="https://docrdsfx76ssb.cloudfront.net/static/1610484866/pages/wp-content/uploads/2019/02/bitly.png" /></a>
       </div>
     </>
