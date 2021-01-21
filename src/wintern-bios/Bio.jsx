@@ -9,6 +9,8 @@ import CommentsComponent from './CommentsComponent.jsx';
 import APIExample from './APIExample.jsx';
 import Meetteam from './Meetteam.jsx';
 import APIinfo from './APIinfo.jsx';
+import CardsComponent from './CardsComponent.jsx';
+
 
 const Bio = ({bioToShow, color='red'}) => {
   const { useState } = React;
@@ -30,6 +32,7 @@ const Bio = ({bioToShow, color='red'}) => {
         { bioToShow === 'APIExample' && <APIExample /> }
         { bioToShow === 'Meetteam' && <Meetteam /> }
         {bioToShow === 'APIinfo' && <APIinfo /> }
+        {bioToShow === 'CardsComponent' && <CardsComponent/> }
        
     </ div>
   );
