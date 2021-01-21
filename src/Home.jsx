@@ -120,14 +120,11 @@ const Home = ({bioToShow}) => {
           { (showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} /> }
           { shouldShowBio && <Bio bioToShow={bioToShow} /> }
           </div>    
-       
-
-          { (showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} /> }
-          { shouldShowBio && <Bio bioToShow={bioToShow} /> }
-          </div>
-        
-        <Link to="/Home"><img className= "logo" alt="bitly logo"src="https://docrdsfx76ssb.cloudfront.net/static/1610484866/pages/wp-content/uploads/2019/02/bitly.png"/></Link>
+    
         </div>
+        </div>
+        <Link to="/Home"><img className= "logo" alt="bitly logo"src="https://docrdsfx76ssb.cloudfront.net/static/1610484866/pages/wp-content/uploads/2019/02/bitly.png"/></Link>
+
         </>
     );
 }
