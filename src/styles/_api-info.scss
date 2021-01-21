@@ -59,6 +59,8 @@ body {
   margin: 0 auto;
   padding: 4rem;
   width: 48rem;
+  position: relative;
+  top: -100px;
 }
 
 .accordion {
@@ -155,4 +157,11 @@ h2 {
     color: #f65103;
     position: relative;
     left: -40px;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 200px;
 }
