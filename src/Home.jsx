@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 import './styles/main.scss';
 import Form from './Form.jsx';
 import Bio from './wintern-bios/Bio.jsx';
-import CardsComponent from './wintern-bios/CardsComponent.jsx';
 
 function Home({ bioToShow }) {
   const { useState } = React;
@@ -33,7 +32,6 @@ function Home({ bioToShow }) {
     </button>
     <div className="dropdown-contentone">
       <Link to="/APIinfo">What is API?</Link>
-      <Link to="/APIExample">Example of API</Link>
       <a href="#">API Explorer</a>
     </div>
   </div>
@@ -61,7 +59,6 @@ function Home({ bioToShow }) {
             <Link to="/Lara">Lara</Link>
             <Link to="/Dana">Dana</Link>
             <Link to="/Comments">Comments</Link>
-            <Link to="/APIExample">API Example</Link>
             <Link to="/Meetteam">Meet The Team</Link>
             <Link to="/APIinfo">What even is an API?</Link> */}
           </div>
@@ -110,7 +107,6 @@ function Home({ bioToShow }) {
 
           {(showForm && !shouldShowBio) && <Form endpoint={endpoint} method={method} />}
           {shouldShowBio && <Bio bioToShow={bioToShow} />}
-          {!shouldShowBio && <CardsComponent />}
 
          
  
