@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'), url('https://www.scdn.co/i/connect/header-spikes-sm.jpg');
+   
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+}
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 78.2%;
+    height: 53.5vh;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-image: url('https://www.scdn.co/i/connect/header-spikes-sm.jpg');
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.btn-scroll-arrow svg:last-of-type {
+    top: -20%;
+}
+
+.btn-scroll-arrow {
+    background-color: #FFF;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 52px;
+    height: 52px;
+    -webkit-transition: fill .3s ease-in-out, transform .3s ease-in-out, color .3s ease-in-out;
+    -webkit-transition: fill .3s ease-in-out, color .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    transition: fill .3s ease-in-out, color .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    transition: fill .3s ease-in-out, transform .3s ease-in-out, color .3s ease-in-out;
+    transition: fill .3s ease-in-out, transform .3s ease-in-out, color .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 12px 5px rgba(0, 0, 0);
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0);
+    margin-bottom: -26px;
+    margin-top: 377px;
+}
+
+.btn-scroll {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    font-size: 16px;
+    line-height: 1;
+}
+
+.btn-scroll-arrow svg {
+    display: block;
+    height: 50%;
+    width: 100%;
+    position: relative;
+    fill: currentColor;
+}
+.btn-scroll-fuchsia {
+    color: #F037A5;
+}
+a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+.page-connect .wrap .jumbotron-hero {
+    background-color: #ffffff;
+    background-image: url('https://www.scdn.co/i/connect/header-spikes-sm.jpg');
+    background-size: cover;
+}
+
+.dana-bio{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    padding-bottom:100px;
+
+    .text
+    {
+        position: absolute;
+        z-index: 10;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: end;
+    }
+
+    .text h2
+    {
+        font-size: 7em;
+        font-weight: 1000;
+        color: #fff;
+        line-height: 1em;
+    }
+
+    .text h3
+    {
+    font-size: 4em;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+    }
+    .text p
+    {
+    font-size: 1.1em;
+    color: #fff;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+    }
+    .text a
+    {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    }
+    
+    .text a:hover{
+        letter-spacing: 6px;
+    }
+
+    .text2 {
+        position: relative;
+        z-index: 10;
+        top: 500px;
+        color: #2D46B9;
+        font-weight: 600;
+    }
+    hr {
+        border: none;
+        border-top: 5px double #2D46B9;
+        color: #2D46B9;
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+    }
+    hr:after {
+        background: #fff;
+        content: '§';
+        padding: 0 4px;
+        position: relative;
+        top: -13px;
+    }
+}
+
+.dana{
+    position: absolute;
+    max-width: 15%;
+    height: auto;
+    top: 80px;
+    right: 50px;
+    z-index: 2;
+}
+.caticorn{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 631px;
+    top: 470px;
+}
+.pride{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 680px;
+    top: 480px;
+}
+
+.imageInn {
+display: inline;
+position: relative;
+pointer-events: auto;
+cursor: pointer;
+right: -50px;
+top: -350px;
+z-index: 3;
+}
+
+.hoverImg {
+    visibility: hidden;
+}
+
+.imageInn:hover .hoverImg {
+    visibility: visible;
+    pointer-events: none;
+}
+
+.hoverImg {
+    display: flex;
+    position: absolute;
+    top: 233px;
+    left: 1085px;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 4vw;
+    height: 4vh;
+}

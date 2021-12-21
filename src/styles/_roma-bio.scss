@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@font-face{
+  font-family: 'Varela';
+  font-style: normal;
+  font-size: 100px;
+  src: url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+}
+.romabio{
+    background-image: url("https://cdn.discordapp.com/attachments/757364835271835648/798326062390968360/icon_transparent.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom:100px;
+    .selfportrait{
+
+        display: block;
+        height: 300px;
+        margin: auto;
+    }
+    // .overlay{
+    //     position: absolute;
+    //     top: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    //     height: 100%;
+    //     width: 100%;
+    //     opacity: 0;
+    //     transition: .5s ease;
+    //     background-color: #008CBA;
+    // }
+    // .hovertext{
+    //      color: white;
+    //      font-size: 20px;
+    //      position: absolute;
+    //      top: 50%;
+    //      left: 50%;
+    //      -webkit-transform: translate(-50%, -50%);
+    //      -ms-transform: translate(-50%, -50%);
+    //      transform: translate(-50%, -50%);
+    //      text-align: center;
+    // }
+    // .hovertest:hover .hovertext {
+    //     opacity: 1;
+    // }
+    
+    p{
+    
+        text-align: center;
+        color: #000000;
+        font-family: 'Varela', sans-serif;
+        opacity: 1;
+        
+        &.testtag {
+            font-size: 150%;
+        }
+        
+    }
+    h1{
+        color: rgb(0, 0, 0);
+         
+         font-family: 'Varela', sans-serif;
+    }
+    hr {
+        border: none;
+        border-top: 3px double rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+    }
+
+    hr:after {
+        background: #fff;
+        
+        padding: 0 4px;
+        position: relative;
+        top: -13px;
+    }
+    h1{
+        text-align: center;
+    }
+
+
+}

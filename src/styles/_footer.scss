@@ -1,0 +1,109 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.footer {
+  background-color: #063B6F;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 145px;
+  width: 100%;
+
+
+    .footertext {
+    width: 500px;
+    margin: auto;
+    padding-top: 20px;
+    word-spacing: 40px;
+    }
+
+        .center-links {
+        text-align: center;
+        font-size: 16px;
+        display: inline;
+        letter-spacing: 2px;
+        font-family: Helvetica, Arial, sans-serif;
+        color:white; 
+        padding-right: 15px;
+        padding-left: 25px;
+        
+        }
+            .ft{
+            color:white;
+            text-decoration:none;
+            }
+         
+
+        .under-text {
+        color: white;
+        text-align: center;
+        position: absolute;
+        left: 0; 
+        bottom: 0; 
+        right: 0;
+        margin:auto;
+        max-width: 600px;
+        }
+
+
+        .fa {
+        font-size: 40px;
+        width: 4px;
+        line-height: 20px;
+        text-decoration: none;
+        border-radius: 50%;
+        float: left;
+        background-color: transparent;
+        }
+
+        /* hover effect  */
+        .fa:hover {
+        opacity: 0.3;
+        }
+
+        .ft:hover {
+        opacity: 0.4;
+        }
+
+        /* different social media icons */
+
+        /* Facebook */
+        .fa-facebook {
+        padding: 40px;
+        }
+        .fa-facebook:before {
+        color: white;
+        }
+
+        /*twitter*/
+        .fa-twitter {
+        padding: 40px;
+        }
+        .fa-twitter:before {
+        color: #55ACEE;
+        }
+
+        /*github*/
+        .fa-github {
+        padding: 40px;
+        }
+        .fa-github:before {
+        color: red;
+        }
+
+        /*instagram*/
+        .fa-instagram {
+        padding: 40px;
+        }
+        .fa-instagram:before {
+        color: #125688;
+        }
+
+        /*linkeldn*/
+        .fa-linkedin {
+        padding: 40px;
+        }
+        .fa-linkedin:before {
+        color: #007bb5;
+        }
+}
+

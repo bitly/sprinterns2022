@@ -1,0 +1,238 @@
+.cardtajra {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+}
+
+/* On mouse-over, add a deeper shadow */
+.cardtajra:hover {
+  box-shadow: 0 8px 16px 0 rgb(0, 36, 197);
+}
+
+/* Add some padding inside the card container */
+.container{
+  padding: 2px 16px;
+
+}
+
+.tajrasimage{
+    width: 150px;
+    height: 130px;
+}
+
+.biotitlepage{
+    color:darkblue;
+    font-size:25px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+// ANDREA CARD
+.cardandrea {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.cardandrea:hover {
+  box-shadow: 0 8px 16px 0 rgb(0, 36, 197);
+}
+
+/* Add some padding inside the card container */
+.container{
+  padding: 2px 16px;
+
+}
+
+.andreasimage{
+    width: 150px;
+    height: 130px;
+}
+
+// LARA CARD
+.cardlara {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.cardlara:hover {
+  box-shadow: 0 8px 16px 0 rgb(0, 36, 197);
+}
+
+/* Add some padding inside the card container */
+.container{
+  padding: 2px 16px;
+
+}
+
+.larasimage{
+    width: 150px;
+    height: 130px;
+}
+
+
+// DANA'S CARD
+.carddana {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.carddana:hover {
+  box-shadow: 0 8px 16px 0 rgb(0, 36, 197);
+}
+
+/* Add some padding inside the card container */
+.container{
+  padding: 2px 16px;
+
+}
+
+.danasimage{
+    width: 150px;
+    height: 130px;
+}
+// ROMA CARD
+.cardroma {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.cardroma:hover {
+  box-shadow: 0 8px 16px 0 rgb(0, 36, 197);
+}
+
+/* Add some padding inside the card container */
+.container{
+  padding: 2px 16px;
+
+}
+
+.romasimage{
+    width: 150px;
+    height: 130px;
+}
+
+.biocards{
+    padding-bottom: 30%;
+    background-color: rgb(35, 94, 184);
+    color:lightskyblue;
+    padding-top:5em;
+    .bigtitleay{
+        color:white;
+        text-align:center;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         background-color: #EE6123;
+    }
+}
+.personname{
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.findmorebtn{
+          background-color: #EE6123;
+          border-color:darkblue;
+          position:absolute;
+          right: 100px;
+          padding: 10px 10px 10px 10px
+          
+        }
+.introcardsbiot{
+    position:relative;
+    text-align:justify;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin:auto;
+    margin-top: -5em;
+    margin-left: 18em;
+    font-weight:bold;
+      .introduction{
+    color:rgb(43, 96, 150); 
+    font-size:18px;
+    }
+    .aboutmecards{
+        color:lightskyblue;
+        font-size:14px;
+    }
+    }
+    .introcardsbioa{
+    position:relative;
+    text-align:justify;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin:auto;
+    margin-top: -5em;
+    margin-left: 13.5em;
+    font-weight:bold;
+    
+      .introduction{
+    color:rgb(43, 96, 150); 
+    font-size:18px;
+    }
+    .aboutmecards{
+        color:lightskyblue;
+        font-size:14px;
+    }
+    }
+    .introcardsbiol{
+    position:relative;
+    text-align:justify;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin:auto;
+    margin-top: -5em;
+    margin-left: 13.5em;
+    font-weight:bold;
+    
+      .introduction{
+    color:rgb(43, 96, 150); 
+    font-size:18px;
+    }
+    .aboutmecards{
+        color:lightskyblue;
+        font-size:14px;
+    }
+    }
+    .introcardsbiod{
+    position:relative;
+    text-align:justify;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin:auto;
+    margin-top: -5em;
+    font-weight:bold;
+      .introductiond{
+    color:rgb(43, 96, 150); 
+    margin-left: -10em;
+    font-size:18px;
+    }
+    .aboutmecards{
+        color:lightskyblue;
+        font-size:14px;
+    }
+    }
+    .introcardsbior{
+    position:relative;
+    text-align:justify;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin:auto;
+    margin-top: -5em;
+    margin-left: 7em;
+    font-weight:bold;
+    
+      .introduction{
+    color:rgb(43, 96, 150); 
+    font-size:18px;
+    }
+    .aboutmecards{
+        color:lightskyblue;
+        font-size:14px;
+    }
+    }
+    .bckgclrforcard{
+        background-color: rgb(4, 18, 63);
+    }
+

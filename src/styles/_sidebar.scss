@@ -1,0 +1,38 @@
+.sidebar{
+  width: 20%;
+  background: #F2F8FC;
+  padding-bottom: 200px;
+  overflow: scroll;
+  font-family:Arial ;
+  display: inline-block;
+
+  .sidenav {
+    a {
+      padding: 20px 10px 10px 22px;
+      text-decoration: none;
+      font-size: 17px;
+      color:black;
+      display: block;
+      font-family: Arial;
+      &:hover {
+        color:#818181;
+      }
+    }
+  } 
+
+  .Get{
+    color: #5DB6A0;
+  }
+
+  .Post{
+  color: #61B3DE;
+  }
+
+  .Patch{
+  color: #E2986B; 
+  }
+
+  .Delete{
+  color: #E37F7F;
+  }
+}
