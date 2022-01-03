@@ -1,36 +1,11 @@
 import React from 'react';
-import { useAttribute } from 'react';
-import { useState } from 'react';
 import chauncey from '../assets/miscellaneous/chauncey.jpg';
 import speech from '../assets/miscellaneous/pixel-speech-bubble.gif';
 
 
-const APIinfo = ({bioToShow, color='red'}) => {
+const APIinfo = () => {
     const { useState } = React;
 
-    // const [showStateEx, setShowStateEx] = useState(false);
-
-    const randomNum = Math.random();
-    // const items = document.querySelectorAll(".accordion button");
-
-    // function toggleAccordion() {
-    // const itemToggle = this.getAttribute('aria-expanded');
-
-    // for (i = 0; i < items.length; i++) {
-    //     items[i].setAttribute('aria-expanded', 'false');
-    // }
-
-    // if (itemToggle == 'false') {
-    //     this.setAttribute('aria-expanded', 'true');
-    // }
-    // }
-    // items.forEach(item => item.addEventListener('click', toggleAccordion));
-
-    const toggleClick = () => {
-        //expand to show content
-        
-
-    }
     const items = [
         {id: "accordion-button-1", title: "Why is the moon sometimes out during the day?", content:"hi"},
         {id: "accordion-button-2", title: "Why is the moon sometimes out during the day?", content:"hi"},
