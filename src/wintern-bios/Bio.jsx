@@ -5,9 +5,7 @@ import LarasComponent from './LarasComponent.jsx';
 import AndreasComponent from './AndreasComponent.jsx';
 import TajrasComponent from './TajrasComponent.jsx';
 import DanasComponent from './DanasComponent.jsx';
-import CommentsComponent from './CommentsComponent.jsx';
 import Meetteam from './Meetteam.jsx';
-import APIinfo from './APIinfo.jsx';
 
 
 const Bio = () => {

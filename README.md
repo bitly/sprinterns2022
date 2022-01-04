@@ -5,13 +5,8 @@ For this winternship, we are building out an GUI that is an explorer for the pub
 
 Slack us or set up a video chat to ask us anything!
 
-* Backend - Grace, Gabriel, Diana, Tyler, Tanner 
-* Frontend - David, Kevin, Kathy, Makayla, JP  
-* QA - Pawan  
-
 ### Gitpod Setup & Saving Work to Github
-1. Open a workspace in gitpod by going to `https://gitpod.io/github.com/bitly/winterns2021` or add the chrome extension (which adds the GitPod button to your Github account)
-2. Create a new branch off of main `git checkout -b <YOUR BRANCH NAME>`
+1. Create a new branch off of main `git checkout -b <YOUR BRANCH NAME>`
 3. Make your changes
 4. Commit changes to Github using the commands `git add <file names> ` (or `git add -A` to add all changes), `git commit -m "commit message"`, `git push --set-upstream origin <YOUR BRANCH>` (this --set-upstream parameter will only have to
 be used the first time you push your branch to the remote, from then on you can just do `git push origin <YOUR BRANCH NAME>`)

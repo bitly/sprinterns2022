@@ -13,7 +13,6 @@ function Team() {
     </button>
     <div className="dropdown-contenttwo">
       <Link to="/Meetteam">Meet The Team</Link>
-      <Link to="/Comments">Help Center</Link>
     </div>
   </div>
  <div className="dropdownone">
