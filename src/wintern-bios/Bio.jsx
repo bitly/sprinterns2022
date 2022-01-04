@@ -5,30 +5,21 @@ import LarasComponent from './LarasComponent.jsx';
 import AndreasComponent from './AndreasComponent.jsx';
 import TajrasComponent from './TajrasComponent.jsx';
 import DanasComponent from './DanasComponent.jsx';
-import CommentsComponent from './CommentsComponent.jsx';
 import Meetteam from './Meetteam.jsx';
-import APIinfo from './APIinfo.jsx';
 
 
-const Bio = ({bioToShow, color='red'}) => {
+const Bio = () => {
   const { useState } = React;
-
-  const [showStateEx, setShowStateEx] = useState(false);
-
-  const randomNum = Math.random();
-
+  const [person, setPerson] = useState('');
 
   return (
     <div className='changeClassName'>
-
-        { bioToShow === 'Dana' && <DanasComponent /> }
-        { bioToShow === 'Tajra' && <TajrasComponent /> } 
-        { bioToShow === 'Lara' && <LarasComponent /> } 
-        { bioToShow === 'Andrea' && <AndreasComponent /> }
-        { bioToShow === 'Roma' && <RomasComponent /> }
-        { bioToShow === 'Comments' && <CommentsComponent /> }
-        { bioToShow === 'Meetteam' && <Meetteam /> }
-        {bioToShow === 'APIinfo' && <APIinfo /> }
+      {person == 'Tajra' && <TajrasComponent/>}
+      {person == 'Dana' && <DanasComponent/>}
+      {person == 'Lara' && <LarasComponent/>}
+      {person == 'Andrea' && <AndreasComponent/>}
+      {person == 'Roma' && <RomasComponent/>}
+      <Meetteam onToggle={(newPerson)=>{setPerson(newPerson)}} /> 
        
     </ div>
   );

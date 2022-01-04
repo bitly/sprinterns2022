@@ -32,7 +32,7 @@ const Form = ({method, endpoint}) => {
   }
 
   const handleSubmit = () => {
-    const SERVER_URL = "https://5000-f9e7f7e4-c57e-43fb-8340-f9648942ba09.ws-us02.gitpod.io/"
+    const SERVER_URL = "http://127.0.0.1:5000/"
     const arrayToObject = (array) =>
       array.reduce((obj, item) => {
         if(item.key) {
@@ -56,6 +56,8 @@ const Form = ({method, endpoint}) => {
 
   return (
     <div className="inputForms">
+      {method}
+      {endpoint}
       <center>
         <label>API Endpoint</label><br />
         <input className ="endpointBox" value={apiEndpoint}
