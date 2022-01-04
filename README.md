@@ -5,7 +5,7 @@ For this winternship, we are building out an GUI that is an explorer for the pub
 
 Slack us or set up a video chat to ask us anything!
 
-### Gitpod Setup & Saving Work to Github
+### Saving Work to Github
 1. Create a new branch off of main `git checkout -b <YOUR BRANCH NAME>`
 3. Make your changes
 4. Commit changes to Github using the commands `git add <file names> ` (or `git add -A` to add all changes), `git commit -m "commit message"`, `git push --set-upstream origin <YOUR BRANCH>` (this --set-upstream parameter will only have to
