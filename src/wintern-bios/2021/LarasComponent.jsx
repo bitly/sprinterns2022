@@ -1,14 +1,7 @@
 import React from 'react';
-import img from '../assets/bio-photos/Lara_Image.jpg';
+import img from '../../assets/bio-photos/Lara_Image.jpg';
 
-const LarasComponent = ({bioToShow, color='red'}) => {
-  const { useState } = React;
-
-  const [showStateEx, setShowStateEx] = useState(false);
-
-  const randomNum = Math.random();
-
-
+const LarasComponent = () => {
   return (
        <div className='larabio'>
            <h1 className='title'> &ensp; Lara Choudhury </h1>

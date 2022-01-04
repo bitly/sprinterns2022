@@ -4,12 +4,16 @@ import axios from 'axios';
 import ReactJson from 'react-json-view'
 
 const Form = ({method, endpoint}) => {
-  const { useState } = React;
+  const { useState, useEffect } = React;
 
   const [response, setResponse] = useState({});
   const [authToken, setAuthToken] = useState('');
   const [apiEndpoint, setApiEndpoint] = useState(endpoint);
   const [params, setParams] = useState([{key:'', value:''}]);
+
+  useEffect(() => {
+    setApiEndpoint(endpoint);
+  }, [endpoint])
 
   const handleKeyValueChange = (event, type, idx) => {  
     let newValue;
@@ -32,7 +36,7 @@ const Form = ({method, endpoint}) => {
   }
 
   const handleSubmit = () => {
-    const SERVER_URL = "http://127.0.0.1:5000/"
+    const SERVER_URL = ""
     const arrayToObject = (array) =>
       array.reduce((obj, item) => {
         if(item.key) {
@@ -56,10 +60,9 @@ const Form = ({method, endpoint}) => {
 
   return (
     <div className="inputForms">
-      {method}
-      {endpoint}
       <center>
         <label>API Endpoint</label><br />
+        <input className ="endpointBox" value={method} disabled={true} type="text" name='method'/> 
         <input className ="endpointBox" value={apiEndpoint}
         type="text" name='apiEndpoint' onChange={(event) => setApiEndpoint(event.target.value)}
         /> 
@@ -73,15 +76,15 @@ const Form = ({method, endpoint}) => {
         <KVInputs handleChange={handleKeyValueChange} params={params}/>
         <button className = 'add' onClick={addKeyVal}>Add+</button>
       </center>
-      <div className="resultsBox"> 
-        <center>
-          <h2>Results</h2>
-        </center> 
-        <ReactJson src={response} theme="bright:inverted"/>
-      </div>   
       <br /> 
       <button className="submit" onClick={handleSubmit}>Submit</button>
       <button className="resetbutton" onClick={handleReset}>Reset</button> 
+      <div className="resultsBox"> 
+        <center>
+          <div>Results</div>
+        </center> 
+        <ReactJson src={response} theme="bright:inverted"/>
+      </div>   
     </div>
   );
 }

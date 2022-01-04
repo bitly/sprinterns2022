@@ -1,7 +1,4 @@
 .inputForms{
-  position: fixed;
-  left: 400px;
-  top: 150px;
   
   .endpointBox{
       width:100%;
@@ -32,9 +29,6 @@
     display: inline-block;
     font-size: 14px;
     border-radius: 3px;
-    left: -60px;
-    top: 127px;
-    position: absolute;
     outline: none;
     cursor: pointer;
   }
@@ -49,11 +43,8 @@
     display: inline-block;
     font-size: 14px;
     border-radius: 3px;
-    left: 760px;
-    top: 450px;
     outline: none;
     cursor: pointer;
-    position: fixed;
   }
   .resetbutton {
     background-color: #023044; 
@@ -65,9 +56,6 @@
     display: inline-block;
     font-size: 14px;
     border-radius: 3px;
-    left: 363px;
-    top: 340px;
-    position: absolute;
     outline: none;
     cursor: pointer;
   }

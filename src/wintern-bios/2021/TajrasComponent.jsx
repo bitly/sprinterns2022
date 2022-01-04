@@ -1,13 +1,7 @@
 import React from 'react';
-import img from '../assets/bio-photos/tajra.jpg';
+import img from '../../assets/bio-photos/tajra.jpg';
 
-const TajrasComponent = ({bioToShow, color='red'}) => {
-  const { useState } = React;
-
-  const [showStateEx, setShowStateEx] = useState(false);
-  const randomNum = Math.random();
-
-
+const TajrasComponent = () => {
   return (
     <div className='tajrabio'>
     <img className='mojaslika' src={img}/>
@@ -29,10 +23,9 @@ const TajrasComponent = ({bioToShow, color='red'}) => {
         <li> My favorite colors are blue and green, as you might have noticed, and the Northern Lights are definitely something I want to see because I am into stargazing and find fascination in astronomy. </li>
         </ul>
         </div>
-    
-        </div>
+      </div>
 
   );
-        }
+}
 
 export default TajrasComponent;

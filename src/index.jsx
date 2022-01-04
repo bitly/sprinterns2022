@@ -9,19 +9,21 @@ import{
 import './styles/main.scss';
 import Home from './Home.jsx';
 import Team from './Team.jsx';
+import APIinfo from './APIinfo.jsx';
 
 const App = () => {
     return (
-
       <Router>
         <Switch>
-        <Route path="/Team">
-            <Team/>
+        <Route path="/APIInfo">
+            <APIinfo />
+          </Route>
+          <Route path="/team">
+            <Team />
           </Route>
           <Route path="/">
             <Home />
           </Route>
-        
         </Switch>
     </Router>
     );
