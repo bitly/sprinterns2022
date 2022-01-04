@@ -1,4 +1,4 @@
-# 2021 Winternship Public API Explorer
+# 2022 Winternship Public API Explorer
 For this winternship, we are building out an GUI that is an explorer for the public facing Bitly API. Users can interface with the different endpoints, or access information from them more easily without needing to run cURL requests. 
 
 ### Wintern Leads Points of Contact

@@ -1,27 +1,11 @@
 import React from 'react';
-import img from '../assets/bio-photos/self portrait-01.png';
+import img from '../../assets/bio-photos/self portrait-01.png';
 
-const RomasComponent = ({bioToShow, color='red'}) => {
-  const { useState } = React;
-
-  const [showStateEx, setShowStateEx] = useState(false);
-
-  const randomNum = Math.random();
-
-
+const RomasComponent = () => {
   return (
     <div className='romabio'>
-       
-        <p>{bioToShow}</p>
-        
-        {/* <div className="hovertest"> */}
-            <img className="selfportrait" alt="test image"src={img}/>
-            {/* <div className = "overlay">
-                <div className="hovertext">test</div>
-            </div>
-        </div> */}
-        
-        
+        <p>Roma</p>
+        <img className="selfportrait" alt="test image"src={img}/>   
         <h1>Roma Cooper</h1>
         <hr/>
         <p className="testtag">About Me</p>
@@ -40,8 +24,6 @@ const RomasComponent = ({bioToShow, color='red'}) => {
         <p>that I want to accomplish in life by this tender age? All I know is that I'm really curious about Computer Science things and Graphic Design! </p>
     
         <hr/>
-
-        
     </ div>
   );
 }

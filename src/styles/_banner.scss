@@ -1,14 +1,11 @@
 .header {
+  font-family: ProximaNova;
   position: relative;
   width: 100%;
   left: 0px;
   top: 0px;
   background: #023044;
 
-//   h3 {
-//     color: white;
-//     text-align: center;
-//   }
   /* Navbar container */
 .navbar {
   overflow: hidden;
@@ -40,16 +37,15 @@
   color:white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
+  font-family: ProximaNova;
   margin: 10px;
   margin-left: 80px;
-  
- /* Important for vertical align on mobile phones */
 }
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #EE6123;
+  cursor: pointer;
 }
 
 /* Dropdown content (hidden by default) */
@@ -98,7 +94,7 @@ Add a grey background color to dropdown links on hover */
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
+  font-family: ProximaNova; /* Important for vertical align on mobile phones */
   margin: 10px; /* Important for vertical align on mobile phones */
   left:30px
 }
@@ -106,7 +102,7 @@ Add a grey background color to dropdown links on hover */
   /* Add a red background color to navbar links on hover  */
  .navbar a :hover, .dropdownone:hover .dropbtnone {
   background-color: #EE6123;
-
+  cursor: pointer;
 }  
 
 /* Dropdown content (hidden by default) */

@@ -1,15 +1,8 @@
 import React from 'react';
-import img from '../assets/bio-photos/DanaIcon.jpg';
+import img from '../../assets/bio-photos/DanaIcon.jpg';
 
-const DanasComponent = ({bioToShow, color='red'}) => {
-    const { useState } = React;
-
-    const [showStateEx, setShowStateEx] = useState(false);
-
-    const randomNum = Math.random();
-
-
-
+const DanasComponent = () => {
+    
     return (
         <div className='dana-bio'>
             <section class="showcase">

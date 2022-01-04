@@ -1,7 +1,8 @@
 import React from 'react';
-import chauncey from '../assets/miscellaneous/chauncey.jpg';
-import speech from '../assets/miscellaneous/pixel-speech-bubble.gif';
-
+import chauncey from './assets/miscellaneous/chauncey.jpg';
+import speech from './assets/miscellaneous/pixel-speech-bubble.gif';
+import Footer from './Footer.jsx';
+import Header from './Header.jsx';
 
 const APIinfo = () => {
     const { useState } = React;
@@ -17,7 +18,6 @@ const APIinfo = () => {
 
     const AccordionItem = (props) => {
         const [showContent, setShowContent] = useState(false)
-        console.log(props.id, "showContent", showContent)
         const toggleContent = () => setShowContent(!showContent)
 
         return( 
@@ -32,22 +32,34 @@ const APIinfo = () => {
     }
 
     return (
-        <div className="api-info">
-        <img className="wintern-chauncey" alt="confused chauncey" src={chauncey}/>
-        <img className="speech-bubble" alt="whats an api" src={speech}/>
-        <div className="container">
-            <h2>Frequently Asked Questions</h2>
-            <div className="accordion">
-                {items.map(
-                    (item, i)=>(<AccordionItem key={i} id={item.id} onClick={item.onClick} title={item.title} content={item.content} />)
-                )}
+        <>
+        <Header />
+        <div className="main">
+          <div className="sidebar">
+            <div className="sidenav">
+            </div>
+          </div>
+            <div className="center">
+                <div className="api-info">
+                <img className="wintern-chauncey" alt="confused chauncey" src={chauncey}/>
+                <img className="speech-bubble" alt="whats an api" src={speech}/>
+                <div className="container">
+                    <h2>Frequently Asked Questions</h2>
+                    <div className="accordion">
+                        {items.map(
+                            (item, i)=>(<AccordionItem key={i} id={item.id} onClick={item.onClick} title={item.title} content={item.content} />)
+                        )}
+                    </div>
+                </div>
+                <div className="video">
+                <p>Still confused? Watch this video (Thanks David).</p>
+                <iframe width="420" height="315"src="https://www.youtube.com/embed/s7wmiS2mSXY"/>
+                </div>
+                </div>
+                <Footer />
             </div>
         </div>
-        <div className="video">
-        <p>Still confused? Watch this video (Thanks David).</p>
-        <iframe width="420" height="315"src="https://www.youtube.com/embed/s7wmiS2mSXY"/>
-        </div>
-        </div>
+        </>
     );
 }
 
