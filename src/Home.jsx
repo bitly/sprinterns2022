@@ -67,7 +67,7 @@ function Home() {
           <div className="centerCard">
             {showIntro && <div className="intro">
               <p>
-                Introduction:Is this reloading properly? Welcome to the Bitly API!If you'd like to use Bitly to shorten, brand, share, or retrieve data from links programmatically, you've come to the right place.If you're interested in integrating
+                Introduction: Welcome to the Bitly API!If you'd like to use Bitly to shorten, brand, share, or retrieve data from links programmatically, you've come to the right place.If you're interested in integrating
               </p>
               <p>
                      your app or software platform with Bitly, you'll need to register and authenticate your service with our API. To do so please contact us at API_sales@bit.ly
