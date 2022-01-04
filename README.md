@@ -6,24 +6,24 @@ For this winternship, we are building out an GUI that is an explorer for the pub
 Slack us or set up a video chat to ask us anything!
 
 Sprintern Leads:
-Kevin Li - FE Engineer
-Grace McGrath - BE Engineer
-Diana Bishop - BE Engineer 
+* Kevin Li - FE Engineer
+* Grace McGrath - BE Engineer
+* Diana Bishop - BE Engineer 
 
 Tech Support:
-Aaron Marks	- BE Engineer
-Katelyn Arenas	- BE Engineer
-Josh Harshman	- Platform Engineer
-Patrick Evans	- BE Engineer (can also help with FE!)
-Justin Barry -	BE Engineer
-Parli Rizal -	BE Engineer
-Tyler Lugger -	BE Engineer
+* Aaron Marks	- BE Engineer
+* Katelyn Arenas	- BE Engineer
+* Josh Harshman	- Platform Engineer
+* Patrick Evans	- BE Engineer (can also help with FE!)
+* Justin Barry -	BE Engineer
+* Parli Rizal -	BE Engineer
+* Tyler Lugger -	BE Engineer
 
 Agile Support:
-Julian Lasius -	Scrum Master / Agile Delivery
+* Julian Lasius -	Scrum Master / Agile Delivery
 
 Product Support:
-Pawan Murthy - Product Manager
+*Pawan Murthy - Product Manager
 
 
 ### Saving Work to Github
