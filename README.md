@@ -3,6 +3,8 @@ For this winternship, we are building out an GUI that is an explorer for the pub
 
 ### Wintern Leads Points of Contact
 
+This is Ange :)
+
 Slack us or set up a video chat to ask us anything!
 
 Sprintern Leads:
