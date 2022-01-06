@@ -3,6 +3,7 @@ For this winternship, we are building out an GUI that is an explorer for the pub
 
 ### Wintern Leads Points of Contact
 
+Hiiiiiiii this is Margaret 
 Slack us or set up a video chat to ask us anything!
 
 Sprintern Leads:
