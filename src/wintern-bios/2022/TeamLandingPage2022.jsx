@@ -5,6 +5,7 @@ const TeamLandingPage2022 = () => {
     <div>
         OMG. IT'S A BLANK WEBSITE!
         { <LaurensComponent /> }
+        { <DianasComponent /> }
     </ div>
   );
 }
