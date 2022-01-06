@@ -2,6 +2,7 @@
 For this winternship, we are building out an GUI that is an explorer for the public facing Bitly API. Users can interface with the different endpoints, or access information from them more easily without needing to run cURL requests. 
 
 ### Wintern Leads Points of Contact
+Hello it's Skyler!!
 
 Slack us or set up a video chat to ask us anything!
 
