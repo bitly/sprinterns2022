@@ -7,9 +7,15 @@ const AngesComponent = () => {
 
         
 
-        <div>
+        <div className='ancontainer'>
+
+            <div id="scroll-container">
+            <div id="scroll-text">This is scrolling text.</div>
+            </div>
             <img src = {img}/>
-        OMG. IT'S Ange BLANK WEBSITE!
+
+            
+        
         
         </ div>
     );
