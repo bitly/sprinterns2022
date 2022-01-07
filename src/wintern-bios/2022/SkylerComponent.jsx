@@ -6,6 +6,7 @@ import learnifypic from '../../assets/bio-photos/skyler-other-pics/learnify-pic.
 import flixpic from '../../assets/bio-photos/skyler-other-pics/flix-pic.png';
 import minecraftpic from '../../assets/bio-photos/skyler-other-pics/minecraft-pic.png';
 import captainamericapic from '../../assets/bio-photos/skyler-other-pics/captainamerica-pic.png';
+import beatsaberpic from '../../assets/bio-photos/skyler-other-pics/beat-saber-pic.png';
 
 const SkylerComponent = () => {
     return (
@@ -103,7 +104,7 @@ const SkylerComponent = () => {
             </div>
 
             <div className="project-card-skyler">
-            <img className = "play-pics" src={flixpic} />
+            <img className = "play-pics" src={beatsaberpic} />
             <h2>Playing Beat Saber VR</h2>
             </div>
         </div>
