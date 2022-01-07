@@ -1,24 +1,3 @@
-#wrapper {
-    background-color:#aaa;
-    display:table;
-    width:250px;
-    height:100px;
+.animateName {
+    font-style: italic;
 }
-
-#innerwrapper {
-    display:table-cell;
-    vertical-align:middle;
-}
-
-#move {
-    position:relative;
-    background-color:green;
-    -webkit-animation: backandforth 2s ease 0s;
-    -webkit-animation-iteration-count:infinite;
-    animation: backandforth 2s ease 0s;
-    animation-iteration-count:infinite;
-}
-
-@-webkit-keyframes backandforth {0%{left:0;} 50%{left:100%;} 100%{left:0;}}
-
-@keyframes backandforth {0%{left:0;} 50%{left:100%;} 100%{left:0;}}

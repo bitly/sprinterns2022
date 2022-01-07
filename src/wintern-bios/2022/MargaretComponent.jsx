@@ -1,10 +1,13 @@
 import React from 'react';
-var randomColor = Math.floor(Math.random()*16777215).toString(16);
+//import Animate from 'animate.css-react'
+//import 'animate.css/animate.css' 
+// var randomColor = Math.floor(Math.random()*16777215).toString(16);
+
 
 const MargaretComponent = () => {
  return (
     <div>
-      <h1> MARGARET DIAZ </h1>
+      <div className='animateName'> MARGARET DIAZ </div>
       <hr/>
       <h2>ABOUT ME</h2>
       <p>I am a 23 sophomore at Hunter College majoring in Computer Science. I recently moved to the city after transferring from Bryn Mawr College in PA. My first expereince with coding was the art-focused language of processing and ever since then I've been hooked! I love the trial and error process of coding and debugging, it's like solving a jigsaw puzzle. My dream job is to become a software engineer and I am thankful to every opportunity that brings me closer to this path. I am incredibly grateful to my family. 
@@ -63,7 +66,7 @@ const MargaretComponent = () => {
           <li>Library shelver (Got me back into reading 8/10)</li>
         </ul>
       </ul>
-    </div>
+      </div>
  );
 }
 
