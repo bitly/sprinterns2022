@@ -82,9 +82,24 @@
   position: relative;
   margin: 10px;
   width: 1200px;
-  height: 700px;
+  height: 800px;
   padding: 40px ;
   background-color: rgb(242, 218, 223);
+
+}
+
+.contact {
+
+  position: absolute;
+  bottom: 110px;
+  left: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  height: 150px;
+  width: 347px;
+  border: 5px solid black;
+  background-color: white;
+  text-align: center;
 
 }
 

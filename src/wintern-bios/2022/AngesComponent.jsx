@@ -13,7 +13,10 @@ const AngesComponent = () => {
             <div id="scroll-text">&#x1F338; Hi, My name is Ange &#x1F338;</div>
             </div>
             <img src = {img}/>
-
+            <div className='contact'>
+                <h3>CONTACT INFORMATION &#x1F4DE;</h3>
+                
+            </div>
             
         
         
