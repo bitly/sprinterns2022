@@ -9,7 +9,7 @@
 }
 .title {
     color:black !important;
-    font-weight: 900;
+    font-weight: 900 !important;
 }
 
 .about-content h1, h2, h3 {
@@ -17,9 +17,19 @@
 }
 
 .main-container h1 {
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Poppins', sans-serif !important; 
+    font-weight: bolder !important;
+
 }
+
+.main-container h2 {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif !important; 
+    font-weight: bolder !important;
+
+}
+
 
 .main-container p {
     text-align: left;
@@ -37,8 +47,9 @@
 .main-container {
     display: table;
     overflow: hidden;
-    min-height: 1500px;
-
+    min-height: 3500px; /* USE THIS TO ADJUST FIXED CONTAINER HEIGHT */
+    margin-left: 250px;
+    margin-right: 250px;
    /* min-height: 1300px !important; 
     /* increase size of div according to contents? https://stackoverflow.com/questions/20814855/how-to-increase-size-of-div-according-to-its-contents
     /*
@@ -48,15 +59,87 @@
     padding-bottom: 100px; /* height of your footer */
    }
 
+
+
+
+/* CODE SECTION */
+
+.project-cards {
+    display: flex;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+.project-card-skyler {
+    flex: 50%;
+    padding: 10px;
+  }
+
+/* CREATE SECTION */
+
+.project-cards {
+    display: flex;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+.project-card-skyler {
+    flex: 50%;
+    padding: 10px;
+   /* height: 300px; /* Should be removed. Only for demonstration */
+  }
+
+/* CONTACT SECTION */
+
 .contact-formspree {
     font-family: 'Poppins', sans-serif !important; 
+    text-align: left;
 
 }
 
-.formspree-name {
+.formspree-name p {
+    font-family: 'Poppins', sans-serif !important; 
+    line-height: 0px;    
+
+}
+
+.formspree-name textarea {
     font-family: 'Poppins', sans-serif !important; 
 }
 
 .contact-formspree textarea {
     font-family: 'Poppins', sans-serif !important;  
+    width: 600px; 
+}
+
+.contact-formspree-button button p {
+    font-family: 'Poppins', sans-serif !important; 
+    background-color: #D3CFFF !important;
+
+}
+
+.contact-formspree-button {
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: -10px;
+    padding-bottom: -10px;
+    line-height: 0px;
+    background-color: #D3CFFF !important;
+
+
+}
+
+#submit-btn-formspree p {
+    font-family: 'Poppins', sans-serif !important; 
+
+}
+
+.contact-formspree .formspree-message-box  {
+    font-family: 'Poppins', sans-serif !important;  
+    width: 600px; 
+    height: 200px;
+
+}
+
+.formspree-message-box {
+    height: 200px;
 }
