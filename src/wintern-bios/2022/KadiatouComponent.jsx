@@ -42,4 +42,5 @@ const KadiatouComponent = () => {
   }
 
 
-  export default KadiatouComponent;
+export default KadiatouComponent;
+
