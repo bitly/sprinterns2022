@@ -4,6 +4,8 @@ import unicornstackpic from '../../assets/bio-photos/skyler-other-pics/unicorn-s
 import m4mpic from '../../assets/bio-photos/skyler-other-pics/m4m-pic.png';
 import learnifypic from '../../assets/bio-photos/skyler-other-pics/learnify-pic.png';
 import flixpic from '../../assets/bio-photos/skyler-other-pics/flix-pic.png';
+import minecraftpic from '../../assets/bio-photos/skyler-other-pics/minecraft-pic.png';
+import captainamericapic from '../../assets/bio-photos/skyler-other-pics/captainamerica-pic.png';
 
 const SkylerComponent = () => {
     return (
@@ -59,11 +61,13 @@ const SkylerComponent = () => {
 
         <div className='project-cards'>
             <div className="project-card-skyler">
+            <img className = "flix-pic" src={flixpic} />
             <h2>Daydreaming</h2>
             <p>Acrylic painting </p>
             </div>
 
             <div className="project-card-skyler">
+            <img className = "flix-pic" src={flixpic} />
             <h2>Reflections on Science</h2>
             <p>Colored Pencil Realism</p>
             </div>
@@ -72,11 +76,13 @@ const SkylerComponent = () => {
 
         <div className='project-cards'>
             <div className="project-card-skyler">
+            <img className = "flix-pic" src={flixpic} />
             <h2>Crumpled to Pieces</h2>
             <p>Colored Pencil Realism </p>
             </div>
 
             <div className="project-card-skyler">
+            <img className = "flix-pic" src={flixpic} />
             <h2>Front Door</h2>
             <p>Pen and Ink</p>
             </div>
@@ -87,14 +93,17 @@ const SkylerComponent = () => {
 
         <div className='project-cards'>
             <div className="project-card-skyler">
+            <img className = "play-pics" src={minecraftpic} />
             <h2>Building on Minecraft</h2>
             </div>
 
             <div className="project-card-skyler">
+            <img className = "play-pics" src={captainamericapic} />
             <h2>Watching Marvel films and shows</h2>
             </div>
 
             <div className="project-card-skyler">
+            <img className = "play-pics" src={flixpic} />
             <h2>Playing Beat Saber VR</h2>
             </div>
         </div>
