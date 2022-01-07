@@ -1,0 +1,104 @@
+.laurenbio{
+    background-image: url("https://cdn.shopify.com/s/files/1/1619/4221/products/03.14-_-_-13_244b2838-8d68-4c6b-afa3-0102a5b14761.jpg?v=1613388948");
+
+    .laurenpic{
+        float: left;
+        margin-left: 125px;
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        overflow: hidden; 
+    }
+
+
+    .fullname{
+        font-family: 'Noto Sans, sans-serif';
+        font-size: to-upper-case($string: "");
+        font-size: 200%;
+        color: white;
+
+    }
+
+    .grade{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: to-lower-case($string: "");
+        font-size: medium;
+        color:white;
+
+    }
+
+    .major{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: to-lower-case($string: "");
+        font-size: medium;
+        color: white;
+    }
+
+    .location{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: to-lower-case($string: "");
+        font-size: medium;
+        color: white;
+    }
+
+    .aboutme{
+        font-family: 'Noto Sans, sans-serif';
+        font-size: to-lower-case($string: "");
+        font-size: large;
+        color: white;
+    }
+
+    .aboutmePARA{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: to-lower-case($string: "");
+        font-size: medium;
+        color: white;
+    
+    }
+
+    .whyCS{
+        font-family: 'Noto Sans, sans-serif';
+        font-size: to-lower-case($string: "");
+        font-size: large;
+        color: white;    
+    }
+
+    .whyCSPARA{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: to-lower-case($string: "");
+        font-size: medium;
+        color: white;
+    }
+
+    .bitly{
+        font-family: 'Noto Sans, sans-serif';
+        font-size: to-lower-case($string: "");
+        font-size: large;
+        color: white;
+    }
+
+    .bitlyPARA{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: to-lower-case($string: "");
+        font-size: medium;
+        color: white;
+
+    }
+
+    .hobbies{
+        font-family: 'Noto Sans, sans-serif';
+        font-size: to-lower-case($string: "");
+        font-size: large;
+        color: white
+    }
+
+    .hobbiesPARA{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: to-lower-case($string: "");
+        font-size: medium;
+        color: white;
+
+    }
+
+}
