@@ -1,14 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
-@font-face{
-  font-family: 'Varela';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'), url('https://www.scdn.co/i/connect/header-spikes-sm.jpg');
+   
+
+@font-face {
+  font-family: 'Poppins';
   font-style: normal;
-  font-size: 100px;
-  src: url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+  font-weight: 200;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+}
+.title {
+    color:black !important;
+    font-weight: 900;
 }
 
-.title h1 {
-    color:black !important;
-    font-weight: bold;
-    font-family: 'Varela', sans-serif !important;
+h1, h2, h3, p {
+    font-family: 'Poppins', sans-serif !important; 
 
+}
+
+p {
+    text-align: left;
 }
