@@ -1,0 +1,90 @@
+ 
+.kadbio{
+    background-image: url('../assets/bio-photos/fd29b82295e6947138c5ab789e1759a0.jpg');
+    //background-position: ;
+    font-size: 20px;
+    padding-bottom:100px;
+    img {
+      float: none;
+    }
+   .bio_pic{
+      display: block;
+      height: 200px;
+      margin:auto;
+      position: center;
+        }
+    .testtag1{
+        color: white;
+        text-align: center;
+        }
+     #rcorners1 {
+      border-radius: 25px;
+      //background: url('../assets/bio-photos/');
+      background-position: left top;
+      background-repeat: repeat;
+      padding: 20px; 
+      width: 500px;
+      height: 150px;
+      float: none;  
+        }
+    .testtag2{
+
+            color: white;
+            text-align: center;
+
+        }
+    #rcorners2 {
+      border-radius: 25px;
+      //background: url('../assets/bio-photos/');
+      background-blend-mode: color-burn;
+      background-position: left top;
+      background-repeat: repeat;
+      padding: 20px; 
+      width: 500px;
+      height: 150px; 
+      float: none; 
+        }
+    .testtag3{
+
+            color: white;
+            text-align: center;
+
+        }
+    #rcorners3 {
+      border-radius: 25px;
+      //background: url('../assets/bio-photos/');
+      background-position: left top;
+      background-repeat: repeat;
+      padding: 20px; 
+      width: 500px;
+      height: 150px;   
+      float: none;
+        }
+    .button {
+          background-color: #6a4caf;
+          border: lightcoral;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+
+}
+
+  
+  h1 {
+    color: rgb(154, 140, 152);
+    text-align: center;
+    font-size: 30;
+    
+  }
+  
+  p {
+    color: rgb(165, 165, 141);
+    font-family: verdana;
+    font-size: 20px;
+  }
