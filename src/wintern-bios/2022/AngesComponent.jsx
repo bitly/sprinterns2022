@@ -10,7 +10,7 @@ const AngesComponent = () => {
         <div className='ancontainer'>
 
             <div id="scroll-container">
-            <div id="scroll-text">This is scrolling text.</div>
+            <div id="scroll-text">&#x1F338; Hi, My name is Ange &#x1F338;</div>
             </div>
             <img src = {img}/>
 
