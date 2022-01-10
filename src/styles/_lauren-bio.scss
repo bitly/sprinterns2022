@@ -1,10 +1,10 @@
 .laurenbio{
-    background-image: url("https://cdn.shopify.com/s/files/1/1619/4221/products/03.14-_-_-13_244b2838-8d68-4c6b-afa3-0102a5b14761.jpg?v=1613388948");
+    background-image: url("https://i.pinimg.com/550x/3e/1d/4d/3e1d4d582968807c7a83d60d04188054.jpg");
+    min-height: 1650px;
 
     .laurenpic{
         float: left;
-        margin-left: 125px;
-        margin-top: 20px;
+        margin: 50px 19px 10px 400px;
         width: 200px;
         height: 200px;
         border-radius: 100%;
@@ -17,6 +17,7 @@
         font-size: to-upper-case($string: "");
         font-size: 200%;
         color: white;
+        margin-top: 50px;
 
     }
 
@@ -43,62 +44,99 @@
     }
 
     .aboutme{
-        font-family: 'Noto Sans, sans-serif';
-        font-size: to-lower-case($string: "");
-        font-size: large;
+        font-family: 'Courier New', Courier, monospace;
         color: white;
+        background-color: rgb(93, 102, 179);
+        border-radius:100px;
+        font-size: 15px;
+        padding: 50px;
+        margin: 100px 20px 15px 20px;
+        border-style: dotted;
     }
 
-    .aboutmePARA{
-        font-family: 'Courier New', Courier, monospace;
-        font-size: to-lower-case($string: "");
-        font-size: medium;
-        color: white;
+    //.aboutmePARA{
+        //font-family: 'Courier New', Courier, monospace;
+        //font-size: to-lower-case($string: "");
+        //font-size: medium;
+        //color: white;
+    //}
     
-    }
-
     .whyCS{
-        font-family: 'Noto Sans, sans-serif';
-        font-size: to-lower-case($string: "");
-        font-size: large;
-        color: white;    
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        background-color: rgb(93, 102, 179);
+        border-radius:100px;
+        font-size: 15px;
+        padding: 50px;
+        margin: 15px 20px 15px 20px;
+        border-style: dotted;
+
     }
 
-    .whyCSPARA{
-        font-family: 'Courier New', Courier, monospace;
-        font-size: to-lower-case($string: "");
-        font-size: medium;
-        color: white;
-    }
+    //.whyCSPARA{
+        //ont-family: 'Courier New', Courier, monospace;
+        //font-size: to-lower-case($string: "");
+        //font-size: medium;
+        //color: white;
+    //}
 
     .bitly{
-        font-family: 'Noto Sans, sans-serif';
-        font-size: to-lower-case($string: "");
-        font-size: large;
-        color: white;
-    }
-
-    .bitlyPARA{
         font-family: 'Courier New', Courier, monospace;
-        font-size: to-lower-case($string: "");
-        font-size: medium;
         color: white;
+        background-color: rgb(93, 102, 179);
+        border-radius:100px;
+        font-size: 15px;
+        padding: 50px;
+        margin: 15px 20px 15px 20px;
+        border-style: dotted;
 
     }
+
+    //.bitlyPARA{
+        //font-family: 'Courier New', Courier, monospace;
+        //font-size: to-lower-case($string: "");
+        //font-size: medium;
+        //color: white;
+
+    //}
 
     .hobbies{
-        font-family: 'Noto Sans, sans-serif';
-        font-size: to-lower-case($string: "");
-        font-size: large;
-        color: white
-    }
-
-    .hobbiesPARA{
         font-family: 'Courier New', Courier, monospace;
-        font-size: to-lower-case($string: "");
-        font-size: medium;
         color: white;
+        background-color: rgb(93, 102, 179);
+        border-radius:100px;
+        font-size: 15px;
+        padding: 50px;
+        margin: 15px 20px 15px 20px;
+        border-style: dotted;
 
     }
+
+    //.hobbiesPARA{
+        //font-family: 'Courier New', Courier, monospace;
+        //font-size: to-lower-case($string: "");
+        //font-size: medium;
+        //color: white;
+
+    //}
+
+    .media{
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        background-color: rgb(93, 102, 179);
+        border-radius:100px;
+        font-size: 15px;
+        padding: 50px;
+        margin: 15px 20px 15px 20px;
+        border-style: dotted;
+
+    }
+
+    //.mediaPARA{
+        //font-family: 'Courier New', Courier, monospace;
+        //font-size: to-lower-case($string: "");
+        //font-size: medium;
+        //color: white;
+    //}
 
 }
