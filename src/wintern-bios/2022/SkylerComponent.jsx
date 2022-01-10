@@ -14,7 +14,7 @@ import frontdoor from '../../assets/bio-photos/skyler-other-pics/frontdoor.jpeg'
 import friendsdrawing from '../../assets/bio-photos/skyler-other-pics/friends-drawing.jpeg';
 import minecraftsteve from '../../assets/bio-photos/skyler-other-pics/minecraftsteve.gif';
 import animatedcap from '../../assets/bio-photos/skyler-other-pics/animatedcap.gif';
-
+import mcsheep from '../../assets/bio-photos/skyler-other-pics/mcsheep.gif';
 
 
 const SkylerComponent = () => {
@@ -44,7 +44,8 @@ const SkylerComponent = () => {
         <h1 className='about'> About 🦋 </h1>
         <p className='about-content'> My name is Skyler! I’m a developer and designer with an affinity for creative mediums in tech, including augmented/virtual reality, 3D software, and visual effects.
         At Queens College, I’m currently studying Computer Science. I aspire to transform our reality’s “impossibilities” into immersive VR games and AR experiences that uplift people and inspire them to create. </p>
-       
+        <a class="button-skyler" href="https://go.echo3d.co/nvSZ" target="_blank"><p>See a 3D/AR model of the Bitly logo!</p></a>
+        <br />
 
         <h1 className='code'> Code 👩🏻‍💻</h1>
         <p className='code-content'>Check out some of the projects I've developed below!</p>
@@ -135,7 +136,7 @@ const SkylerComponent = () => {
         </div>
 
         <h1 className='contact'> Contact 📩</h1>
-        <p className='contact-content'>Want to connect, collaborate, or build something innovative together? I’m happy to chat about anything from CS to design to future projects. <br /> <br /> Feel free to shoot me a DM on <a href="https://www.linkedin.com/in/skylerbasco/" target="_blank">LinkedIn</a>, email me at skylerbasco@gmail.com, or send a message through the form below! ⬇️</p>
+        <p className='contact-content'>Want to connect, collaborate, or build something innovative together? I’m happy to chat about anything from CS to design to future projects. <br /> <br /> Feel free to shoot me a DM on <a href="https://www.linkedin.com/in/skylerbasco/" target="_blank" className='hyperlink'>LinkedIn</a>, email me at <a href="mailto: skylerbasco@gmail.com" target="_blank">skylerbasco@gmail.com</a>, or send a message through the form below! ⬇️</p>
         <form action="https://formspree.io/f/mzbopzgv" method="POST"> 
         <div className='contact-formspree'>
         <label classname='formspree-name'> Full Name <br/> <textarea name="name"  placeholder="Peter Parker"></textarea></label> 
@@ -150,6 +151,8 @@ const SkylerComponent = () => {
         <button  type="submit" id="submit-btn-formspree"><p className='contact-formspree-button'>Submit</p></button>
         </div>
         </form>
+        <img className = "skyler-headshot" src={mcsheep} />
+
     </div>
 
     

@@ -264,11 +264,15 @@
 
 .contact-formspree .formspree-message-box  {
     font-family: 'Poppins', sans-serif !important;  
-    width: 600px; 
+    width: 200px; 
     height: 200px;
 
 }
 
 .formspree-message-box {
-    height: 200px;
+    height: 100px;
+}
+
+.hyperlink p {
+    text-decoration: underline;
 }
