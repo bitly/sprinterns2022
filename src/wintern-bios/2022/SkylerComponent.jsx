@@ -12,17 +12,34 @@ import reflectionsonscience from '../../assets/bio-photos/skyler-other-pics/refl
 import crumpled from '../../assets/bio-photos/skyler-other-pics/crumpledtopieces.jpeg';
 import frontdoor from '../../assets/bio-photos/skyler-other-pics/frontdoor.jpeg';
 import friendsdrawing from '../../assets/bio-photos/skyler-other-pics/friends-drawing.jpeg';
+import minecraftsteve from '../../assets/bio-photos/skyler-other-pics/minecraftsteve.gif';
+import animatedcap from '../../assets/bio-photos/skyler-other-pics/animatedcap.gif';
+
+
 
 const SkylerComponent = () => {
     return (
         
     <div className = 'main-container'>
-        <h1 className='title'> Hey, I'm Skyler Basco (she/her)! 👋</h1>
-        <p className='about-content'> 
-        👾 Your friendly neighborhood Minecraft stan
-        </p>
-        <img className = "skyler-headshot" src={skylerheadshot} />
+    
+        <h1 className='title'> Hello world, I'm Skyler Basco! <span class="waving-hand">👋</span>
+</h1>
 
+        <p className='about-content'> 
+        
+        </p>
+        <div className='project-cards'>
+        <div className="project-card-skyler">
+        <img className = "skyler-headshot" src={animatedcap} />
+        </div>
+        <div className="project-card-skyler">
+        <img className = "skyler-headshot" src={skylerheadshot} />
+        </div>
+        <div className="project-card-skyler">
+        <img className = "skyler-headshot" src={minecraftsteve} />
+        </div>
+
+        </div>
 
         <h1 className='about'> About 🦋 </h1>
         <p className='about-content'> My name is Skyler! I’m a developer and designer with an affinity for creative mediums in tech, including augmented/virtual reality, 3D software, and visual effects.
