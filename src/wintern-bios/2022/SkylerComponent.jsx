@@ -7,6 +7,11 @@ import flixpic from '../../assets/bio-photos/skyler-other-pics/flix-pic.png';
 import minecraftpic from '../../assets/bio-photos/skyler-other-pics/minecraft-pic.png';
 import captainamericapic from '../../assets/bio-photos/skyler-other-pics/captainamerica-pic.png';
 import beatsaberpic from '../../assets/bio-photos/skyler-other-pics/beat-saber-pic.png';
+import daydreaming from '../../assets/bio-photos/skyler-other-pics/daydreaming.jpeg';
+import reflectionsonscience from '../../assets/bio-photos/skyler-other-pics/reflectionsonscience.jpeg';
+import crumpled from '../../assets/bio-photos/skyler-other-pics/crumpledtopieces.jpeg';
+import frontdoor from '../../assets/bio-photos/skyler-other-pics/frontdoor.jpeg';
+import friendsdrawing from '../../assets/bio-photos/skyler-other-pics/friends-drawing.jpeg';
 
 const SkylerComponent = () => {
     return (
@@ -58,17 +63,17 @@ const SkylerComponent = () => {
 
 
         <h1 className='create'> Create 🎨</h1>
-        <p className='create-content'>I love playing around with different artistic mediums - ranging from colored pencil realism to digital art. See what's in my sketchbook below! </p>
+        <p className='create-content'>I love playing around with different artistic mediums - ranging from colored pencil realism to acrylic paint. See a little bit of my sketchbook below! </p>
 
         <div className='project-cards'>
             <div className="project-card-skyler">
-            <img className = "flix-pic" src={flixpic} />
+            <img className = "daydreaming-pic" src={daydreaming} />
             <h2>Daydreaming</h2>
             <p>Acrylic painting </p>
             </div>
 
             <div className="project-card-skyler">
-            <img className = "flix-pic" src={flixpic} />
+            <img className = "daydreaming-pic" src={reflectionsonscience} />
             <h2>Reflections on Science</h2>
             <p>Colored Pencil Realism</p>
             </div>
@@ -77,15 +82,15 @@ const SkylerComponent = () => {
 
         <div className='project-cards'>
             <div className="project-card-skyler">
-            <img className = "flix-pic" src={flixpic} />
+            <img className = "frontdoor-pic" src={crumpled} />
             <h2>Crumpled to Pieces</h2>
             <p>Colored Pencil Realism </p>
             </div>
 
             <div className="project-card-skyler">
-            <img className = "flix-pic" src={flixpic} />
-            <h2>Front Door</h2>
-            <p>Pen and Ink</p>
+            <img className = "frontdoor-pic" src={friendsdrawing}/>
+            <h2>Friends</h2>
+            <p>Copic Marker</p>
             </div>
         </div>
 
