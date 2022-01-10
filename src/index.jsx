@@ -21,6 +21,9 @@ const App = () => {
           <Route path="/team">
             <Team />
           </Route>
+          <Route path="/team-2022">
+            <Team year={2022} />
+          </Route>
           <Route path="/">
             <Home />
           </Route>
