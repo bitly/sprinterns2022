@@ -64,7 +64,7 @@
 .main-container {
     display: table;
     overflow: hidden;
-    min-height: 3600px; /* USE THIS TO ADJUST FIXED CONTAINER HEIGHT */
+    min-height: 3700px; /* USE THIS TO ADJUST FIXED CONTAINER HEIGHT */
     margin-left: 250px;
     margin-right: 250px;
    /* min-height: 1300px !important; 
@@ -111,6 +111,9 @@
   
     /* Colors */
     background-color: #F3F4F6;
+    background-image: linear-gradient(to bottom right, #D2CFFF, #8EC5FC);
+    box-shadow: 3px 3px black;
+
     color: var(--navy);
     transition: .5s ease-out;
   
@@ -226,6 +229,7 @@
     padding-bottom: -10px;
     line-height: 0px;
     background-color: #D3CFFF !important;
+    background-image: linear-gradient(to bottom right, #D2CFFF, #8EC5FC);
 
 
 }
@@ -233,6 +237,29 @@
 #submit-btn-formspree p {
     font-family: 'Poppins', sans-serif !important; 
 
+}
+
+#submit-btn-formspree {
+    display: block;
+    padding: 10px 15px 10px 15px;
+    width: fit-content;
+    border-radius: 5px;
+    text-decoration: none;
+    line-height: 0px;
+    border: 1px solid black;
+  
+    /* Colors */
+    background-color: #F3F4F6;
+    background-image: linear-gradient(to bottom right, #D2CFFF, #8EC5FC);
+    box-shadow: 3px 3px black;
+
+    color: var(--navy);
+    transition: .5s ease-out;
+  
+    /* Font */
+    font-weight: 600;
+    font-size: 11px !important;
+    color: black !important;
 }
 
 .contact-formspree .formspree-message-box  {

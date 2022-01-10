@@ -26,7 +26,7 @@ const SkylerComponent = () => {
 </h1>
 
         <p className='about-content'> 
-        <var>M<sup> 3</sup></var> = Minecrafter. Marvel fan. Maker.
+        <var>M<sup> 3</sup></var> = Minecrafter. Marvel(er). Maker.
         </p>
         <div className='project-cards'>
         <div className="project-card-skyler">
@@ -135,7 +135,7 @@ const SkylerComponent = () => {
         </div>
 
         <h1 className='contact'> Contact 📩</h1>
-        <p className='contact-content'>Want to connect, collaborate, or build something innovative together? I’m happy to chat about anything from CS to design to future projects. Feel free to shoot me a DM on LinkedIn or send a message through the form below! ⬇️</p>
+        <p className='contact-content'>Want to connect, collaborate, or build something innovative together? I’m happy to chat about anything from CS to design to future projects. <br /> <br /> Feel free to shoot me a DM on <a href="https://www.linkedin.com/in/skylerbasco/" target="_blank">LinkedIn</a>, email me at skylerbasco@gmail.com, or send a message through the form below! ⬇️</p>
         <form action="https://formspree.io/f/mzbopzgv" method="POST"> 
         <div className='contact-formspree'>
         <label classname='formspree-name'> Full Name <br/> <textarea name="name"  placeholder="Peter Parker"></textarea></label> 
