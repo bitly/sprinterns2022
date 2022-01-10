@@ -26,7 +26,7 @@ const SkylerComponent = () => {
 </h1>
 
         <p className='about-content'> 
-        
+        <var>M<sup> 3</sup></var> = Minecrafter. Marvel fan. Maker.
         </p>
         <div className='project-cards'>
         <div className="project-card-skyler">
