@@ -17,7 +17,10 @@ const SkylerComponent = () => {
     return (
         
     <div className = 'main-container'>
-        <h1 className='title'> Hey, I'm Skyler Basco! 👋</h1>
+        <h1 className='title'> Hey, I'm Skyler Basco (she/her)! 👋</h1>
+        <p className='about-content'> 
+        👾 Your friendly neighborhood Minecraft stan
+        </p>
         <img className = "skyler-headshot" src={skylerheadshot} />
 
 
@@ -34,14 +37,14 @@ const SkylerComponent = () => {
             <img className = "flix-pic" src={unicornstackpic} />
             <h2>Unicorn Stack</h2>
             <p>A fun, easy-to-use platform to strengthen healthy financial habits through Augmented Reality (AR), 3D experiences, and more.      </p>
-            <a class="button" href="https://devpost.com/software/unicorn-stack" target="_blank"><p>Explore on Devpost</p></a>
+            <a class="button-skyler" href="https://devpost.com/software/unicorn-stack" target="_blank"><p>Explore on Devpost</p></a>
             </div>
 
             <div className="project-card-skyler">
             <img className = "flix-pic" src={learnifypic} />
             <h2>Learnify</h2>
             <p>A gamified web app that improves the focus, vocabulary, and mathematical skills of students with learning disabilities. </p>
-            <a class="button" href="https://github.com/skylerbasco/Learnify" target="_blank"><p>Explore on GitHub</p></a>
+            <a class="button-skyler" href="https://github.com/skylerbasco/Learnify" target="_blank"><p>Explore on GitHub</p></a>
             </div>
         </div>
 
@@ -50,14 +53,14 @@ const SkylerComponent = () => {
             <img className = "flix-pic" src={m4mpic} />
             <h2>Melodies for Math</h2>
             <p>Responsive website for a nonprofit simplifying math concepts for high school students, comprising a database of math songs.</p>
-            <a class="button" href="https://github.com/skylerbasco/Melodies-for-Math-Website" target="_blank"><p>Explore on GitHub</p></a>
+            <a class="button-skyler" href="https://github.com/skylerbasco/Melodies-for-Math-Website" target="_blank"><p>Explore on GitHub</p></a>
             </div>
 
             <div className="project-card-skyler">
             <img className = "flix-pic" src={flixpic} />
             <h2>Flix</h2>
             <p>iOS app for browsing movies currently playing in theaters. Displays the title, description, and poster for each film with a CollectionView layout.</p>
-            <a class="button" href="https://github.com/skylerbasco/Flix" target="_blank"><p>Explore on GitHub</p></a>
+            <a class="button-skyler" href="https://github.com/skylerbasco/Flix" target="_blank"><p>Explore on GitHub</p></a>
             </div>
         </div>
 

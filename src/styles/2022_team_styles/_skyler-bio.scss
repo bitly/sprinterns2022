@@ -4,7 +4,6 @@
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 200;
   src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 }
 .title {
@@ -82,6 +81,53 @@
     height: auto;
     margin: auto;
 }
+
+.button-skyler {
+    display: block;
+    padding: 10px 15px 10px 15px;
+    width: fit-content;
+    border-radius: 5px;
+    text-decoration: none;
+    line-height: 0px;
+    border: 1px solid black;
+  
+    /* Colors */
+    background-color: #F3F4F6;
+    color: var(--navy);
+    transition: .5s ease-out;
+  
+    /* Font */
+    font-weight: 600;
+    font-size: 11px !important;
+    color: black !important;
+  
+  }
+
+  .button-skyler p{
+    font-size: 14px !important;
+  
+  }
+
+  .button-skyler a:hover{
+    display: block;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 0px;
+    text-decoration: none;
+    line-height: 0px;
+    box-shadow: 3px 3px black;
+  
+    /* Colors */
+    background-color: white !important;
+    color: var(--navy);
+    transition: .5s ease-out;
+  
+    /* Font */
+    font-weight: 600;
+    font-size: 14px;
+  
+  }
 
 /* CREATE SECTION */
 
