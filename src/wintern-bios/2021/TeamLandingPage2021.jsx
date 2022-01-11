@@ -17,6 +17,8 @@ const TeamLandingPage2021 = () => {
         { person === 'Lara' && <LarasComponent /> } 
         { person === 'Andrea' && <AndreasComponent /> }
         { person === 'Roma' && <RomasComponent /> }
+        { person === 'Skyler' && <SkylerComponent /> }
+
         <TeamList onToggle={(newPerson) => setPerson(newPerson)} />
     </ div>
   );
