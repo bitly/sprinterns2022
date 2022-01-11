@@ -22,8 +22,8 @@ const SkylerComponent = () => {
     return (
         
     <div className = 'main-container'>
-    <div className='aboutallcontent'>
-    <iframe width="60" height="30" src="https://www.youtube.com/embed/Ld4WasFSvm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="threemagicnumber"></iframe>
+    <div className='aboutallcontent'> 
+    <h3><span class="waving-hand">🎶</span> Hold up - before you scroll, press play for a surprise... <span class="waving-hand">🎶</span></h3><iframe width="60" height="30" src="https://www.youtube.com/embed/Ld4WasFSvm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="threemagicnumber"></iframe>
     <br />
         <h1 className='title'> Hello world, I'm Skyler Basco! <span class="waving-hand">👋</span></h1>
         <h2 className='about-content' text-align='center'> 
@@ -32,7 +32,7 @@ const SkylerComponent = () => {
         </h2>
         <div className='project-cards'>
         <div className="project-card-skyler">
-        <img className = "skyler-headshot" src={animatedcap} />
+        <img className = "skyler-headshot" src={animatedcap} text-align="center" />
         </div>
         <div className="project-card-skyler">
         <img className = "skyler-headshot" src={skylerheadshot} />
@@ -43,7 +43,7 @@ const SkylerComponent = () => {
         </div>
         </div>
 
-        <h1 className='about'> About 🦋 </h1>
+        <h1 className='about'> About <span class="waving-hand">🦋</span> </h1>
         <p className='about-content'> My name is Skyler! I’m a developer and designer with an affinity for creative mediums in tech, including augmented/virtual reality, 3D software, and visual effects.
         At Queens College, I’m currently studying Computer Science. I aspire to transform our reality’s “impossibilities” into immersive VR games and AR experiences that uplift people and inspire them to create. 
         </p>
@@ -54,7 +54,7 @@ const SkylerComponent = () => {
         <a class="button-qrcode3d" href="https://go.echo3d.co/Rerj" target="_blank"><p>See a 3D/AR model of the Bitly logo!</p></a>
         <br />
 
-        <h1 className='code'> Code 👩🏻‍💻</h1>
+        <h1 className='code'> Code <span class="waving-hand">👩🏻‍💻</span></h1>
         <p className='code-content'>Check out some of the projects I've developed below!</p>
 
         <div className='project-cards'>
@@ -90,7 +90,7 @@ const SkylerComponent = () => {
         </div>
 
         <br />
-        <h1 className='create'> Create 🎨</h1>
+        <h1 className='create'> Create <span class="waving-hand">🎨</span></h1>
         <p className='create-content'>I love playing around with different artistic mediums - ranging from colored pencil realism to acrylic paint. See a little bit of my sketchbook below! </p>
 
         <div className='project-cards'>
@@ -122,7 +122,7 @@ const SkylerComponent = () => {
             </div>
         </div>
 
-        <h1 className='play'> Play 👾</h1>
+        <h1 className='play'> Play <span class="waving-hand">👾</span></h1>
         <p className='play-content'>In my free time, you can find me...</p>
 
         <div className='project-cards'>
@@ -142,7 +142,7 @@ const SkylerComponent = () => {
             </div>
         </div>
 
-        <h1 className='contact'> Contact 📩</h1>
+        <h1 className='contact'> Contact <span class="waving-hand">📩</span></h1>
         <p className='contact-content'>Want to connect, collaborate, or build something innovative together? I’m happy to chat about anything from CS to design to future projects. <br /> <br /> Feel free to shoot me a DM on <a href="https://www.linkedin.com/in/skylerbasco/" target="_blank" className='hyperlink'>LinkedIn</a>, email me at <a href="mailto: skylerbasco@gmail.com" target="_blank">skylerbasco@gmail.com</a>, or send a message through the form below! ⬇️</p>
         <div className='project-cards'>
             <div className="project-card-skyler">

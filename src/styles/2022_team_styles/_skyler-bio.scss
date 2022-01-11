@@ -71,12 +71,13 @@
     padding: 10px;
     width: 200px;
     height: auto;
+    text-align: center;
 }
 
 .main-container {
     display: table;
     overflow: hidden;
-    min-height: 4100px; /* USE THIS TO ADJUST FIXED CONTAINER HEIGHT */
+    min-height: 4200px; /* USE THIS TO ADJUST FIXED CONTAINER HEIGHT */
     padding-left: 250px;
     padding-right: 250px;
    /* min-height: 1300px !important; 
@@ -343,3 +344,4 @@
 .hyperlink p {
     text-decoration: underline;
 }
+
