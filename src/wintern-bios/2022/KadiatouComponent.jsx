@@ -6,11 +6,12 @@ import {Link} from "react-router-dom";
 const KadiatouComponent = () => {
     return (
       <div className='kadbio'>
+
           <img className="bio_pic" alt="test image"src={img}/>  
+
           <div class="sign">
             <span class="fast-flicker">Kadia</span>tou<span class="flicker">Dial</span>lo
-         </div>
-
+          </div>
 
           <div class="box box1">
              <div class="oddboxinner">Who am I?</div>
@@ -26,17 +27,19 @@ const KadiatouComponent = () => {
              I love Documentaries. Crime and Corruption related documentaries are my favorite.
              I love food. I am hungry all day every day.</p>
           </div>
+
           <div class="box box3">
              <div class="oddboxinner3">Facts about me.</div>
              <p> I am from guinea.(Located in West Africa)
              I speak 3 languages:French, Fulani, and English.
              I am also very interested in cybersecurity</p>
           </div>
+
           <Link to ="/home"><button class="button">return</button></Link>
+
       </ div>
     );
   }
-  //class="button" 
+
 
   export default KadiatouComponent;
-  //          <h1>Kadiatou Diallo</h1> 
