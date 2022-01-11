@@ -1,5 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
 import img from '../../assets/bio-photos/PROFILE.JPEG';
 import bella from '../../assets/miscellaneous/bella.jpg';
 import broady from '../../assets/miscellaneous/broady.jpg';
@@ -10,8 +9,6 @@ import winnie from '../../assets/miscellaneous/winnie.png';
 import olddoggies from '../../assets/miscellaneous/olddoggies.png';
 import infinity from '../../assets/miscellaneous/infinity.png';
 import quinn from '../../assets/miscellaneous/quinn.png';
-=======
-//var randomColor = Math.floor(Math.random()*16777215).toString(16);
 import img from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/bio-photos/PROFILE.JPEG';
 import bella from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/miscellaneous/bella.jpg';
 import broady from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/miscellaneous/broady.jpg';
@@ -22,7 +19,6 @@ import winnie from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/misce
 import olddoggies from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/miscellaneous/olddoggies.png';
 import infinity from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/miscellaneous/infinity.png';
 import quinn from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/miscellaneous/quinn.png';
->>>>>>> fde619e (“your-commit-message”)
 
 const MargaretComponent = () => {
  return (
@@ -59,7 +55,6 @@ const MargaretComponent = () => {
       <a href="https://www.youtube.com/watch?v=kOHB85vDuow"className='twiceButton'>Twice</a>
       <a href="https://www.youtube.com/watch?v=TmKh7lAwnBI"className='badBunny'>Bad Bunny</a>
       <a href="https://www.youtube.com/watch?v=clwLKJ294u4"className='britneyButton'>Britney Spears</a>
-      <a href="https://www.youtube.com/watch?v=n5LWsc-qCdA"className='meganButton'>Megan Thee Stallion</a>
       <a className='favoriteFacts'> Extra </a>
           <h2 className='center'>FAVORITES:</h2>
           <a className='myFavs'>
