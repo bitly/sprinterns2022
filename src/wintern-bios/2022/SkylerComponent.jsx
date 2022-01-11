@@ -15,19 +15,21 @@ import friendsdrawing from '../../assets/bio-photos/skyler-other-pics/friends-dr
 import minecraftsteve from '../../assets/bio-photos/skyler-other-pics/minecraftsteve.gif';
 import animatedcap from '../../assets/bio-photos/skyler-other-pics/animatedcap.gif';
 import mcsheep from '../../assets/bio-photos/skyler-other-pics/mcsheep.gif';
-
+import qrcode3dbitly from '../../assets/bio-photos/skyler-other-pics/qrcode3dbitly.jpg';
+import mcparrot from '../../assets/bio-photos/skyler-other-pics/mcparrot.gif';
 
 const SkylerComponent = () => {
     return (
         
     <div className = 'main-container'>
-    
-        <h1 className='title'> Hello world, I'm Skyler Basco! <span class="waving-hand">👋</span>
-</h1>
-
-        <p className='about-content'> 
+    <div className='aboutallcontent'>
+    <iframe width="60" height="30" src="https://www.youtube.com/embed/Ld4WasFSvm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="threemagicnumber"></iframe>
+    <br />
+        <h1 className='title'> Hello world, I'm Skyler Basco! <span class="waving-hand">👋</span></h1>
+        <h2 className='about-content' text-align='center'> 
         <var>M<sup> 3</sup></var> = Minecrafter. Marvel(er). Maker.
-        </p>
+        <br />
+        </h2>
         <div className='project-cards'>
         <div className="project-card-skyler">
         <img className = "skyler-headshot" src={animatedcap} />
@@ -38,13 +40,18 @@ const SkylerComponent = () => {
         <div className="project-card-skyler">
         <img className = "skyler-headshot" src={minecraftsteve} />
         </div>
-
+        </div>
         </div>
 
         <h1 className='about'> About 🦋 </h1>
         <p className='about-content'> My name is Skyler! I’m a developer and designer with an affinity for creative mediums in tech, including augmented/virtual reality, 3D software, and visual effects.
-        At Queens College, I’m currently studying Computer Science. I aspire to transform our reality’s “impossibilities” into immersive VR games and AR experiences that uplift people and inspire them to create. </p>
-        <a class="button-skyler" href="https://go.echo3d.co/nvSZ" target="_blank"><p>See a 3D/AR model of the Bitly logo!</p></a>
+        At Queens College, I’m currently studying Computer Science. I aspire to transform our reality’s “impossibilities” into immersive VR games and AR experiences that uplift people and inspire them to create. 
+        </p>
+        <div className="project-card-skyler">
+        <p>👇 Scan the QR Code below with your phone to see Bitly's logo in 3D/AR! Made with Blender and echo3D.</p>
+        <img className = "qrcodecss" src={qrcode3dbitly}/>
+        </div>
+        <a class="button-qrcode3d" href="https://go.echo3d.co/Rerj" target="_blank"><p>See a 3D/AR model of the Bitly logo!</p></a>
         <br />
 
         <h1 className='code'> Code 👩🏻‍💻</h1>
@@ -82,7 +89,7 @@ const SkylerComponent = () => {
             </div>
         </div>
 
-
+        <br />
         <h1 className='create'> Create 🎨</h1>
         <p className='create-content'>I love playing around with different artistic mediums - ranging from colored pencil realism to acrylic paint. See a little bit of my sketchbook below! </p>
 
@@ -137,6 +144,8 @@ const SkylerComponent = () => {
 
         <h1 className='contact'> Contact 📩</h1>
         <p className='contact-content'>Want to connect, collaborate, or build something innovative together? I’m happy to chat about anything from CS to design to future projects. <br /> <br /> Feel free to shoot me a DM on <a href="https://www.linkedin.com/in/skylerbasco/" target="_blank" className='hyperlink'>LinkedIn</a>, email me at <a href="mailto: skylerbasco@gmail.com" target="_blank">skylerbasco@gmail.com</a>, or send a message through the form below! ⬇️</p>
+        <div className='project-cards'>
+            <div className="project-card-skyler">
         <form action="https://formspree.io/f/mzbopzgv" method="POST"> 
         <div className='contact-formspree'>
         <label classname='formspree-name'> Full Name <br/> <textarea name="name"  placeholder="Peter Parker"></textarea></label> 
@@ -151,7 +160,11 @@ const SkylerComponent = () => {
         <button  type="submit" id="submit-btn-formspree"><p className='contact-formspree-button'>Submit</p></button>
         </div>
         </form>
-        <img className = "skyler-headshot" src={mcsheep} />
+        </div>
+        <div className="project-card-skyler">
+        <img className = "qrcodecss" src={mcparrot} />
+        </div>
+        </div>
 
     </div>
 

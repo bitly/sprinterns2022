@@ -15,6 +15,18 @@
     font-family: 'Poppins', sans-serif !important; 
 }
 
+.about-content {
+    text-align: center;
+}
+
+.about-content p{
+    text-align: center !important;
+  
+}
+.aboutallcontent {
+    text-align: center;
+}
+
 .main-container h1 {
     font-size: 25px;
     font-family: 'Poppins', sans-serif !important; 
@@ -64,9 +76,9 @@
 .main-container {
     display: table;
     overflow: hidden;
-    min-height: 3700px; /* USE THIS TO ADJUST FIXED CONTAINER HEIGHT */
-    margin-left: 250px;
-    margin-right: 250px;
+    min-height: 4100px; /* USE THIS TO ADJUST FIXED CONTAINER HEIGHT */
+    padding-left: 250px;
+    padding-right: 250px;
    /* min-height: 1300px !important; 
     /* increase size of div according to contents? https://stackoverflow.com/questions/20814855/how-to-increase-size-of-div-according-to-its-contents
     /*
@@ -76,7 +88,54 @@
     padding-bottom: 100px; /* height of your footer */
    }
 
+   .qrcodecss {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
+    padding: 10px;
+    width: 200px;
+    height: auto;
+}
+
+
+.button-qrcode3d {
+    display: block;
+    padding: 10px 15px 10px 15px;
+    width: fit-content;
+    border-radius: 5px;
+    text-decoration: none;
+    line-height: 0px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  
+    /* Colors */
+    background-color: #F3F4F6;
+    background-image: linear-gradient(to bottom right, #D2CFFF, #8EC5FC);
+    box-shadow: 3px 3px black;
+
+    color: var(--navy);
+    transition: .5s ease-out;
+  
+    /* Font */
+    font-weight: 600;
+    font-size: 11px !important;
+    color: black !important;
+  
+  }
+
+  .button-qrcode3d p{
+    font-size: 14px !important;
+  
+  }
+
+  .threemagicnumber{
+    border-radius: 15px;
+    box-shadow: 3px 3px black;
+    border: 1px solid black;
+
+  }
 
 
 /* CODE SECTION */
@@ -88,7 +147,7 @@
   /* Create two equal columns that sits next to each other */
 .project-card-skyler {
     flex: 50%;
-    padding: 10px;
+    padding: 35px;
   }
 
 .flix-pic {
@@ -169,6 +228,11 @@
     padding: 0px;
     width: auto;
     height: 250px;
+    border-radius: 10px;
+    box-shadow: 3px 3px black;
+    border: 1px solid black;
+
+
 }
 
 .daydreaming-pic {
@@ -177,6 +241,9 @@
     padding: 0px;
     width: auto;
     height: 250px;
+    border-radius: 10px;
+    box-shadow: 3px 3px black;
+    border: 1px solid black;
 }
 
 
@@ -212,7 +279,7 @@
 
 .contact-formspree textarea {
     font-family: 'Poppins', sans-serif !important;  
-    width: 600px; 
+    width: 400px; 
 }
 
 .contact-formspree-button button p {
