@@ -11,7 +11,9 @@ const LaurenComponent = () => {
                 <img className = "github" src={img2} />
             </a>
             
-            <img className = "linkedin" src={img3} />
+            <a href = "https://www.linkedin.com/in/lauren-avilla-071467229/">
+                <img className = "linkedin" src={img3} />
+            </a>
 
             <img className='laurenpic' src={img}/>
             <br/>
