@@ -23,6 +23,8 @@
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "animate.css-react": "^1.1.0",
     "@formspree/react": "^2.2.4",
     "axios": "^0.19.1",
     "merge-images": "^2.0.0",

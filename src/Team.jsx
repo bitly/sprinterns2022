@@ -15,10 +15,9 @@ function Team() {
         <div className="main">
     
             <div className="sidebar">
-             <div>  <a onClick={() => setYear(2022)}>2022</a> </div>
+                <a onClick={() => setYear(2022)}>2022</a> 
                 <a onClick={() => setYear(2021)}>2021</a>
             </div>
-
             <div className="center">
                {year === 2022 && <TeamLandingPage2022 />} 
                {year === 2021 && <TeamLandingPage2021 />} 
