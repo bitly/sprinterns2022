@@ -5,7 +5,7 @@ const TeamLandingPage2022 = () => {
   return (
     <div>
         
-       { <AngesComponent />}
+        <AngesComponent />
     </ div>
    
   );
