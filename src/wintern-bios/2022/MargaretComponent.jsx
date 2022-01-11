@@ -1,14 +1,14 @@
 import React from 'react';
-import img from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/bio-photos/PROFILE.JPEG';
-import bella from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/miscellaneous/bella.jpg';
-import broady from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/miscellaneous/broady.jpg';
-import jason from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/miscellaneous/jason.png';
-import sharon from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/miscellaneous/sharon.png';
-import stevie from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/miscellaneous/stevie.png';
-import winnie from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/miscellaneous/winnie.png';
-import olddoggies from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/miscellaneous/olddoggies.png';
-import infinity from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/miscellaneous/infinity.png';
-import quinn from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/miscellaneous/quinn.png';
+import img from '../../assets/bio-photos/PROFILE.JPEG';
+import bella from '../../assets/miscellaneous/bella.jpg';
+import broady from '../../assets/miscellaneous/broady.jpg';
+import jason from '../../assets/miscellaneous/jason.png';
+import sharon from '../../assets/miscellaneous/sharon.png';
+import stevie from '../../assets/miscellaneous/stevie.png';
+import winnie from '../../assets/miscellaneous/winnie.png';
+import olddoggies from '../../assets/miscellaneous/olddoggies.png';
+import infinity from '../../assets/miscellaneous/infinity.png';
+import quinn from '../../assets/miscellaneous/quinn.png';
 
 const MargaretComponent = () => {
  return (
