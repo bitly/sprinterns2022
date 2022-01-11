@@ -4,7 +4,7 @@ import LaurenComponent from './LaurenComponent.jsx';
 const TeamLandingPage2022 = () => {
   return (
     <div>
-        { <LaurenComponent />}
+        <LaurenComponent />
     </ div>
   );
 }

@@ -6,15 +6,12 @@
         width: 200px;
         height: 200px;
         margin: 0px 10px -250px 100px;
-
     }
 
     .linkedin{
         width: 200px;
         height: 200px;
         margin: 0px 10px -250px 400px;
-        //margin top right bottom left
-
     }
 
     .laurenpic{
@@ -28,14 +25,12 @@
         border-color: white;
     }
 
-
     .fullname{
         font-family: "Noto Sans, sans-serif";
         font-size: to-upper-case($string: "");
         font-size: 200%;
         color: white;
         margin: 270px 19px 10px 400px;
-
     }
 
     .grade{
@@ -44,8 +39,6 @@
         font-size: medium;
         color:white;
         margin: 2px 9px 10px 380px;
-
-
     }
 
     .major{
@@ -54,7 +47,6 @@
         font-size: medium;
         color: white;
         margin: 2px 9px 10px 380px;
-
     }
 
     .location{
@@ -63,7 +55,6 @@
         font-size: medium;
         color: white;
         margin: 2px 9px 10px 380px;
-
     }
 
     .aboutme{
@@ -77,13 +68,6 @@
         border-style: dotted;
     }
 
-    //.aboutmePARA{
-        //font-family: 'Courier New', Courier, monospace;
-        //font-size: to-lower-case($string: "");
-        //font-size: medium;
-        //color: white;
-    //}
-    
     .whyCS{
         font-family: 'Courier New', Courier, monospace;
         color: white;
@@ -93,15 +77,7 @@
         padding: 50px;
         margin: 15px 20px 15px 20px;
         border-style: dotted;
-
     }
-
-    //.whyCSPARA{
-        //ont-family: 'Courier New', Courier, monospace;
-        //font-size: to-lower-case($string: "");
-        //font-size: medium;
-        //color: white;
-    //}
 
     .bitly{
         font-family: 'Courier New', Courier, monospace;
@@ -112,16 +88,7 @@
         padding: 50px;
         margin: 15px 20px 15px 20px;
         border-style: dotted;
-
     }
-
-    //.bitlyPARA{
-        //font-family: 'Courier New', Courier, monospace;
-        //font-size: to-lower-case($string: "");
-        //font-size: medium;
-        //color: white;
-
-    //}
 
     .hobbies{
         font-family: 'Courier New', Courier, monospace;
@@ -132,16 +99,7 @@
         padding: 50px;
         margin: 15px 20px 15px 20px;
         border-style: dotted;
-
     }
-
-    //.hobbiesPARA{
-        //font-family: 'Courier New', Courier, monospace;
-        //font-size: to-lower-case($string: "");
-        //font-size: medium;
-        //color: white;
-
-    //}
 
     .media{
         font-family: 'Courier New', Courier, monospace;
@@ -152,14 +110,6 @@
         padding: 50px;
         margin: 15px 20px 15px 20px;
         border-style: dotted;
-
     }
-
-    //.mediaPARA{
-        //font-family: 'Courier New', Courier, monospace;
-        //font-size: to-lower-case($string: "");
-        //font-size: medium;
-        //color: white;
-    //}
 
 }
