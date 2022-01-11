@@ -1,0 +1,365 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+body{
+  background:#fff;
+  font-family: 'Bangers', cursive;
+  font-size: 25px;
+.kadbio{
+    background-image: url('../assets/bio-photos//bfb35ac84790187271033bf96c3c042f-1.jpg');
+    font-size: 20px;
+    padding-bottom:100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom:200px;
+    height:900px;
+    border:solid blanchedalmond;
+    transform: rotate(1deg);
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+}
+    .box{
+      margin:25px;
+      width:250px;
+      height:250px;
+      background:#fff;
+      border: solid black;
+      border-color: black;
+      float:left; 
+    }
+    .bio_pic{
+      display: block;
+      height: 250px;
+      width: 300;
+      position: center;
+      margin: auto;
+      border-width: 3px 4px 3px 5px;
+      border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+      transform: rotate(2deg);
+      border-color: black;
+      
+    }
+    .oddboxinner{
+        color: rgb(0, 0, 0);
+        text-align: center;
+        transform: rotate(2deg);
+        margin:15px;
+        padding:0 5px;
+        float:right;
+        background: #fee6e3;
+        border:1px solid #222;
+        box-shadow:3px 3px 0 #222;
+        font-family: 'Just Another Hand', cursive;
+      }
+    .box1{
+     position: relative;
+     bottom: 300px;
+     border-width: 3px 4px 3px 5px;
+     border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+     transform: rotate(2deg);
+     background: url('../assets/bio-photos/edb8b85469272330bc001f39a5000736.jpg');
+    }
+    .evenboxinner{
+        color: rgb(0, 0, 0);
+        text-align: center;
+        transform: rotate(2deg);
+        margin:15px;
+        padding:0 5px;
+        float:right;
+        background: #fee6e3;
+        border:1px solid #222;
+        box-shadow:3px 3px 0 #222;
+        font-family: 'Just Another Hand', cursive;
+        }
+    .box2{
+     position: relative;
+     bottom: 300px;
+     width:350px;
+     border-width: 3px 3px 5px 5px;
+     border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+     transform: rotate(-2deg);
+     background: url('../assets/bio-photos/edb8b85469272330bc001f39a5000736.jpg');
+    }
+    .oddboxinner3{
+        color: rgb(0, 0, 0); 
+        text-align: center;
+        transform: rotate(2deg);
+        margin:15px;
+        padding:0 5px;
+        float:right;
+        background: #fee6e3;
+        border:1px solid #222;
+        box-shadow:3px 3px 0 #222;
+        font-family: 'Just Another Hand', cursive;
+    }
+    .box3{
+      border-width: 5px 3px 3px 5px;
+      border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+      transform: rotate(2deg);
+      background: url('../assets/bio-photos/edb8b85469272330bc001f39a5000736.jpg');
+      position: relative;
+      bottom: 290px;
+      left:200px;
+    }
+    .button {
+        position: relative;
+        left: 298px;
+        bottom:3px;
+        align-items: center;
+        background-color: #fee6e3;
+        border: 2px solid #111;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: #111;
+        cursor: pointer;
+        display: flex;
+        font-family: Inter,sans-serif;
+        font-size: 16px;
+        height: 48px;
+        justify-content: center;
+        line-height: 24px;
+        max-width: 100%;
+        padding: 0 25px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+      .button:after {
+        background-color: #111;
+        border-radius: 8px;
+        content: "";
+        display: block;
+        height: 48px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        top: -2px;
+        transform: translate(8px, 8px);
+        transition: transform .2s ease-out;
+        z-index: -1;
+      }
+      
+      .button:hover:after {
+        transform: translate(0, 0);
+      }
+      
+      .button:active {
+        background-color: #ffdeda;
+        outline: 0;
+      }
+      
+      .button:hover {
+        outline: 0;
+      }
+      
+      @media (min-width: 768px) {
+        .button {
+          padding: 0 40px;
+        }
+      }
+      .sign {
+        position: relative;
+        top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+        background-image: radial-gradient(
+          ellipse 50% 25% at 50% 50%,
+          #ffdeda,
+          transparent
+        );
+        transform: translate(-50%, -50%);
+        letter-spacing: 2;
+        left: 50%;
+        top: 10%;
+        font-family: "Clip";
+        text-transform: uppercase;
+        font-size: 2em;
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+          -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+          0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+        animation: shine 2s forwards, flicker 3s infinite;
+      }
+      
+      @keyframes blink {
+        0%,
+        22%,
+        36%,
+        75% {
+          color: #ffe6ff;
+          text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+            -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+            0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+        }
+        28%,
+        33% {
+          color: #ff65bd;
+          text-shadow: none;
+        }
+        82%,
+        97% {
+          color: #ff2483;
+          text-shadow: none;
+        }
+      }
+      
+      .flicker {
+        animation: shine 2s forwards, blink 3s 2s infinite;
+      }
+      
+      .fast-flicker {
+        animation: shine 2s forwards, blink 10s 1s infinite;
+      }
+      
+      @keyframes shine {
+        0% {
+          color: #6b1839;
+          text-shadow: none;
+        }
+        100% {
+          color: #ffe6ff;
+          text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+            -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+            0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+        }
+      }
+      
+      @keyframes flicker {
+        from {
+          opacity: 1;
+        }
+      
+        4% {
+          opacity: 0.9;
+        }
+      
+        6% {
+          opacity: 0.85;
+        }
+      
+        8% {
+          opacity: 0.95;
+        }
+      
+        10% {
+          opacity: 0.9;
+        }
+      
+        11% {
+          opacity: 0.922;
+        }
+      
+        12% {
+          opacity: 0.9;
+        }
+      
+        14% {
+          opacity: 0.95;
+        }
+      
+        16% {
+          opacity: 0.98;
+        }
+      
+        17% {
+          opacity: 0.9;
+        }
+      
+        19% {
+          opacity: 0.93;
+        }
+      
+        20% {
+          opacity: 0.99;
+        }
+      
+        24% {
+          opacity: 1;
+        }
+      
+        26% {
+          opacity: 0.94;
+        }
+      
+        28% {
+          opacity: 0.98;
+        }
+      
+        37% {
+          opacity: 0.93;
+        }
+      
+        38% {
+          opacity: 0.5;
+        }
+      
+        39% {
+          opacity: 0.96;
+        }
+      
+        42% {
+          opacity: 1;
+        }
+      
+        44% {
+          opacity: 0.97;
+        }
+      
+        46% {
+          opacity: 0.94;
+        }
+      
+        56% {
+          opacity: 0.9;
+        }
+      
+        58% {
+          opacity: 0.9;
+        }
+      
+        60% {
+          opacity: 0.99;
+        }
+      
+        68% {
+          opacity: 1;
+        }
+      
+        70% {
+          opacity: 0.9;
+        }
+      
+        72% {
+          opacity: 0.95;
+        }
+      
+        93% {
+          opacity: 0.93;
+        }
+      
+        95% {
+          opacity: 0.95;
+        }
+      
+        97% {
+          opacity: 0.93;
+        }
+      
+        to {
+          opacity: 1;
+        }
+      }
+}
+
+
+
+  p {
+    color: rgb(165, 165, 141);
+    font-family: verdana;
+    font-size: 20px;
+    text-align: center;
+  }
