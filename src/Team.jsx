@@ -18,7 +18,6 @@ function Team({year}) {
                 <a onClick={() => setSelectedYear(2022)}>2022</a>
                 <a onClick={() => setSelectedYear(2021)}>2021</a>
             </div>
-
             <div className="center">
                 {selectedYear === 2022 && <TeamLandingPage2022 />}
                 {selectedYear === 2021 && <TeamLandingPage2021 />}

@@ -1,0 +1,583 @@
+.backgroundMe{
+    background-image:url('https://media4.giphy.com/media/t9v4bTFAuL6hFv64li/giphy.gif?cid=ecf05e47yqgtb6hx2vjgjfy2drlahbypfla0hzfr729rx0uv&rid=giphy.gif&ct=g'); 
+    background-repeat:repeat; 
+    min-height: 2000px;
+    width: 960px;
+    position: relative;
+
+    img:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.5s;
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+      }
+      
+      @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+
+    .profilePic {
+        position: absolute;
+        //display: inline-block;
+        top: 65px;
+        left: 330px;
+        margin-top: 20px;
+        margin-left: 10px;
+        max-width: 230px;
+        max-height: 250px;
+        border-radius: 50%;
+        border-width: 15px;
+        border-image: linear-gradient(to right, rgb(255, 105, 180), rgb(247, 63, 63)) 1; 
+    }
+    
+    .borderName {
+            margin-top: 100px;
+            margin-bottom: 50px;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 3rem;
+            letter-spacing: 0.15rem;
+            text-transform: uppercase;
+            color: #fff;
+            text-shadow: -4px 4px #ef3550,
+                         -8px 8px #f48fb1,
+                         -12px 12px #7e57c2,
+                         -16px 16px #2196f3,
+                         -20px 20px #26c6da,
+                         -24px 24px #43a047,
+                         -28px 28px #eeff41,
+                         -32px 32px #f9a825,
+                         -36px 36px #ff5722;
+        }
+        
+    .aboutME {
+            position: relative;    
+            background-color: purple;
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            max-width: 300px;
+            max-height: 300px;
+            top: 210px;
+            left: 220px;
+            color: white;
+            letter-spacing: 0.15rem;
+            max-width: 500px;
+            font-size: small;
+            font-family: sans-serif;
+            border-style: solid;
+            border-width: 10px;
+            border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+            padding: 0;
+        }
+
+    .profileName {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: x-small;
+        top: 260px;
+        left: 363px;
+    }
+
+    .bellaImg{
+        position:absolute;
+        width: 200px;
+        min-height: 200px;
+        top:310px;
+        float:left;
+        border-radius: 5%;
+    }
+
+    .bellaName {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        top: 490px;
+        left: 50px;
+      }
+
+    .stevieName {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        top: 490px;
+        right: 30px;
+    }
+
+    .stevieImg{
+        position: absolute;
+        width: 200px;
+        height: 230px;
+        top:310px;
+        right: 0;
+        border-radius: 5%;
+    }
+
+    .olddoggiesName{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        top: 700px;
+        left: 190px;
+    }
+
+    .olddoggiesImg{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 550px;
+        left: 200px;
+        border-radius: 5%;
+    }
+
+    .jasonName{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        top: 700px;
+        left: 50px;
+    }
+
+    .jasonImg{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 550px;
+        left: 0;
+        border-radius: 5%;
+    }
+
+    .winnieName{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        top: 700px;
+        right: 30px;
+    }
+
+    .winnieImg{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 550px;
+        right: 0;
+        border-radius: 5%;
+    }
+
+    .sharonName{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        top: 700px;
+        left: 600px;
+    }
+
+    .sharonImg{
+        position: absolute;
+        width: 180px;
+        height: 200px;
+        top: 550px;
+        right: 200px;
+        border-radius: 5%;
+    }
+
+    .broadyName{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        top: 700px;
+        left: 430px;
+    }
+
+    .broadyImg{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 550px;
+        left: 380px;
+        border-radius: 5%;
+    }
+
+    .favoriteMusic{
+        position: absolute;
+        background-color: rgb(128, 0, 128, 0.8);
+        text-align: center;
+        top: 800px;
+        left: 20px;
+        height: 1000px;
+        width: 350px;
+        border: 30px solid;
+        border-image: linear-gradient(to right, rgb(255, 105, 180), rgb(247, 63, 63)) 1;
+        padding: 30px;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 3rem;
+        letter-spacing: 0.15rem;
+        text-transform: uppercase;
+        color: #fff;
+        text-shadow: -4px 4px #ef3550,
+                    -8px 8px #f48fb1,
+                    -12px 12px #7e57c2,
+                    -16px 16px #2196f3,
+                    -20px 20px #26c6da,
+                    -24px 24px #43a047,
+                    -28px 28px #eeff41,
+                    -32px 32px #f9a825,
+                    -36px 36px #ff5722;
+    }
+
+    .clicktoplay{
+        position: absolute;
+        left: 80px;
+        top: 1030px;
+        text-align: center;
+        font-family: sans-s3rif;
+        font-size: 2rem;
+        color: white;
+        letter-spacing: 0.15rem;
+        text-transform: uppercase;
+    }
+
+    .taylorButton {
+        position: absolute;
+        top: 1240px;
+        left: 150px;
+        background-image: linear-gradient(to right, pink , purple);
+        color: white;
+        letter-spacing: 0.15rem;
+        max-width: 500px;
+        font-size:x-large;
+        font-family: sans-serif;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        //font-size: 16px;
+        margin: 4px 2px;
+        cursor: cell;
+      }
+
+    .estemanButton {
+        position: absolute;
+        top: 1170px;
+        left: 150px;
+        background-image: linear-gradient(to right, pink , purple);
+        color: white;
+        letter-spacing: 0.15rem;
+        max-width: 500px;
+        border-color:white;
+        font-size:x-large;
+        font-family: sans-serif;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        //font-size: 16px;
+        margin: 4px 2px;
+        cursor: cell;
+    }
+
+    .hayleyButton {
+        position: absolute;
+        top: 1100px;
+        left: 150px;
+        background-image: linear-gradient(to right, pink , purple);
+        color: white;
+        letter-spacing: 0.15rem;
+        max-width: 500px;
+        font-size:x-large;
+        font-family: sans-serif;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        //font-size: 16px;
+        margin: 4px 2px;
+        cursor: cell;
+    }
+
+    .ruzziButton {
+        position: absolute;
+        top: 1310px;
+        left: 150px;
+        background-image: linear-gradient(to right, pink , purple);
+        color: white;
+        letter-spacing: 0.15rem;
+        max-width: 500px;
+        font-size:x-large;
+        font-family: sans-serif;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        //font-size: 16px;
+        margin: 4px 2px;
+        cursor: cell;
+    }
+
+    .paramoreButton {
+        position: absolute;
+        top: 1380px;
+        left: 150px;
+        background-image: linear-gradient(to right, pink , purple);
+        color: white;
+        letter-spacing: 0.15rem;
+        max-width: 500px;
+        font-size:x-large;
+        font-family: sans-serif;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        //font-size: 16px;
+        margin: 4px 2px;
+        cursor: cell;
+    }
+    .selenaButton {
+        position: absolute;
+        top: 1450px;
+        left: 150px;
+        background-image: linear-gradient(to right, pink , purple);
+        color: white;
+        letter-spacing: 0.15rem;
+        max-width: 500px;
+        font-size:x-large;
+        font-family: sans-serif;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        //font-size: 16px;
+        margin: 4px 2px;
+        cursor: cell;
+    }
+
+    .khalidButton {
+        position: absolute;
+        top: 1520px;
+        left: 150px;
+        background-image: linear-gradient(to right, pink , purple);
+        color: white;
+        letter-spacing: 0.15rem;
+        max-width: 500px;
+        font-size:x-large;
+        font-family: sans-serif;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        //font-size: 16px;
+        margin: 4px 2px;
+        cursor: cell;
+    }
+
+    .mirandaButton {
+        position: absolute;
+        top: 1590px;
+        left: 150px;
+        background-image: linear-gradient(to right, pink , purple);
+        color: white;
+        letter-spacing: 0.15rem;
+        max-width: 500px;
+        font-size:x-large;
+        font-family: sans-serif;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        //font-size: 16px;
+        margin: 4px 2px;
+        cursor: cell;
+    }
+
+    .twiceButton {
+        position: absolute;
+        top: 1660px;
+        left: 150px;
+        background-image: linear-gradient(to right, pink , purple);
+        color: white;
+        letter-spacing: 0.15rem;
+        max-width: 500px;
+        font-size:x-large;
+        font-family: sans-serif;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        //font-size: 16px;
+        margin: 4px 2px;
+        cursor: cell;
+    }
+
+    .badBunny {
+        position: absolute;
+        top: 1730px;
+        left: 150px;
+        background-image: linear-gradient(to right, pink , purple);
+        color: white;
+        letter-spacing: 0.15rem;
+        max-width: 500px;
+        font-size:x-large;
+        font-family: sans-serif;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        //font-size: 16px;
+        margin: 4px 2px;
+        cursor: cell;
+    }
+
+    .britneyButton {
+        position: absolute;
+        top: 1800px;
+        left: 150px;
+        background-image: linear-gradient(to right, pink , purple);
+        color: white;
+        letter-spacing: 0.15rem;
+        max-width: 500px;
+        font-size:x-large;
+        font-family: sans-serif;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        //font-size: 16px;
+        margin: 4px 2px;
+        cursor: cell;
+    }
+
+    .meganButton {
+        position: absolute;
+        top: 2000px;
+        left: 150px;
+        background-image: linear-gradient(to right, pink , purple);
+        color: white;
+        letter-spacing: 0.15rem;
+        max-width: 500px;
+        font-size:x-large;
+        font-family: sans-serif;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        //font-size: 16px;
+        margin: 4px 2px;
+        cursor: cell;
+    }
+
+    .favoriteFacts{
+        position: absolute;
+        background-color: rgb(128, 0, 128, 0.8);
+        text-align: center;
+        top: 800px;
+        left: 470px;
+        height: 1000px;
+        width: 350px;
+        border: 30px solid;
+        border-image: linear-gradient(to right, rgb(255, 105, 180), rgb(247, 63, 63)) 1;
+        padding: 30px;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 3rem;
+        letter-spacing: 0.15rem;
+        text-transform: uppercase;
+        color: #fff;
+        text-shadow: -4px 4px #ef3550,
+                    -8px 8px #f48fb1,
+                    -12px 12px #7e57c2,
+                    -16px 16px #2196f3,
+                    -20px 20px #26c6da,
+                    -24px 24px #43a047,
+                    -28px 28px #eeff41,
+                    -32px 32px #f9a825,
+                    -36px 36px #ff5722;
+    }
+    .center{
+        position: absolute;
+        left: 450px;
+        top: 840px;
+        width: 350px;
+        text-align: center;
+        font-family: sans-s3rif;
+        font-size: 2rem;
+        color: white;
+        letter-spacing: 0.15rem;
+        text-transform: uppercase;
+    }
+    .myFavs {
+        position: absolute;
+        left: 550px;
+        top: 990px;
+        width: 350px;
+        font-family: sans-s3rif;
+        font-size: 1rem;
+        color: white;
+        letter-spacing: 0.15rem;
+    }
+
+    .tooMuch{
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        top: 1300px;
+        left: 560px;
+        border-radius: 5%;
+    }
+
+    .centerFacts{
+        position: absolute;
+        left: 550px;
+        top: 1480px;
+        width: 350px;
+        text-align: center;
+        font-family: sans-s3rif;
+        font-size: 2rem;
+        color: white;
+        letter-spacing: 0.15rem;
+        text-transform: uppercase;
+    }
+
+    .Facts{
+        position: absolute;
+        left: 550px;
+        top: 1540px;
+        width: 350px;
+        font-family: sans-s3rif;
+        font-size: 1rem;
+        color: white;
+        letter-spacing: 0.15rem;
+    }
+
+    .quinnImg{
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        top: 1650px;
+        left: 560px;
+        border-radius: 50%;
+    }
+
+    .quinnName{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 1rem;
+        top: 1800px;
+        left: 560px;
+    }
+  }
+
+
