@@ -103,15 +103,32 @@
 
 }
 
+.buton {
+
+  position: absolute;
+  bottom: 280px;
+  left: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  height: 50px;
+  width: 347px;
+  text-align: center;
+
+}
+
+
+
+
+
 .aboutme {
 
   position: absolute;
   bottom: 110px;
-  right: 40px;
+  right: 120px;
   border-radius: 5px;
   padding: 10px;
   height: 565px;
-  width: 700px;
+  width: 570px;
   border: 5px solid black;
   background-color: white;
   text-align: center;
