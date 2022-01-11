@@ -4,7 +4,7 @@ import MargaretComponent from './MargaretComponent.jsx';
 const TeamLandingPage2022 = () => {  
   return (
     <div>
-    {<MargaretComponent /> } 
+     <MargaretComponent /> 
     </div>
   );
 }

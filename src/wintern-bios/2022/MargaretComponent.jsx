@@ -1,5 +1,4 @@
 import React from 'react';
-//var randomColor = Math.floor(Math.random()*16777215).toString(16);
 import img from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/bio-photos/PROFILE.JPEG';
 import bella from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/miscellaneous/bella.jpg';
 import broady from '/Users/mdiaz/Desktop/interns/sprinterns2022/src/assets/miscellaneous/broady.jpg';
@@ -46,7 +45,6 @@ const MargaretComponent = () => {
       <a href="https://www.youtube.com/watch?v=kOHB85vDuow"className='twiceButton'>Twice</a>
       <a href="https://www.youtube.com/watch?v=TmKh7lAwnBI"className='badBunny'>Bad Bunny</a>
       <a href="https://www.youtube.com/watch?v=clwLKJ294u4"className='britneyButton'>Britney Spears</a>
-      <a href="https://www.youtube.com/watch?v=n5LWsc-qCdA"className='meganButton'>Megan Thee Stallion</a>
       <a className='favoriteFacts'> Extra </a>
           <h2 className='center'>FAVORITES:</h2>
           <a className='myFavs'>
@@ -77,12 +75,6 @@ const MargaretComponent = () => {
       </div>
  );
 }
-
-// setInterval(
-//   function () {
-//     var randomColor = Math.floor(Math.random()*16777215).toString(16);
-//     document.body.style.backgroundColor = "#"+randomColor;
-//   },1000);
 
 
 export default MargaretComponent;
