@@ -1,6 +1,21 @@
 .laurenbio{
     background-image: url("https://i.pinimg.com/550x/3e/1d/4d/3e1d4d582968807c7a83d60d04188054.jpg");
-    min-height: 1650px;
+    min-height: 1800px;
+
+    .github{
+        width: 200px;
+        height: 200px;
+        margin: 0px 10px -250px 100px;
+
+    }
+
+    .linkedin{
+        width: 200px;
+        height: 200px;
+        margin: 0px 10px -250px 400px;
+        //margin top right bottom left
+
+    }
 
     .laurenpic{
         float: left;
@@ -9,15 +24,17 @@
         height: 200px;
         border-radius: 100%;
         overflow: hidden; 
+        border-style: dotted;
+        border-color: white;
     }
 
 
     .fullname{
-        font-family: 'Noto Sans, sans-serif';
+        font-family: "Noto Sans, sans-serif";
         font-size: to-upper-case($string: "");
         font-size: 200%;
         color: white;
-        margin-top: 50px;
+        margin: 270px 19px 10px 400px;
 
     }
 
@@ -26,6 +43,8 @@
         font-size: to-lower-case($string: "");
         font-size: medium;
         color:white;
+        margin: 2px 9px 10px 380px;
+
 
     }
 
@@ -34,6 +53,8 @@
         font-size: to-lower-case($string: "");
         font-size: medium;
         color: white;
+        margin: 2px 9px 10px 380px;
+
     }
 
     .location{
@@ -41,6 +62,8 @@
         font-size: to-lower-case($string: "");
         font-size: medium;
         color: white;
+        margin: 2px 9px 10px 380px;
+
     }
 
     .aboutme{
@@ -50,7 +73,7 @@
         border-radius:100px;
         font-size: 15px;
         padding: 50px;
-        margin: 100px 20px 15px 20px;
+        margin: 30px 20px 15px 20px;
         border-style: dotted;
     }
 
