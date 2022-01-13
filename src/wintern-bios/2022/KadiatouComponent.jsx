@@ -9,29 +9,29 @@ const KadiatouComponent = () => {
 
           <img className="bio_pic" alt="test image"src={img}/>  
 
-           <div class="sign">
-            <span class="fast-flicker">Kadia</span>tou<span class="flicker">Dial</span>lo
+           <div className="sign">
+            <span className="fast-flicker">Kadia</span>tou<span  className="flicker">Dial</span>lo
           </div> 
 
         <div>
 
-          <div class="box box1">
-             <div class="oddboxinner">Who am I?</div>
+          <div  className="box box1">
+             <div  className="oddboxinner">Who am I?</div>
                  <p>I am Kadiatou Diallo.
                  A freshmen at Hunter college.  
                  Expected major: Computer Science.</p>
           </div>
 
-          <div class="box box2">
-             <div class="evenboxinner"> What I like?</div>
+          <div  className="box box2">
+             <div  className="evenboxinner"> What I like?</div>
              <p>I love Documentaries. 
              Crime and Corruption related documentaries are my favorite.
              I love Documentaries. Crime and Corruption related documentaries are my favorite.
              I love food. I am hungry all day every day.</p>
           </div>
 
-          <div class="box box3">
-             <div class="oddboxinner3">Facts about me.</div>
+          <div  className="box box3">
+             <div  className="oddboxinner3">Facts about me.</div>
              <p> I am from guinea.(Located in West Africa)
              I speak 3 languages:French, Fulani, and English.
              I am also very interested in cybersecurity</p>
@@ -39,7 +39,7 @@ const KadiatouComponent = () => {
 
           </div>
 
-          <Link to ="/home"><button class="button">return</button></Link>
+          <Link to ="/home"><button className="button">return</button></Link>
 
       </ div>
     );
