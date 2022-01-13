@@ -13,6 +13,8 @@ const TeamLandingPage2022 = () => {
         <TeamList2022 /> 
       
     </div>
+        
+   
   );
 }
 

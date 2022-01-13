@@ -12,6 +12,7 @@ body{
     background-size: cover;
     padding-bottom:200px;
     height:900px;
+    width:900px;
     border:solid blanchedalmond;
     transform: rotate(1deg);
     border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
@@ -23,7 +24,7 @@ body{
       background:#fff;
       border: solid black;
       border-color: black;
-      float:left; 
+      //float:left; 
     }
     .bio_pic{
       display: block;
@@ -50,8 +51,8 @@ body{
         font-family: 'Just Another Hand', cursive;
       }
     .box1{
-     position: relative;
-     bottom: 300px;
+     position: absolute;
+     bottom: 410px;
      border-width: 3px 4px 3px 5px;
      border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
      transform: rotate(2deg);
@@ -70,8 +71,9 @@ body{
         font-family: 'Just Another Hand', cursive;
         }
     .box2{
-     position: relative;
-     bottom: 300px;
+     position: absolute;
+     bottom: 410px;
+     left: 480px;
      width:350px;
      border-width: 3px 3px 5px 5px;
      border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
@@ -95,14 +97,14 @@ body{
       border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
       transform: rotate(2deg);
       background: url('../assets/bio-photos/edb8b85469272330bc001f39a5000736.jpg');
-      position: relative;
-      bottom: 290px;
-      left:200px;
+      position: absolute;
+      bottom: 100px;
+      left: 300px;
     }
     .button {
-        position: relative;
-        left: 298px;
-        bottom:3px;
+        position: absolute;
+        left: 700px;
+        top: 320px;
         align-items: center;
         background-color: #fee6e3;
         border: 2px solid #111;
@@ -159,8 +161,9 @@ body{
         }
       }
       .sign {
-        position: relative;
+       position: relative;
         top: 100px;
+        left:100px;
         display: flex;
         justify-content: center;
         align-items: center;
