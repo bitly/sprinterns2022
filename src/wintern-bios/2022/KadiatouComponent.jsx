@@ -9,9 +9,11 @@ const KadiatouComponent = () => {
 
           <img className="bio_pic" alt="test image"src={img}/>  
 
-          <div class="sign">
+           <div class="sign">
             <span class="fast-flicker">Kadia</span>tou<span class="flicker">Dial</span>lo
-          </div>
+          </div> 
+
+        <div>
 
           <div class="box box1">
              <div class="oddboxinner">Who am I?</div>
@@ -33,6 +35,8 @@ const KadiatouComponent = () => {
              <p> I am from guinea.(Located in West Africa)
              I speak 3 languages:French, Fulani, and English.
              I am also very interested in cybersecurity</p>
+          </div>
+
           </div>
 
           <Link to ="/home"><button class="button">return</button></Link>

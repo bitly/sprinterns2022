@@ -4,6 +4,7 @@ import MargaretComponent from './MargaretComponent.jsx';
 import AngesComponent from './AngesComponent.jsx';
 import LaurenComponent from './LaurenComponent.jsx';
 import SkylerComponent from './SkylerComponent.jsx';
+import AngesComponent from './AngesComponent.jsx'
 
 const TeamLandingPage2022 = () => {
 
@@ -15,6 +16,8 @@ const TeamLandingPage2022 = () => {
         <SkylerComponent />
         <MargaretComponent /> 
     </div>
+        
+   
   );
 }
 
