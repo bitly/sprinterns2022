@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'), url('https://www.scdn.co/i/connect/header-spikes-sm.jpg');
+   
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+}
+
+.teampage2022 h1 {
+    font-family: 'Poppins', sans-serif !important; 
+    font-weight: 900;
+    color: black;
+    text-align: center;
+}
+
+.teampage2022 p {
+    font-family: 'Poppins', sans-serif !important; 
+    font-weight: 200;
+    color: black;
+}
+
+.avatar-cards {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.avatar-card {
+  flex: 50%;
+  padding: 35px;
+}
+
+.avatar-card h5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+
+  font-family: 'Poppins', sans-serif !important; 
+  font-weight: 200;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+}
+.avatar-circle {
+  display: block;
+  padding: 10px;
+  width: 200px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.learn-more-button-yellow {
+  display: block;
+  padding: 10px 20px 10px 20px;
+  width: fit-content;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 0px;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+  /* Colors */
+  background-color: #FAF1D2;
+  box-shadow: 3px 3px black;
+
+  color: var(--navy);
+  transition: .5s ease-out;
+
+  /* Font */
+  font-weight: 600;
+  font-size: 11px !important;
+  color: black !important;
+
+}
+
+.learn-more-button-yellow p {
+  font-size: 14px !important;
+  font-weight: 900;
+
+}
+
+.learn-more-button-lightgreen {
+  display: block;
+  padding: 10px 20px 10px 20px;
+  width: fit-content;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 0px;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+
+  /* Colors */
+  background-color: #E8F9E8;
+  box-shadow: 3px 3px black;
+
+  color: var(--navy);
+  transition: .5s ease-out;
+
+  /* Font */
+  font-weight: 600;
+  font-size: 11px !important;
+  color: black !important;
+
+}
+
+.learn-more-button-lightgreen p {
+  font-size: 14px !important;
+  font-weight: 900;
+
+}
+
+.learn-more-button-green {
+  display: block;
+  padding: 10px 20px 10px 20px;
+  width: fit-content;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 0px;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+
+  /* Colors */
+  background-color: #9DC79F;
+  box-shadow: 3px 3px black;
+
+  color: var(--navy);
+  transition: .5s ease-out;
+
+  /* Font */
+  font-weight: 600;
+  font-size: 11px !important;
+  color: black !important;
+
+}
+
+.learn-more-button-green p {
+  font-size: 14px !important;
+  font-weight: 900;
+
+}
+
+.learn-more-button-green {
+  display: block;
+  padding: 10px 20px 10px 20px;
+  width: fit-content;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 0px;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+
+  /* Colors */
+  background-color: #9DC79F;
+  box-shadow: 3px 3px black;
+
+  color: var(--navy);
+  transition: .5s ease-out;
+
+  /* Font */
+  font-weight: 600;
+  font-size: 11px !important;
+  color: black !important;
+
+}
+
+.learn-more-button-green p {
+  font-size: 14px !important;
+  font-weight: 900;
+
+}
+
+.learn-more-button-blue {
+  display: block;
+  padding: 10px 20px 10px 20px;
+  width: fit-content;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 0px;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+
+  /* Colors */
+  background-color: #C8DEFF;
+  box-shadow: 3px 3px black;
+
+  color: var(--navy);
+  transition: .5s ease-out;
+
+  /* Font */
+  font-weight: 600;
+  font-size: 11px !important;
+  color: black !important;
+
+}
+
+.learn-more-button-blue p {
+  font-size: 14px !important;
+  font-weight: 900;
+
+}
+
+.learn-more-button-purple {
+  display: block;
+  padding: 10px 20px 10px 20px;
+  width: fit-content;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 0px;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+
+  /* Colors */
+  background-color: #E0DDFF;
+  box-shadow: 3px 3px black;
+
+  color: var(--navy);
+  transition: .5s ease-out;
+
+  /* Font */
+  font-weight: 600;
+  font-size: 11px !important;
+  color: black !important;
+
+}
+
+.learn-more-button-purple p {
+  font-size: 14px !important;
+  font-weight: 900;
+
+}
+
+
