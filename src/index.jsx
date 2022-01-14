@@ -14,26 +14,26 @@ import SwaggerParser from "@apidevtools/swagger-parser";
 import CommentsPage from './CommentsPage.jsx';
 
 
+import Header from './Header.jsx';
 const App = () => {
+const [api, setApi] = useState(null);
 
-  const [api, setApi] = useState(null);
-
-  useEffect(() => {
-    const openSwaggerFile = async () => {
-      try {
-        let api = await SwaggerParser.validate("./static/v4.json");
-        setApi(api);
-        console.log(api);
-        console.log("API name: %s, Version: %s", api.info.title, api.info.version);
-      }
-      catch(err) {
-        console.error(err);
-      }
+useEffect(() => {
+  const openSwaggerFile = async () => {
+    try {
+      let api = await SwaggerParser.validate("./static/v4.json");
+      setApi(api);
+      console.log("API name: %s, Version: %s", api.info.title, api.info.version);
+      console.log(api);
     }
+    catch(err) {
+      console.error(err);
+    }
+  }
 
-    openSwaggerFile();
-  }, [])
-
+  openSwaggerFile();
+}, [])
+  
     return (
       <Router>
         <Switch>

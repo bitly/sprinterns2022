@@ -16,6 +16,7 @@ function Team({year}) {
     
             <div className="sidebar">
                 <a onClick={() => setSelectedYear(2022)}>2022</a>
+                <br/>
                 <a onClick={() => setSelectedYear(2021)}>2021</a>
             </div>
             <div className="center">
