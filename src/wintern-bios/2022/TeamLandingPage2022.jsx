@@ -5,6 +5,7 @@ import AngesComponent from './AngesComponent.jsx';
 import LaurenComponent from './LaurenComponent.jsx';
 import SkylerComponent from './SkylerComponent.jsx';
 
+
 const TeamLandingPage2022 = () => {
 
   return (
