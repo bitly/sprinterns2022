@@ -7,14 +7,12 @@ import sqlite3
 from flask import g
 
 DATABASE = 'api-explorer.db'
-#path = 'sprinterns2022/api-explorer.db'
-#conn = sqlite3.connect(DATABASE)
-#cursor = conn.cursor()
+
 
 app = Flask(__name__)
 app.secret_key = "secret"
 
-#DATABASE = 'api-explorer.db'
+
 
 def get_db():
     db = getattr(g, '_database', None)
@@ -58,7 +56,9 @@ def all_comments_queries():
     return json.dumps(data)
 
         
-@app.route('/api', methods=['GET', 'POST', 'PATCH', 'DELETE'])   #relates to Form.jsx line 49
+
+
+@app.route('/api', methods=['GET', 'POST', 'PATCH', 'DELETE'])   
 def quote():
     
     auth_token = request.json['authToken'] 

@@ -13,8 +13,6 @@ import APIinfo from './APIinfo.jsx';
 import SwaggerParser from "@apidevtools/swagger-parser";
 import All_Comments from './All_Comments.jsx';
 
-//This file is where the routes are being written. When you hit any of these routes the component 
-//its tied to will be displayed. However, routes displyed on app.py not shown here 
 
 const App = () => {
 

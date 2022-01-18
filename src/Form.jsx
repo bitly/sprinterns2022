@@ -45,7 +45,7 @@ const Form = ({method, endpoint}) => {
         return obj
     }, {});
     const keyvalObject = arrayToObject(params)
-    axios    //Used to send http reques to the databse, needed in my componenet. These paramters are in the app.py file quote()
+    axios    
       .post(SERVER_URL + 'api', {apiEndpoint: apiEndpoint, authToken: authToken, params: keyvalObject, Method: method})
       .then((res) => {   
         setResponse(res.data)
@@ -83,7 +83,7 @@ const Form = ({method, endpoint}) => {
         <center>
           <div>Results</div>
         </center>  
-        <ReactJson src={response} theme="bright:inverted"/>  // needs to be in my component. delete this comment before running site
+        <ReactJson src={response} theme="bright:inverted"/>  
       </div>   
     </div>
   );

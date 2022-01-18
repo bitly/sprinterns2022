@@ -59,7 +59,7 @@ const sidebarData = getSidebarData(api);
             </div> }
           <Footer />
 
-          {(showForm) && <Form endpoint={endpoint} method={method} />} //this is being passed into Form.jsx to specify method and endpoint. delete
+          {(showForm) && <Form endpoint={endpoint} method={method} />} 
  
           </div>
         </div>
