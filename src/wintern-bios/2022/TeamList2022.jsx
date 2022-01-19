@@ -27,6 +27,8 @@ import edison_avatar from '../../assets/meet-the-team-2022/edison-avatar.png';
 import jacob_avatar from '../../assets/meet-the-team-2022/jacob-avatar.png';
 import trupti_avatar from '../../assets/meet-the-team-2022/trupti-avatar.png';
 import jake_avatar from '../../assets/meet-the-team-2022/jake-avatar.png';
+import lily_avatar from '../../assets/meet-the-team-2022/lily-avatar.png';
+import mae_avatar from '../../assets/meet-the-team-2022/mae-avatar.png';
 import {Link} from "react-router-dom";
 
 const TeamList2022 = () => {
@@ -197,7 +199,28 @@ const TeamList2022 = () => {
         </div>
         <br/>
     </div>
+    <div className='avatar-cards'>
+        <div className="avatar-card">
+        <img className = "avatar-circle" src={lily_avatar} text-align="center" />
+        <h5><b>Lily Elogullari</b></h5>
+        <h5>“Marketing Session”</h5>
+        <br/>
+        <br/>
+        </div>
+        <div className="avatar-card">
+        <img className = "avatar-circle" src={mae_avatar} text-align="center" />
+        <h5><b>Mae Tunney</b></h5>
+        <h5>“LinkedIn Session”</h5>
+        <br/>
+        <br/>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        
     </div>
+    </div>
+    
   );
 }
 
