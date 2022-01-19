@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import{
      HashRouter as Router,
@@ -10,8 +10,28 @@ import './styles/main.scss';
 import Home from './Home.jsx';
 import Team from './Team.jsx';
 import APIinfo from './APIinfo.jsx';
+import SwaggerParser from "@apidevtools/swagger-parser";
 
 const App = () => {
+
+  const [api, setApi] = useState(null);
+
+  useEffect(() => {
+    const openSwaggerFile = async () => {
+      try {
+        let api = await SwaggerParser.validate("./static/v4.json");
+        setApi(api);
+        console.log(api);
+        console.log("API name: %s, Version: %s", api.info.title, api.info.version);
+      }
+      catch(err) {
+        console.error(err);
+      }
+    }
+
+    openSwaggerFile();
+  }, [])
+
     return (
       <Router>
         <Switch>
@@ -25,12 +45,11 @@ const App = () => {
             <Team year={2022} />
           </Route>
           <Route path="/">
-            <Home />
+              {api ? <Home api={api} /> : <div>Loading ...</div>}
           </Route>
         </Switch>
     </Router>
     );
-}
-
+    }
 ReactDOM.render(<App />, document.getElementById('app'));
 
