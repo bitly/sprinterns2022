@@ -48,14 +48,11 @@ def hello():
 @app.route("/getComments", methods = ['GET'])
 def all_comments_queries():
 
-    conn = sqlite3.connect(DATABASE)
-    cursor = conn.cursor()
-    result = cursor.execute('''SELECT * FROM comments_table ''')
-    data = cursor.fetchall()
-    conn.close()
+    query = '''SELECT * FROM comments_table '''
+    data = query_db(query)
+    
     return json.dumps(data)
 
-        
 
 
 @app.route('/api', methods=['GET', 'POST', 'PATCH', 'DELETE'])   

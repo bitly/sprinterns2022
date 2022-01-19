@@ -3,7 +3,7 @@ import axios from 'axios';
 import ReactJson from 'react-json-view';
 
 
-const All_Comments = () => {
+const CommentsPage = () => {
 
     const { useState, useEffect } = React;
     const [post, setPost] = React.useState({});
@@ -23,10 +23,7 @@ const All_Comments = () => {
         </center>  
         <ReactJson src={post} theme="bright:inverted"/>
         </div> 
-
         );
-
-    
 }
 
-export default All_Comments;
+export default CommentsPage;

@@ -11,7 +11,7 @@ import Home from './Home.jsx';
 import Team from './Team.jsx';
 import APIinfo from './APIinfo.jsx';
 import SwaggerParser from "@apidevtools/swagger-parser";
-import All_Comments from './All_Comments.jsx';
+import CommentsPage from './CommentsPage.jsx';
 
 
 const App = () => {
@@ -47,7 +47,7 @@ const App = () => {
             <Team year={2022} />
           </Route>
           <Route path="/allComments">
-            <All_Comments />
+            <CommentsPage />
           </Route>
           <Route path="/">
               {api ? <Home api={api} /> : <div>Loading ...</div>}
