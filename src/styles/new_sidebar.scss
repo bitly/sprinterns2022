@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'), url('https://www.scdn.co/i/connect/header-spikes-sm.jpg');
+   
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+}
+
+.sidebar-new{
+    width: 23%;
+    background: #F2F8FC;
+    padding-bottom: 200px;
+    overflow: scroll;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif; 
+    color: black;
+    height: 800px; /* USE THIS TO ADJUST FIXED CONTAINER HEIGHT */
+    } 
+
+.sidebar-new-object h5 {
+    color: black;
+    margin-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: inline;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif; 
+
+}
+
+.sidebar-title {
+    display: inline-block;
+}
+
+.sidebar-new-object {
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+
+.sidebar-type {
+    
+    &--green, &--blue, &--orange, &--red {
+        display: inline-block;
+        width: 110px;
+    }
+    &--green h4 {
+        background-color: #75C0AD;
+    }
+    
+    &--blue h4 {
+        background-color: #61B3DE;
+    }
+    
+    &--orange h4 {
+        background-color: #E2986A;
+    }
+    
+    &--red h4 {
+        background-color: #E47F7F;
+    }
+
+}
+
+
+.sidebar-new-object h4 {
+    color: white;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    width: 50px;
+    display: inline;
+
+}
+
+
+.sidebar-new-object:hover {
+    background-color: #D0EAFE;
+    //border-left: #163B6B 5px solid;
+    box-shadow:5px 0px 0px 0px #163B6B inset;
+
+  }
+
+  .sidebar-new-object:active {
+    background-color: #D0EAFE;
+
+  }
