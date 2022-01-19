@@ -1,5 +1,6 @@
 import React from 'react';
 import skylerheadshot from '../../assets/bio-photos/Skyler-Basco-Headshot-Circle.png';
+import skylervr from '../../assets/bio-photos/skyler-other-pics/skyler-vr.jpg';
 import unicornstackpic from '../../assets/bio-photos/skyler-other-pics/unicorn-stack-pic.png';
 import m4mpic from '../../assets/bio-photos/skyler-other-pics/m4m-pic.png';
 import learnifypic from '../../assets/bio-photos/skyler-other-pics/learnify-pic.png';
@@ -17,6 +18,7 @@ import animatedcap from '../../assets/bio-photos/skyler-other-pics/animatedcap.g
 import mcsheep from '../../assets/bio-photos/skyler-other-pics/mcsheep.gif';
 import qrcode3dbitly from '../../assets/bio-photos/skyler-other-pics/qrcode3dbitly.jpg';
 import mcparrot from '../../assets/bio-photos/skyler-other-pics/mcparrot.gif';
+import smileybackground from '../../assets/bio-photos/skyler-other-pics/smiley-background.png';
 
 const SkylerComponent = () => {
     return (
@@ -30,18 +32,14 @@ const SkylerComponent = () => {
         <var>M<sup> 3</sup></var> = Minecrafter. Marvel(er). Maker.
         <br />
         </h2>
-        <div className='project-cards'>
-        <div className="project-card-skyler">
-        <img className = "skyler-headshot" src={animatedcap} text-align="center" />
+        
+        
         </div>
         <div className="project-card-skyler">
-        <img className = "skyler-headshot" src={skylerheadshot} />
+        <img className = "qrcodecss" src={skylervr} />
         </div>
-        <div className="project-card-skyler">
-        <img className = "skyler-headshot" src={minecraftsteve} />
-        </div>
-        </div>
-        </div>
+       
+
 
         <h1 className='about'> About <span class="waving-hand">🦋</span> </h1>
         <p className='about-content'> My name is Skyler! I’m a developer and designer with an affinity for creative mediums in tech, including augmented/virtual reality, 3D software, and visual effects.
@@ -51,6 +49,7 @@ const SkylerComponent = () => {
         <p>👇 Scan the QR Code below with your phone to see Bitly's logo in 3D/AR! Made with Blender and echo3D.</p>
         <img className = "qrcodecss" src={qrcode3dbitly}/>
         </div>
+        <br/>
         <a class="button-qrcode3d" href="https://go.echo3d.co/Rerj" target="_blank"><p>See a 3D/AR model of the Bitly logo!</p></a>
         <br />
 
@@ -59,32 +58,32 @@ const SkylerComponent = () => {
 
         <div className='project-cards'>
             <div className="project-card-skyler">
-            <img className = "flix-pic" src={unicornstackpic} />
+            <img className = "frontdoor-pic" src={unicornstackpic} />
             <h2>Unicorn Stack</h2>
             <p>A fun, easy-to-use platform to strengthen healthy financial habits through Augmented Reality (AR), 3D experiences, and more.      </p>
             <a class="button-skyler" href="https://devpost.com/software/unicorn-stack" target="_blank"><p>Explore on Devpost</p></a>
             </div>
 
             <div className="project-card-skyler">
-            <img className = "flix-pic" src={learnifypic} />
+            <img className = "frontdoor-pic" src={learnifypic} />
             <h2>Learnify</h2>
             <p>A gamified web app that improves the focus, vocabulary, and mathematical skills of students with learning disabilities. </p>
             <a class="button-skyler" href="https://github.com/skylerbasco/Learnify" target="_blank"><p>Explore on GitHub</p></a>
             </div>
         </div>
-
+<br />
         <div className='project-cards'>
             <div className="project-card-skyler">
-            <img className = "flix-pic" src={m4mpic} />
+            <img className = "frontdoor-pic" src={m4mpic} />
             <h2>Melodies for Math</h2>
             <p>Responsive website for a nonprofit simplifying math concepts for high school students, comprising a database of math songs.</p>
             <a class="button-skyler" href="https://github.com/skylerbasco/Melodies-for-Math-Website" target="_blank"><p>Explore on GitHub</p></a>
             </div>
 
             <div className="project-card-skyler">
-            <img className = "flix-pic" src={flixpic} />
+            <img className = "frontdoor-pic" src={flixpic} />
             <h2>Flix</h2>
-            <p>iOS app for browsing movies currently playing in theaters. Displays the title, description, and poster for each film with a CollectionView layout.</p>
+            <p>iOS app for browsing movies currently playing in theaters. Displays the title, description, poster for each film with a CollectionView layout.</p>
             <a class="button-skyler" href="https://github.com/skylerbasco/Flix" target="_blank"><p>Explore on GitHub</p></a>
             </div>
         </div>
@@ -142,26 +141,29 @@ const SkylerComponent = () => {
             </div>
         </div>
 
-        <h1 className='contact'> Contact <span class="waving-hand">📩</span></h1>
-        <p className='contact-content'>Want to connect, collaborate, or build something innovative together? I’m happy to chat about anything from CS to design to future projects. <br /> <br /> Feel free to shoot me a DM on <a href="https://www.linkedin.com/in/skylerbasco/" target="_blank" className='hyperlink'>LinkedIn</a>, email me at <a href="mailto: skylerbasco@gmail.com" target="_blank">skylerbasco@gmail.com</a>, or send a message through the form below! ⬇️</p>
+        <h1 className='contact-skyler'> Contact <span class="waving-hand">📩</span></h1>
+        <p className='contact-content-skyler'>Want to connect, collaborate, or build something innovative together? I’m happy to chat about anything from CS to design to future projects. <br /> <br /> Feel free to shoot me a DM on <a href="https://www.linkedin.com/in/skylerbasco/" target="_blank" className='hyperlink'>LinkedIn</a>, email me at <a href="mailto: skylerbasco@gmail.com" target="_blank">skylerbasco@gmail.com</a>, or send a message through the form below! ⬇️</p>
         <div className='project-cards'>
             <div className="project-card-skyler">
         <form action="https://formspree.io/f/mzbopzgv" method="POST"> 
         <div className='contact-formspree'>
-        <label classname='formspree-name'> Full Name <br/> <textarea name="name"  placeholder="Peter Parker"></textarea></label> 
+        <label classname='formspree-name'> <h2>Full Name</h2>  <textarea name="name"  placeholder="Peter Parker"></textarea></label> 
+        
         <br/>
+        <label > <h2>Email Address</h2>  <textarea name="email"  placeholder="spidermannowayhome@gmail.com"></textarea></label>
+        
         <br/>
-        <label > Email Address <br/> <textarea name="email"  placeholder="spidermannowayhome@gmail.com"></textarea></label>
-        <br/>
-        <br/>
-        <label> Message <br/> <textarea classname='formspree-message-box' name="message" placeholder="I'm your friendly neighborhood Spider-Man..."></textarea> </label>
+        <label> <h2>Message</h2> <textarea classname='formspree-message-box' name="message" placeholder="I'm your friendly neighborhood Spider-Man..."></textarea> </label>
         <br/>
         <br/>
         <button  type="submit" id="submit-btn-formspree"><p className='contact-formspree-button'>Submit</p></button>
+        <br/>
         </div>
         </form>
         </div>
         <div className="project-card-skyler">
+            <br/>
+            <br/>
         <img className = "qrcodecss" src={mcparrot} />
         </div>
         </div>

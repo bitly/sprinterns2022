@@ -11,8 +11,11 @@
     font-weight: 900 !important;
 }
 
+
 .about-content h1, h2, h3 {
     font-family: 'Poppins', sans-serif !important; 
+    color:black !important;
+
 }
 
 .about-content {
@@ -21,7 +24,8 @@
 
 .about-content p{
     text-align: center !important;
-  
+    color:black !important;
+
 }
 .aboutallcontent {
     text-align: center;
@@ -31,6 +35,7 @@
     font-size: 25px;
     font-family: 'Poppins', sans-serif !important; 
     font-weight: bolder !important;
+    color:black !important;
 
 }
 
@@ -38,6 +43,14 @@
     font-size: 18px;
     font-family: 'Poppins', sans-serif !important; 
     font-weight: bolder !important;
+    color:black !important;
+
+}
+
+.main-container{
+    background:#F2F1FF;
+    border: 1px solid black;
+    box-shadow: 3px 3px black;
 
 }
 
@@ -63,6 +76,9 @@
 .main-container p {
     text-align: left;
     font-family: 'Poppins', sans-serif !important; 
+    color:black !important;
+    font-size: 17px;
+
 
 }
 
@@ -74,12 +90,23 @@
     text-align: center;
 }
 
+.skyler-giphys {
+    display: block;
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    box-shadow: 3px 3px black;
+    border: 1px solid black;
+    background-color: white;
+}
+
 .main-container {
     display: table;
     overflow: hidden;
     min-height: 4200px; /* USE THIS TO ADJUST FIXED CONTAINER HEIGHT */
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 330px;
+    padding-right: 330px;
    /* min-height: 1300px !important; 
     /* increase size of div according to contents? https://stackoverflow.com/questions/20814855/how-to-increase-size-of-div-according-to-its-contents
     /*
@@ -97,6 +124,9 @@
     padding: 10px;
     width: 200px;
     height: auto;
+    box-shadow: 3px 3px black;
+    border: 1px solid black;
+    background-color: white;
 }
 
 
@@ -229,7 +259,7 @@
     padding: 0px;
     width: auto;
     height: 250px;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 3px 3px black;
     border: 1px solid black;
 
@@ -242,7 +272,7 @@
     padding: 0px;
     width: auto;
     height: 250px;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 3px 3px black;
     border: 1px solid black;
 }
@@ -281,6 +311,8 @@
 .contact-formspree textarea {
     font-family: 'Poppins', sans-serif !important;  
     width: 400px; 
+    border: 1px solid black;
+
 }
 
 .contact-formspree-button button p {
