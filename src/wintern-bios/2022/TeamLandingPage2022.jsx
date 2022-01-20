@@ -5,11 +5,6 @@ import AngesComponent from './AngesComponent.jsx';
 import LaurenComponent from './LaurenComponent.jsx';
 import SkylerComponent from './SkylerComponent.jsx';
 import TeamList2022 from './TeamList2022.jsx';
-<<<<<<< HEAD
-
-=======
->>>>>>> 8a217be (route)
-
 
 const TeamLandingPage2022 = () => {
 
