@@ -48,7 +48,6 @@ useEffect(() => {
           </Route>
           <Route path="/allComments">
             <CommentsPage />
-          </Route>
           <Route path="/">
               {api ? <Home api={api} /> : <div>Loading ...</div>}
           </Route>
