@@ -73,6 +73,7 @@ useEffect(() => {
           <Route path="/margaret-diaz">
             <Header />
             <MargaretComponent />
+            </Route>
           <Route path="/allComments">
             <CommentsPage />
           </Route>
