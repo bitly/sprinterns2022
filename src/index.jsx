@@ -16,7 +16,7 @@ import KadiatouComponent from './wintern-bios/2022/KadiatouComponent.jsx';
 import LaurenComponent from './wintern-bios/2022/LaurenComponent.jsx';
 import SkylerComponent from './wintern-bios/2022/SkylerComponent.jsx';
 import MargaretComponent from './wintern-bios/2022/MargaretComponent.jsx';
-
+import CommentsPage from './CommentsPage.jsx';
 import Header from './Header.jsx';
 const App = () => {
 const [api, setApi] = useState(null);
@@ -68,6 +68,8 @@ useEffect(() => {
           <Route path="/margaret-diaz">
             <Header />
             <MargaretComponent />
+          <Route path="/allComments">
+            <CommentsPage />
           </Route>
           <Route path="/">
               {api ? <Home api={api} /> : <div>Loading ...</div>}

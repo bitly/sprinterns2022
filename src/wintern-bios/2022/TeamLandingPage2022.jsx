@@ -6,6 +6,7 @@ import LaurenComponent from './LaurenComponent.jsx';
 import SkylerComponent from './SkylerComponent.jsx';
 import TeamList2022 from './TeamList2022.jsx';
 
+
 const TeamLandingPage2022 = () => {
 
   return (

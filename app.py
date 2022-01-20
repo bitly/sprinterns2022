@@ -6,10 +6,13 @@ import json
 import sqlite3
 from flask import g
 
+DATABASE = 'api-explorer.db'
+
+
 app = Flask(__name__)
 app.secret_key = "secret"
 
-DATABASE = 'api-explorer.db'
+
 
 def get_db():
     db = getattr(g, '_database', None)
@@ -42,7 +45,17 @@ def hello():
     return render_template('app.html', text=hi)
 
 
-@app.route('/api', methods=['GET', 'POST', 'PATCH', 'DELETE'])
+@app.route("/getComments", methods = ['GET'])
+def all_comments_queries():
+
+    query = '''SELECT * FROM comments_table '''
+    data = query_db(query)
+    
+    return json.dumps(data)
+
+
+
+@app.route('/api', methods=['GET', 'POST', 'PATCH', 'DELETE'])   
 def quote():
     
     auth_token = request.json['authToken'] 
