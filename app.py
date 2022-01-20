@@ -64,11 +64,14 @@ def new_comment_query():
     subject = request.json["subject"] 
     comment = request.json["comment"] 
 
-    conn = sqlite3.connect(DATABASE, isolation_level = None)
-    cursor = conn.cursor()
-    cursor.execute('''INSERT INTO comments_table (first_name, last_name, email, subject, comment) VALUES (?,?,?,?,?) ''', (first_name, last_name, email, subject, comment) )
-    cursor.close()
-    conn.close()
+    # conn = sqlite3.connect(DATABASE, isolation_level = None)
+    # cursor = conn.cursor()
+    # cursor.execute('''INSERT INTO comments_table (first_name, last_name, email, subject, comment) VALUES (?,?,?,?,?) ''', (first_name, last_name, email, subject, comment) )
+    # cursor.close()
+    # conn.close()
+
+    query = '''INSERT INTO comments_table (first_name, last_name, email, subject, comment) VALUES (?,?,?,?,?) ''', (first_name, last_name, email, subject, comment)
+    data = query_db(query)
 
     return "Comment Added"
     
