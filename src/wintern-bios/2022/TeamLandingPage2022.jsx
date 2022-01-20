@@ -11,6 +11,7 @@ import TeamList2022 from './TeamList2022.jsx';
 >>>>>>> 8a217be (route)
 
 
+
 const TeamLandingPage2022 = () => {
 
   return (

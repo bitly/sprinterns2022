@@ -12,11 +12,6 @@ import Team from './Team.jsx';
 import APIinfo from './APIinfo.jsx';
 import SwaggerParser from "@apidevtools/swagger-parser";
 import CommentsPage from './CommentsPage.jsx';
-import AngesComponent from './wintern-bios/2022/AngesComponent.jsx';
-import KadiatouComponent from './wintern-bios/2022/KadiatouComponent.jsx';
-import LaurenComponent from './wintern-bios/2022/LaurenComponent.jsx';
-import SkylerComponent from './wintern-bios/2022/SkylerComponent.jsx';
-import MargaretComponent from './wintern-bios/2022/MargaretComponent.jsx';
 const App = () => {
 const [api, setApi] = useState(null);
 
@@ -48,28 +43,6 @@ useEffect(() => {
           <Route path="/team-2022">
             <Team year={2022} />
           </Route>
-          <Route path="/allComments">
-            <CommentsPage />
-            </Route>
-          <Route path="/ange-louis">
-            <Header />
-            <AngesComponent />
-          </Route>
-          <Route path="/kadiatou-diallo">
-            <Header />
-            <KadiatouComponent />
-          </Route>
-          <Route path="/lauren-avilla">
-            <Header />
-            <LaurenComponent />
-          </Route>
-          <Route path="/skyler-basco">
-            <Header />
-            <SkylerComponent />
-          </Route>
-          <Route path="/margaret-diaz">
-            <Header />
-            <MargaretComponent />
           <Route path="/allComments">
             <CommentsPage />
           </Route>
