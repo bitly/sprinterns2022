@@ -18,7 +18,6 @@ import animatedcap from '../../assets/bio-photos/skyler-other-pics/animatedcap.g
 import mcsheep from '../../assets/bio-photos/skyler-other-pics/mcsheep.gif';
 import qrcode3dbitly from '../../assets/bio-photos/skyler-other-pics/qrcode3dbitly.jpg';
 import mcparrot from '../../assets/bio-photos/skyler-other-pics/mcparrot.gif';
-import smileybackground from '../../assets/bio-photos/skyler-other-pics/smiley-background.png';
 
 const SkylerComponent = () => {
     return (
