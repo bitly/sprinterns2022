@@ -1,133 +1,209 @@
+.webContainer{
+        height: auto;
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
+        
 .Forum{
-    min-height: 100vh;
+    // min-height: 100vh;
     overflow-y:auto;
     // float:left;
-    position:relative;
+    // position:relative;
     overflow: -moz-scrollbars-vertical; 
-    margin-left:10%;
+    // margin-left:10%;
 
     .ForumHeader{
-        left: 10%;
-        max-width: 80%;
-        position: relative;
-        height: 7%;
+        // margin-left: 50%;
+        // left: 10%;
+        // max-width: 80%;
+        // position: relative;
+        font-family: proxima nova;
+        padding: 10px;
+        height: 40px;
         color: black;
         background-color: rgba(32, 130, 228, 0.3);
         color: black;
         letter-spacing: 0.15rem;
         font-size: xx-large;
-        font-family: sans-serif;
         text-align: center;
         border-radius: 5%;
 
     }
 
     .NewComment{
-        position: relative;
-        left: 40%;
-        top: -2%;
-        width: 20%;
-        height: 5%;
+        // position: relative;
+        // left: 40%;
+        // top: -2%;
+        // width: 20%;
+        padding: 10px;
         background-color: #063B6F;
         letter-spacing: 0.15rem;
-        font-family: sans-serif;
+        font-family: proxima nova;
         text-align: center;
         color: white;
+        font-size: large;
         border-radius: 40%;
         text-align: center;
+        margin-left: 42%;
+        margin-bottom: 30px;
         cursor: cell;
     }
 
     .comments{
-        position: relative;
-        max-width: 80%;
-        height: 200px;
+        // position: relative;
+        width: 60vw;
+        height: 150px;
         border-color:black;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: rgba(32, 130, 228, 0.1);
-        left: 10%;
-        display: block;
+        // left: 10%;
+        // display: block;
+        // margin-bottom: 20px;
+        margin-left: 20%;
+        padding:3%;
     
+        .container{
+            // padding-top: 3%;
+             display: flex;
+            // margin-right: 5%;
+            // margin-left: 2%;
 
-        .name::before{
-            font-weight: bold;
-            text-decoration: underline;
-            font-size: large;
-            color: black;
-            content: "Name: ";
-        }
-
-        .name{
-            position:relative;
-            font-size: large;
-            left: 10px;
-            top: 90px;
-        }
+            .name::before{
+                font-weight: bold;
+                text-decoration: underline;
+                font-size: large;
+                color: black;
+                content: "Name: ";
+                font-family: proxima nova;
+            }
     
-        .email::before{
-            font-weight: bold;
-            text-decoration: underline;
-            font-size: large;
-            color: black;
-            content: "Email: ";
-        }
+            .name{
+                // position:relative;
+                // font-size: large;
+                // left: 10px;
+                // top: 90px;
+                // margin-left: 3%;
+                // padding-top: 3%;
+                font-family: proxima nova;
+            }
 
-        .email{
-            position: relative;
-            left: 10px;
-            top: 100px;
-        }
-
-        .date::before{
-            font-weight: bold;
-            text-decoration: underline;
-            font-size: large;
-            color: black;
-            content: "Date: ";
-        }
-
-        .date{
-            position: relative;
-            left: 10px;
-            top: 110px;
-            content: "Date: ";
-        }
+            .email::before{
+                font-weight: bold;
+                text-decoration: underline;
+                font-size: large;
+                color: black;
+                content: "Email: ";
+                font-family: proxima nova;
+            }
     
+            .email{
+                // position: relative;
+                // left: 10px;
+                // top: 100px;
+                font-family: proxima nova;
+                // margin-top: 2%;
+                margin-left: 10%;
+                // margin-top: 20px;
+    
+            }
+
+            .date::before{
+                font-weight: bold;
+                text-decoration: underline;
+                font-size: large;
+                color: black;
+                content: "Date: ";
+                font-family: proxima nova;
+            }
+    
+            .date{
+                // position: relative;
+                // left: 10px;
+                // top: 110px;
+                content: "Date: ";
+                font-family: proxima nova;
+                // margin-left: 30%;
+                // margin-top: 20px;
+                margin-left: 5%;
+            }
+
+    }
+
+
+    .containerText{
+        margin-left: 2%;
+        width: 90%;
+
+
+        .subject{
+            // position: relative;
+            // top: -35px;
+            // left: 200px;
+            content: "Subject: ";
+            border-bottom: 3px solid black;
+            // overflow:hidden;
+            // padding-bottom: 5%;
+            margin-top: 2%;
+            // margin-left: 35%;
+            font-family: proxima nova;
+        }
+            
         .subject::before{
             font-weight: bold;
             font-size: large;
             color: black;
             content: "Subject: ";
-        }
-
-        .subject{
-            position: relative;
-            top: -35px;
-            left: 200px;
+            font-family: proxima nova;
+        }                .subject{
+            // position: relative;
+            // top: -35px;
+            // left: 200px;
             content: "Subject: ";
-            width: 20%;
-            border-bottom: 3px solid black;
-            overflow:hidden;
+            // width: 20%;
+            // border-bottom: 3px solid black;
+            // overflow:hidden;
+            // padding-bottom: 5%;
+            // margin-top: -30px;
+            // margin-left: 35%;
+            font-family: proxima nova;
         }
+            
+        // .subject::before{
+        //     font-weight: bold;
+        //     font-size: large;
+        //     color: black;
+        //     content: "Subject: ";
+        //     font-family: proxima nova;
+        // }
     
-        .commentText{
-            position: absolute;
-            top: 70px;
-            left: 200px;
-            width: 70%;
-            height: 60%;
-            background-color: white;
-            border-color: rgb(6,59,111,0.1);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            display: block;
-        }
+    
+    
+        
+            .commentText{
+                // position: absolute;
+                // top: 70px;
+                // left: 200px;
+                // margin-left: 50%;
+                // margin-bottom: 20%;
+                height: 70px;
+                // left: 40%;
+                // margin-bottom: 100px;
+                // margin-inline-end: 20px; 
+                // writing-mode: horizontal-tb;
+                background-color: white;
+                border-color: rgb(6,59,111,0.1);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                font-family: proxima nova;
+    
+            }
+
+    }
+
 
         .avatar{
-            position: relative;
+            // position: relative;
             left: 0px;
             top: 20px;
-            height: 30%;
+            height: 200px;
             width: 30%;
             border-radius: 50%;
         }
@@ -135,3 +211,5 @@
 
 }
 
+
+}

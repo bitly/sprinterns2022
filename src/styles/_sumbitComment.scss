@@ -1,23 +1,24 @@
 .webContainer{
-    height: 90vh;
+    height: auto;
     top:0px;
     @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 
     .commentContainer{
-        margin-top: 2%;
-        margin-left: 10%;
+        margin-top: 5%;
+        margin-left: 15%;
         width: 70%;
         color: black;
-        height: 70%;
         border-radius: 6%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: rgba(32, 130, 228, 0.1);
-        padding: 60px;
+        padding: 2%;
     
         .submitHeader{
             text-align: center;
             color: black;
+            margin-top: -2%;
+            font-family: proxima nova;
         }
     
         input[type=text] {
@@ -34,7 +35,6 @@
         }
     
         .subjectContainer{
-            padding-right: 130px;
             .subectTextField{
                 width: 70vw;
                 height: 30px;
@@ -45,47 +45,44 @@
                 font-family: sans-serif;
                 text-align: center;
                 color: black;
+                font-family: proxima nova;
             }
         }
 
-                .firstNameLabel{
-                    padding-right: 130px;
-                    letter-spacing: 0.15rem;
-                    font-family: sans-serif;
-                    color: black;
-                }   
-    
-            .lastNameLabel{
-                padding-left: 140px;
+        .firstNameContainer{
+            .firstNameTextField{
+                width: 70vw;
+                height: 30px;
+            }
+        
+            .firstNameLabel{
                 letter-spacing: 0.15rem;
                 font-family: sans-serif;
-                // text-align: center;
+                text-align: center;
                 color: black;
+                font-family: proxima nova;
             }
-            
-            // .textFeildContainer{
-            //     display: inline-flex;
-                .firstNameTextField{
-                    width: 20vw;
-                    height: 30px;
-                    margin-right: 20%;
-                    display: inline;
-                }
+        }
 
-                .lastNameTextField{
-                    padding-left: 120px;
-                    width: 20vw;
-                    height: 30px;
-                    margin-left: 20%;
-                    display: inline;
-                   }
-            // }
-    
+        .lastNameContainer{
+            .lastNameTextField{
+                width: 70vw;
+                height: 30px;
+            }
+        
+            .lastNameLabel{
+                letter-spacing: 0.15rem;
+                font-family: sans-serif;
+                text-align: center;
+                color: black;
+                font-family: proxima nova;
+            }
+        }
 
         .emailContainer{
             .emailTextField{
-                width: 90%;
-                height: 8%;
+                width: 70vw;
+                height: 30px;
             }
         
             .emailLabel{
@@ -93,14 +90,14 @@
                 font-family: sans-serif;
                 text-align: center;
                 color: black;
+                font-family: proxima nova;
             }
-        
         }
-    
+
         .commentTextContainer{
             .commentTextField{
-                width: 90%;
-                height: 15%;
+                width: 70vw;
+                height: 8vw;
             }
         
             .commentLabel{
@@ -108,15 +105,41 @@
                 font-family: sans-serif;
                 text-align: center;
                 color: black;
-            }    
+                font-family: proxima nova;
+            }
         }
     
         .submitButton{
-    
+            padding: 2%;
+            padding-left: 4%;
+            padding-right: 4%;
+            border-radius: 20%;
+            margin-left: 28%;
+            margin-right: 10%;
+            margin-top: 10px;
+            letter-spacing: 0.15rem;
+            font-family: sans-serif;
+            text-align: center;
+            color: white;
+            background-color: #063B6F;
+            border-color: #063B6F;
+            font-family: proxima nova;
+            font-weight: bold;
     
         }
         .resetButton{
-    
+            padding: 2%;
+            padding-left: 5%;
+            padding-right: 5%;
+            border-radius: 20%;
+            letter-spacing: 0.15rem;
+            font-family: sans-serif;
+            text-align: center;
+            color: white;
+            background-color: #063B6F;
+            border-color: #063B6F;
+            font-family: proxima nova;
+            font-weight: bold;
     
         }
     }
