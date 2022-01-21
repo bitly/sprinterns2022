@@ -65,6 +65,12 @@ def new_comment_query():
     query = '''INSERT INTO comments_table (first_name, last_name, email, subject, comment) VALUES (?,?,?,?,?) ''' 
     arg = (first_name, last_name, email, subject, comment)
     query_db(query,arg)
+    
+
+    # query2 ='''SELECT * FROM comments_table WHERE comment_id=(SELECT max(comment_id) FROM comments_table) '''
+    # display = query_db(query2)
+
+    return jsonify(data = data, statusCode = 201)
 
     return jsonify(statusCode = 201)
 
