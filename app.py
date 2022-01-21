@@ -53,8 +53,6 @@ def all_comments_queries():
     
     return json.dumps(data)
 
-
-
 @app.route("/savedetails", methods = ['POST'])
 def new_comment_query():    
 
@@ -66,13 +64,19 @@ def new_comment_query():
 
     query = '''INSERT INTO comments_table (first_name, last_name, email, subject, comment) VALUES (?,?,?,?,?) ''' 
     arg = (first_name, last_name, email, subject, comment)
-    data = query_db(query,arg) 
+    query_db(query,arg)
 
-    query2 ='''SELECT * FROM comments_table WHERE comment_id=(SELECT max(comment_id) FROM comments_table) '''
-    display = query_db(query2)
+    return jsonify(statusCode = 201)
 
-    return jsonify(data = display, statusCode = 201)
 
+@app.route("/<comment_id>/delete", methods = ['DELETE'])
+def delete_comment_query(comment_id): 
+
+    query = ''' DELETE FROM comments_table WHERE comment_id = ?'''
+    arg = (comment_id)
+    query_db(query,arg)
+
+    return (statusCode = 204) 
 
 
 @app.route('/api', methods=['GET', 'POST', 'PATCH', 'DELETE'])   
