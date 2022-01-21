@@ -45,7 +45,7 @@ const Form = ({method, endpoint}) => {
         return obj
     }, {});
     const keyvalObject = arrayToObject(params)
-    axios
+    axios    
       .post(SERVER_URL + 'api', {apiEndpoint: apiEndpoint, authToken: authToken, params: keyvalObject, Method: method})
       .then((res) => {   
         setResponse(res.data)
@@ -82,8 +82,8 @@ const Form = ({method, endpoint}) => {
       <div className="resultsBox"> 
         <center>
           <div>Results</div>
-        </center> 
-        <ReactJson src={response} theme="bright:inverted"/>
+        </center>  
+        <ReactJson src={response} theme="bright:inverted"/>  
       </div>   
     </div>
   );
