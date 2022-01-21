@@ -17,6 +17,9 @@ import KadiatouComponent from './wintern-bios/2022/KadiatouComponent.jsx';
 import LaurenComponent from './wintern-bios/2022/LaurenComponent.jsx';
 import SkylerComponent from './wintern-bios/2022/SkylerComponent.jsx';
 import MargaretComponent from './wintern-bios/2022/MargaretComponent.jsx';
+import HelpCenter from './HelpCenter.jsx';
+import Forum from './Forum.jsx';
+import Submit from './SubmitComment.jsx'
 
 
 import Header from './Header.jsx';
@@ -76,6 +79,14 @@ useEffect(() => {
             </Route>
           <Route path="/allComments">
             <CommentsPage />
+          <Route path="/HelpCenter">
+            <HelpCenter />
+            </Route>
+          <Route path="/Forum">
+            < Forum />
+          </Route>
+          <Route path="/Submit">
+            < Submit />
           </Route>
           <Route path="/">
               {api ? <Home api={api} /> : <div>Loading ...</div>}

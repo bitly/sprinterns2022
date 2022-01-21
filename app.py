@@ -8,10 +8,8 @@ from flask import g
 
 DATABASE = 'api-explorer.db'
 
-
 app = Flask(__name__)
 app.secret_key = "secret"
-
 
 
 def get_db():
@@ -39,23 +37,41 @@ def dict_factory(cursor, row):
         d[col[0]] = row[idx]
     return d
 
+@app.route("/getComments", methods = ['GET'])
+def all_comments_queries():
+   conn = sqlite3.connect(DATABASE)
+   cursor = conn.cursor()
+   cursor.execute('''SELECT * FROM comments_table ''')
+   data = cursor.fetchall()
+   conn.close()
+   return json.dumps(data)
+
+   
+@app.route("/comments", methods = ['POST'])
+def new_comment_query():   
+ 
+   first_name = request.json["f_name"] 
+   last_name = request.json["l_name"] 
+   email = request.json["email"]
+   subject = request.json["subject"]
+   comment = request.json["comment"]
+ 
+   conn = sqlite3.connect(DATABASE, isolation_level = None)
+   cursor = conn.cursor()
+   cursor.execute('''INSERT INTO comments_table (first_name, last_name, email, subject, comment) VALUES (?,?,?,?,?) ''', (first_name, last_name, email, subject, comment) )
+   cursor.close()
+   conn.close()
+ 
+   return "Comment Added"
+
 @app.route("/", methods = ['GET'])
 def hello():
     hi = "hello world. Winterns are the best."
     return render_template('app.html', text=hi)
 
 
-@app.route("/getComments", methods = ['GET'])
-def all_comments_queries():
 
-    query = '''SELECT * FROM comments_table '''
-    data = query_db(query)
-    
-    return json.dumps(data)
-
-
-
-@app.route('/api', methods=['GET', 'POST', 'PATCH', 'DELETE'])   
+@app.route('/api', methods=['GET', 'POST', 'PATCH', 'DELETE'])
 def quote():
     
     auth_token = request.json['authToken'] 
@@ -87,5 +103,11 @@ def quote():
     
     return (response.json())   
 
-
-
+@app.route("/comments/<comment_id>", methods = ['DELETE'])
+def delete_comment_query(comment_id):
+ 
+   query = ''' DELETE FROM comments_table WHERE comment_id = ?'''
+   arg = (comment_id)
+   query_db(query,arg)
+ 
+   return jsonify(statusCode = 204)

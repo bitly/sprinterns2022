@@ -1,0 +1,137 @@
+
+.Forum{
+    min-height: 100vh;
+    overflow-y:auto;
+    // float:left;
+    position:relative;
+    overflow: -moz-scrollbars-vertical; 
+    margin-left:10%;
+
+    .ForumHeader{
+        left: 10%;
+        max-width: 80%;
+        position: relative;
+        height: 7%;
+        color: black;
+        background-color: rgba(32, 130, 228, 0.3);
+        color: black;
+        letter-spacing: 0.15rem;
+        font-size: xx-large;
+        font-family: sans-serif;
+        text-align: center;
+        border-radius: 5%;
+
+    }
+
+    .NewComment{
+        position: relative;
+        left: 40%;
+        top: -2%;
+        width: 20%;
+        height: 5%;
+        background-color: #063B6F;
+        letter-spacing: 0.15rem;
+        font-family: sans-serif;
+        text-align: center;
+        color: white;
+        border-radius: 40%;
+        text-align: center;
+        cursor: cell;
+    }
+
+    .comments{
+        position: relative;
+        max-width: 80%;
+        height: 200px;
+        border-color:black;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: rgba(32, 130, 228, 0.1);
+        left: 10%;
+        display: block;
+    
+
+        .name::before{
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: large;
+            color: black;
+            content: "Name: ";
+        }
+
+        .name{
+            position:relative;
+            font-size: large;
+            left: 10px;
+            top: 90px;
+        }
+    
+        .email::before{
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: large;
+            color: black;
+            content: "Email: ";
+        }
+
+        .email{
+            position: relative;
+            left: 10px;
+            top: 100px;
+        }
+
+        .date::before{
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: large;
+            color: black;
+            content: "Date: ";
+        }
+
+        .date{
+            position: relative;
+            left: 10px;
+            top: 110px;
+            content: "Date: ";
+        }
+    
+        .subject::before{
+            font-weight: bold;
+            font-size: large;
+            color: black;
+            content: "Subject: ";
+        }
+
+        .subject{
+            position: relative;
+            top: -35px;
+            left: 200px;
+            content: "Subject: ";
+            width: 20%;
+            border-bottom: 3px solid black;
+            overflow:hidden;
+        }
+    
+        .commentText{
+            position: absolute;
+            top: 70px;
+            left: 200px;
+            width: 70%;
+            height: 60%;
+            background-color: white;
+            border-color: rgb(6,59,111,0.1);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            display: block;
+        }
+
+        .avatar{
+            position: relative;
+            left: 0px;
+            top: 20px;
+            height: 30%;
+            width: 30%;
+            border-radius: 50%;
+        }
+    }
+
+}
+
