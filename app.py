@@ -36,10 +36,37 @@ def dict_factory(cursor, row):
         d[col[0]] = row[idx]
     return d
 
+@app.route("/getComments", methods = ['GET'])
+def all_comments_queries():
+   conn = sqlite3.connect(DATABASE)
+   cursor = conn.cursor()
+   cursor.execute('''SELECT * FROM comments_table ''')
+   data = cursor.fetchall()
+   conn.close()
+   return json.dumps(data)
+   
+@app.route("/savedetails", methods = ['POST'])
+def new_comment_query():   
+ 
+   first_name = request.json["f_name"] 
+   last_name = request.json["l_name"] 
+   email = request.json["email"]
+   subject = request.json["subject"]
+   comment = request.json["comment"]
+ 
+   conn = sqlite3.connect(DATABASE, isolation_level = None)
+   cursor = conn.cursor()
+   cursor.execute('''INSERT INTO comments_table (first_name, last_name, email, subject, comment) VALUES (?,?,?,?,?) ''', (first_name, last_name, email, subject, comment) )
+   cursor.close()
+   conn.close()
+ 
+   return "Comment Added"
+
 @app.route("/", methods = ['GET'])
 def hello():
     hi = "hello world. Winterns are the best."
     return render_template('app.html', text=hi)
+
 
 
 @app.route('/api', methods=['GET', 'POST', 'PATCH', 'DELETE'])
@@ -73,6 +100,3 @@ def quote():
             response = requests.delete('https://api-ssl.bitly.com/v4' + endpoint, headers={"Authorization": "Bearer " + auth_token})
     
     return (response.json())   
-
-
-

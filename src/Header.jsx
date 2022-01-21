@@ -11,7 +11,8 @@ const Header = () => {
         </button>
         <div className="dropdown-contenttwo">
             <Link to="/team">Meet The Team</Link>
-            <Link to="/help-center">Help Center</Link>
+            <Link to="/HelpCenter">Help Center</Link>
+            <a href="#">API Explorer</a>
         </div>
         </div>
     <div className="dropdownone">

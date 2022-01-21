@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './styles/main.scss';
 import TeamLandingPage2022 from './wintern-bios/2022/TeamLandingPage2022.jsx';
 import TeamLandingPage2021 from './wintern-bios/2021/TeamLandingPage2021.jsx';
+
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 

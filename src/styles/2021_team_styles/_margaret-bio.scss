@@ -4,6 +4,8 @@
     min-height: 2000px;
     width: 960px;
     position: relative;
+    // overflow-y: auto;
+    left:0px;
 
     img:hover {
         /* Start the shake animation and make the animation last for 0.5 seconds */

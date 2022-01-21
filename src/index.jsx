@@ -10,6 +10,9 @@ import './styles/main.scss';
 import Home from './Home.jsx';
 import Team from './Team.jsx';
 import APIinfo from './APIinfo.jsx';
+import HelpCenter from './HelpCenter.jsx';
+import Forum from './Forum.jsx';
+import Submit from './SubmitComment.jsx'
 
 const App = () => {
     return (
@@ -20,6 +23,15 @@ const App = () => {
           </Route>
           <Route path="/team">
             <Team />
+          </Route>
+          <Route path="/HelpCenter">
+            <HelpCenter />
+            </Route>
+          <Route path="/Forum">
+            < Forum />
+          </Route>
+          <Route path="/Submit">
+            < Submit />
           </Route>
           <Route path="/">
             <Home />

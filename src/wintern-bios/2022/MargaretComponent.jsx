@@ -34,16 +34,16 @@ const MargaretComponent = () => {
       <h2 className='olddoggiesName'> 🤍 Steve + Sharon 💜</h2>
       <a className='favoriteMusic'>♬ Favorite Songs ♬</a>
       <a className='clicktoplay'>♬Click to listen♬</a>
-      <a href="https://www.youtube.com/watch?v=2d1wKn-oJnA" className='taylorButton'>Taylor Swift</a>
-      <a href="https://www.youtube.com/watch?v=sVdxA0rFN5c" className='estemanButton'>Esteman</a>
-      <a href="https://www.youtube.com/watch?v=jix-u8h4KEU" className='hayleyButton'>Hayley Kiyoko</a>
-      <a href="https://www.youtube.com/watch?v=QIQvUmiyVTY" className='ruzziButton'>Ruzzi</a>
-      <a href="https://www.youtube.com/watch?v=RvnkAtWcKYg" className='paramoreButton'>Paramore</a>
-      <a href="https://www.youtube.com/watch?v=XBCDvINm0Vo"className='selenaButton'>Selena</a>
-      <a href="https://www.youtube.com/watch?v=56WBK4ZK_cw"className='khalidButton'>Khalid</a>
-      <a href="https://www.youtube.com/watch?v=owLnDbAIOWE"className='mirandaButton'>Miranda Del Sol</a>
-      <a href="https://www.youtube.com/watch?v=kOHB85vDuow"className='twiceButton'>Twice</a>
-      <a href="https://www.youtube.com/watch?v=TmKh7lAwnBI"className='badBunny'>Bad Bunny</a>
+      <a href="https://www.youtube.com/watch?v=2d1wKn-oJnA" className='taylorButton' target="_blank">Taylor Swift</a>
+      <a href="https://www.youtube.com/watch?v=sVdxA0rFN5c" className='estemanButton'target="_blank">Esteman</a>
+      <a href="https://www.youtube.com/watch?v=jix-u8h4KEU" className='hayleyButton'target="_blank">Hayley Kiyoko</a>
+      <a href="https://www.youtube.com/watch?v=QIQvUmiyVTY" className='ruzziButton'target="_blank">Ruzzi</a>
+      <a href="https://www.youtube.com/watch?v=RvnkAtWcKYg" className='paramoreButton'target="_blank">Paramore</a>
+      <a href="https://www.youtube.com/watch?v=XBCDvINm0Vo"className='selenaButton'target="_blank">Selena</a>
+      <a href="https://www.youtube.com/watch?v=56WBK4ZK_cw"className='khalidButton'target="_blank">Khalid</a>
+      <a href="https://www.youtube.com/watch?v=owLnDbAIOWE"className='mirandaButton'target="_blank">Miranda Del Sol</a>
+      <a href="https://www.youtube.com/watch?v=kOHB85vDuow"className='twiceButton' target="_blank">Twice</a>
+      <a href="https://www.youtube.com/watch?v=TmKh7lAwnBI"className='badBunny'target="_blank">Bad Bunny</a>
       <a href="https://www.youtube.com/watch?v=clwLKJ294u4"className='britneyButton'>Britney Spears</a>
       <a className='favoriteFacts'> Extra </a>
           <h2 className='center'>FAVORITES:</h2>

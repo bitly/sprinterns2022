@@ -1,0 +1,123 @@
+.webContainer{
+    height: 90vh;
+    top:0px;
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+    .commentContainer{
+        margin-top: 2%;
+        margin-left: 10%;
+        width: 70%;
+        color: black;
+        height: 70%;
+        border-radius: 6%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: rgba(32, 130, 228, 0.1);
+        padding: 60px;
+    
+        .submitHeader{
+            text-align: center;
+            color: black;
+        }
+    
+        input[type=text] {
+            border: 2px solid rgb(122, 122, 122);
+            border-radius: 6px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    
+        input[type=text]:focus {
+            border: 2px solid red;
+            border-radius: 4px;
+            background-color: cadetblue;
+            border: 8px solid #555;
+        }
+    
+        .subjectContainer{
+            padding-right: 130px;
+            .subectTextField{
+                width: 70vw;
+                height: 30px;
+            }
+        
+            .subjectLabel{
+                letter-spacing: 0.15rem;
+                font-family: sans-serif;
+                text-align: center;
+                color: black;
+            }
+        }
+
+                .firstNameLabel{
+                    padding-right: 130px;
+                    letter-spacing: 0.15rem;
+                    font-family: sans-serif;
+                    color: black;
+                }   
+    
+            .lastNameLabel{
+                padding-left: 140px;
+                letter-spacing: 0.15rem;
+                font-family: sans-serif;
+                // text-align: center;
+                color: black;
+            }
+            
+            // .textFeildContainer{
+            //     display: inline-flex;
+                .firstNameTextField{
+                    width: 20vw;
+                    height: 30px;
+                    margin-right: 20%;
+                    display: inline;
+                }
+
+                .lastNameTextField{
+                    padding-left: 120px;
+                    width: 20vw;
+                    height: 30px;
+                    margin-left: 20%;
+                    display: inline;
+                   }
+            // }
+    
+
+        .emailContainer{
+            .emailTextField{
+                width: 90%;
+                height: 8%;
+            }
+        
+            .emailLabel{
+                letter-spacing: 0.15rem;
+                font-family: sans-serif;
+                text-align: center;
+                color: black;
+            }
+        
+        }
+    
+        .commentTextContainer{
+            .commentTextField{
+                width: 90%;
+                height: 15%;
+            }
+        
+            .commentLabel{
+                letter-spacing: 0.15rem;
+                font-family: sans-serif;
+                text-align: center;
+                color: black;
+            }    
+        }
+    
+        .submitButton{
+    
+    
+        }
+        .resetButton{
+    
+    
+        }
+    }
+}

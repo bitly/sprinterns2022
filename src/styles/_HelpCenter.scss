@@ -1,0 +1,65 @@
+
+.HelpCenterText{
+    position: absolute;
+    left: 0px;
+    // top: 12vh;
+    font-size: 4vw;
+    text-align: center;
+    text-decoration: bold;
+    color: rgb(201, 199, 197);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    height: 80vh;
+
+    }
+
+.ButtonContainer{
+    background-color: rgb(6,59,111,0.3);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 60vh;
+    width: 100%;
+
+
+.FAQButton{
+    position: absolute;
+    top: 5%;
+    left: 60vw;
+    background-image: pink;
+    color: black;
+    letter-spacing: 0.15rem;
+    width: 25vw;
+    height: 25vw;
+    font-size: 4vw;
+    font-family: sans-serif;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    border-color: rgb(6,59,111,0.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: cell;
+    overflow: visible;
+}
+
+.ForumButton{
+    position: absolute;
+    top: 5%;
+    right: 60vw;
+    color: black;
+    letter-spacing: 0.15rem;
+    width: 25vw;
+    height: 25vw;
+    font-size: 4vw;
+    font-family: sans-serif;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    border-color: rgb(6,59,111,0.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: pink;
+    cursor: cell;
+}
+
+}
+
