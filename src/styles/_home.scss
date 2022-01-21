@@ -1,32 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'), url('https://www.scdn.co/i/connect/header-spikes-sm.jpg');
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+}
+
 .main_container{
     display:flex;
 }
 
+//change padding for the whole thing to shift it out
 .APIRequest{
     width: 100%;
     font-family: 'Poppins';
     font-style: normal;
 
     &__title{
-        font-family: 'Poppins';
-        font-style: normal;
+        font-size: 20px;
     }
 
     &__endpoint{
-        font-family: 'Poppins';
-        font-style: normal;
+    }
+
+    &__method{
     }
 
     &__path{
-        font-family: 'Poppins';
-        font-style: normal
     }
 
     &__accesstoken{
-        font-family: 'Poppins';
-        font-style: normal
     }
 
+    &__accesstokenfield{
+        //change to light blue and make it bigger
+        //make the border color the same blue color so it just looks blue
+    }
+
+    &__pathparameters{
+    }
+
+    &__rbschema{
+    }
+
+    &__tryme{
+        //make the button bigger
+        //change the font type 
+        //change the font color to white
+        //make the whole button and border dark blue
+    }
+
+    &__reset{
+        //make the button bigger
+        //change the font type 
+        //change the font color to white
+        //make the whole button and border dark blue
+    }
+
+    &__responseJSON{
+        //create a blue box
+    }
 
 }
 
