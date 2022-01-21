@@ -17,7 +17,7 @@ app.secret_key = "secret"
 def get_db():
     db = getattr(g, '_database', None)
     if db is None:
-        db = g._database = sqlite3.connect(DATABASE)
+        db = g._database = sqlite3.connect(DATABASE, isolation_level = None)
         db.row_factory = dict_factory
     return db
 
@@ -64,14 +64,9 @@ def new_comment_query():
     subject = request.json["subject"] 
     comment = request.json["comment"] 
 
-    # conn = sqlite3.connect(DATABASE, isolation_level = None)
-    # cursor = conn.cursor()
-    # cursor.execute('''INSERT INTO comments_table (first_name, last_name, email, subject, comment) VALUES (?,?,?,?,?) ''', (first_name, last_name, email, subject, comment) )
-    # cursor.close()
-    # conn.close()
-
-    query = '''INSERT INTO comments_table (first_name, last_name, email, subject, comment) VALUES (?,?,?,?,?) ''', (first_name, last_name, email, subject, comment)
-    data = query_db(query)
+    query = '''INSERT INTO comments_table (first_name, last_name, email, subject, comment) VALUES (?,?,?,?,?) ''' 
+    arg = (first_name, last_name, email, subject, comment)
+    query_db(query,arg)
 
     return "Comment Added"
     
