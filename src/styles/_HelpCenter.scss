@@ -1,4 +1,6 @@
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
 .HelpCenterText{
     position: absolute;
     left: 0px;
@@ -6,9 +8,9 @@
     font-size: 4vw;
     text-align: center;
     text-decoration: bold;
-    color: rgb(201, 199, 197);
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+    color: black;
+    font-family: proxima nova;
+    background-color: white;
     height: 80vh;
 
     }
@@ -26,13 +28,13 @@
     position: absolute;
     top: 5%;
     left: 60vw;
-    background-image: pink;
+    background-image: white;
     color: black;
     letter-spacing: 0.15rem;
     width: 25vw;
     height: 25vw;
     font-size: 4vw;
-    font-family: sans-serif;
+    font-family: proxima nova;
     text-align: center;
     display: inline-block;
     border-radius: 50%;
@@ -51,13 +53,13 @@
     width: 25vw;
     height: 25vw;
     font-size: 4vw;
-    font-family: sans-serif;
+    font-family: proxima nova;
     text-align: center;
     display: inline-block;
     border-radius: 50%;
     border-color: rgb(6,59,111,0.1);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: pink;
+    background-color: white;
     cursor: cell;
 }
 }
