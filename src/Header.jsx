@@ -11,14 +11,14 @@ const Header = () => {
         </button>
         <div className="dropdown-contenttwo">
             <Link to="/team">Meet The Team</Link>
-            <Link to="/help-center">Help Center</Link>
+            <Link to="/HelpCenter">Help Center</Link>
         </div>
         </div>
     <div className="dropdownone">
         <button className="dropbtnone">API
         </button>
         <div className="dropdown-contentone">
-            <Link to="/APIInfo">What is API?</Link>
+            <Link to="/APIinfo">What is API?</Link>
             <a href="#">API Explorer</a>
         </div>
         </div>

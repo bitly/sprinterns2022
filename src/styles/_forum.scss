@@ -1,0 +1,238 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.Forum{
+    min-height: 100vh;
+    height: 800px;
+    // width:80%;
+    overflow-y:auto;
+    // float:left;
+    position:relative;
+    overflow: -moz-scrollbars-vertical;
+    // margin-left:10%;
+    background-color: #edf2fe; //bisque
+
+  
+    .ForumHeader{
+        left: 10%;
+        width: 85%;
+        position: relative;
+        height: 7%;
+        color: black;
+        background-color: #f54a00;;
+        color: #063B6F;
+        letter-spacing: 0.15rem;
+        font-size: xx-large;
+        font-family: sans-serif;
+        text-align: center;
+        border-radius: 5%;
+  
+    }
+  
+    .NewComment{
+        position: relative;
+        left: 40%;
+        top: -2%;
+        width: 30%;
+        height: 7%;
+        background-color: #063B6F;
+        letter-spacing: 0.15rem;
+        font-family: sans-serif;
+        text-align: center;
+        color: white;
+        border-radius: 40%;
+        text-align: center;
+        cursor: cell;
+        border-style: solid;
+        border-block-color: #f54a00;
+    }
+  
+    .comments{
+        position: relative;
+        width: 80%;
+        height: 0px;
+        border: solid 5px #063B6F;
+        transition: border-width 0.6s linear;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: rgba(32, 130, 228, 0.1);
+        left: 10%;
+        display: block;
+        padding-bottom: 200px;
+        margin: 20px;
+        border-radius: 10px;
+   
+  
+        .name::before{
+            font-weight: bold;
+            //text-decoration: underline;
+            font-size: large;
+            color: #063B6F;
+            content: "Name: ";
+        }
+  
+        .name{
+            position:relative;
+            font-size: large;
+            left: 10px;
+            top: 90px;
+            color: black;
+        }
+   
+        .email::before{
+            font-weight: bold;
+            //text-decoration: underline;
+            font-size: large;
+            color: #063B6F;
+            content: "Email: ";
+        }
+  
+        .email{
+            position: relative;
+            left: 10px;
+            top: 100px;
+            color: black;
+            font-size: large;
+        }
+  
+        .date::before{
+            font-weight: bold;
+            //text-decoration: underline;
+            font-size: large;
+            color: #063B6F;
+            content: "Date: ";
+        }
+  
+        .date{
+            position: relative;
+            left: 10px;
+            top: 110px;
+            //content: "Date: ";
+            color: black;
+            font-size: large;
+        }
+   
+        .subject::before{
+            font-weight: bold;
+            font-size: large;
+            color: #063B6F;
+            content: "SUBJECT: ";
+        }
+  
+        .subject{
+            position: relative;
+            top: -50px;
+            left: 240px;
+            //content: "Subject: ";
+            width: 70%;
+            border-bottom: 3px solid #f54a00;
+            overflow:hidden;
+            color: black;
+            font-size: large;
+        }
+   
+        .commentText{
+            position: absolute;
+            top: 45px;
+            left: 240px;
+            width: 70%;
+            height: 70%;
+            background-color: white;
+            //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            display: block;
+            border-radius: 10px;
+            color: black;
+            border-style: solid;
+            border-color: #f54a00; //rgb(6,59,111,0.1);
+        }
+  
+        .avatar{
+            position: relative;
+            left: 0px;
+            top: 20px;
+            height: 30%;
+            width: 30%;
+            border-radius: 50%;
+        }
+    }
+    .comments:hover { border-width: 10px; }
+    button{
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 0 8px rgb(207, 207, 207);
+      }
+      
+      button:hover{
+        border: none;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: inset 0 0 8px #f9f8fc;
+        } 
+      
+       #foot{
+        position: relative;
+        top: 10px;
+        left: 500px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border: none;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 0 8px #d9d4e7;
+        width: 150px;
+        height: 65px;
+        background-color: #d9d4e7;
+        animation-duration: 5s;
+      }
+      
+      .button-os{
+         position: absolute;
+          width: 150px;
+          height: 65px;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          background-color: #f54a00; 
+          border: 2.5px solid #063B6F;
+          transition: background-color 2.2s;
+          transition-duration: 3s;
+          transition: 1.5s;
+        }
+        
+        .button-os:hover{
+          position: absolute;
+          top: 30px;
+          background-color: #edf2fe;
+        }
+        
+        .button-os a{
+          font-size: 20px;
+          display: block;
+          text-decoration: none;
+          color:#063B6F;
+          transition: 1.5s;
+        }
+        
+        .button-os a:hover{
+          letter-spacing: 5px;
+        }
+    .FAQSButton{
+        position: absolute;
+        width: 150px;
+        height: 65px;
+        top: 100px;
+        // left: 0;
+        right: 20px;
+        bottom: 0;
+        margin: auto;
+        background-color: #f54a00; 
+        border: 2.5px solid whitesmoke;
+        transition: background-color 2.2s;
+        transition-duration: 3s;
+        transition: 1.5s;
+        border-radius: circle;
+           }
+  
+ }
+ 

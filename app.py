@@ -6,13 +6,18 @@ import json
 import sqlite3
 from flask import g
 
+<<<<<<< HEAD
 DATABASE = 'api-explorer.db'
 
+=======
+>>>>>>> ea95e54 (changes)
 
 app = Flask(__name__)
 app.secret_key = "secret"
 
 
+
+# con = sqlite3.connect(DATABASE)  
 
 def get_db():
     db = getattr(g, '_database', None)
@@ -20,6 +25,7 @@ def get_db():
         db = g._database = sqlite3.connect(DATABASE)
         db.row_factory = dict_factory
     return db
+
 
 @app.teardown_appcontext
 def close_connection(exception):
@@ -86,6 +92,34 @@ def quote():
             response = requests.delete('https://api-ssl.bitly.com/v4' + endpoint, headers={"Authorization": "Bearer " + auth_token})
     
     return (response.json())   
+
+@app.route("/getComments", methods = ['GET'])
+def all_comments_queries():
+ 
+   conn = sqlite3.connect(DATABASE)
+   cursor = conn.cursor()
+   cursor.execute('''SELECT * FROM comments_table ''')
+   data = cursor.fetchall()
+   conn.close()
+   return json.dumps(data)
+
+@app.route("/savedetails", methods = ['POST'])
+def new_comment_query():   
+ 
+   first_name = request.json["f_name"] 
+   last_name = request.json["l_name"] 
+   email = request.json["email"]
+   subject = request.json["subject"]
+   comment = request.json["comment"]
+ 
+   conn = sqlite3.connect(DATABASE, isolation_level = None)
+   cursor = conn.cursor()
+   cursor.execute('''INSERT INTO comments_table (first_name, last_name, email, subject, comment) VALUES (?,?,?,?,?) ''', (first_name, last_name, email, subject, comment) )
+   cursor.close()
+   conn.close()
+ 
+   return "Comment Added"
+
 
 
 

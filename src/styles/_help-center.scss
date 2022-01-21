@@ -1,0 +1,92 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background: black;
+    color: #4d5974;
+    min-height: 100vh;
+}
+.HelpCenterText{
+    // position: absolute;
+    font-size: 2.5vw;
+    text-align: center;
+    text-decoration: bold;
+    color: #f54a00;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:white;
+    min-height: 70%;
+
+ 
+}
+    h1 {
+        display: block;
+        font-size: 2.5em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        position: relative;
+        bottom: 20px;
+}
+  
+.Buttonss{
+    background-color: #edf2fe; //rgb(6,59,111,0.3);
+   // position: absolute;
+    //left: 0px;
+    //top: 500px;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 100px;
+
+    .ForumButton{
+        position: relative;
+        top: 50px;
+        left: 100px;
+        background-image: white;
+        color: #f54a00;
+        letter-spacing: 0.15rem;
+        width: 25vw;
+        height: 25vw;
+        font-size: 4vw;
+        font-family: sans-serif;
+        text-align: center;
+        display: inline-block;
+        border-radius: 50%;
+        border-color: rgb(6,59,111,0.1);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        cursor: cell;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        background-color: whitesmoke;
+    }
+    .FAQButton{
+        position: relative;
+        top: 50px;
+        left: 600px;
+        background-image: white;
+        color: #f54a00;
+        letter-spacing: 0.15rem;
+        width: 25vw;
+        height: 25vw;
+        font-size: 4vw;
+        font-family: sans-serif;
+        text-align: center;
+        display: inline-block;
+        border-radius: 50%;
+        border-color: rgb(6,59,111,0.1);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        cursor: cell;
+        overflow: visible;
+        background-color: whitesmoke;
+    }
+}
+
+
+
+
+
