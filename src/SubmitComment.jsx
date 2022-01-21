@@ -53,26 +53,30 @@ const SubmitComment = () => {
         <div className='webContainer'>
         <div className='commentContainer'>
         <h1 className='submitHeader'>Submit Commment</h1>
-        <br />
         <div className='subjectContainer'>
         <label className='subjectLabel'>Subject</label>
         <input value={subject} type="text" name='subject' className='subectTextField' onChange={(event) => SetSubject(event.target.value)} />
         </div> 
         <br />
+        <div className='firstNameContainer'>
         <label className='firstNameLabel'>First Name</label>
-        <label className='lastNameLabel'>Last Name</label>
-        <br />
-        <div className ='textFeildContainer'>
         <input value={first_name} type="text" name='first_name' className= 'firstNameTextField'onChange={(event) => setFirstName(event.target.value)} /> 
+        </div>
+        <br />
+        <div className ='lastNameContainer'>
+        <label className='lastNameLabel'>Last Name</label>
         <input value={last_name} type="text" name='last_name' className= 'lastNameTextField' onChange={(event) => setLastName(event.target.value)} /> 
         </div>
         <br />
+        <div className='emailContainer'>
         <label className='emailLabel'>Email</label>
         <input value={email} type="text" name= 'email' className='emailTextField' onChange={(event) => setEmail(event.target.value)} /> 
+        </div>
         <br />
+        <div className='commentTextContainer'>
         <label className='commentLabel'>Comment</label>
         <input value={comment} type="text" name='comment' className='commentTextField' onChange={(event) => SetComment(event.target.value)} /> 
-        <br /> 
+        </div>
         <Link to ="/Forum"><button className="submitButton" onClick={handleSubmit}>Submit</button></Link> 
         <button className="resetButton" onClick={handleReset}>Reset</button> 
         </div>
