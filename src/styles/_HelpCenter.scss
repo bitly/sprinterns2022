@@ -1,66 +1,85 @@
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-
-.HelpCenterText{
-    position: absolute;
-    left: 0px;
-    // top: 12vh;
-    font-size: 4vw;
-    text-align: center;
-    text-decoration: bold;
-    color: black;
-    font-family: proxima nova;
-    background-color: white;
-    height: 80vh;
-
-    }
+// @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");.webContainer{
+//     height: auto;
+//     background-color: white;
 
 .ButtonContainer{
-    background-color: rgb(6,59,111,0.3);
-    position: absolute;
-    left: 0px;
+    background-color: rgba(6, 59, 111, 0.3);
+    position: fixed;
     bottom: 0px;
-    height: 60vh;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
 
 
 .FAQButton{
-    position: absolute;
-    top: 5%;
-    left: 60vw;
-    background-image: white;
+    // position: absolute;
+    // top: 5%;
+    // left: 60vw;
     color: black;
     letter-spacing: 0.15rem;
     width: 25vw;
     height: 25vw;
     font-size: 4vw;
-    font-family: proxima nova;
+    font-family: ProximaNova;
     text-align: center;
     display: inline-block;
     border-radius: 50%;
     border-color: rgb(6,59,111,0.1);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    cursor: cell;
+    background-color: whitesmoke;
+    cursor: pointer;
     overflow: visible;
 }
 
+.FAQButton:hover{
+    background-color:rgb(191, 231, 243);
+}
+
 .ForumButton{
-    position: absolute;
-    top: 5%;
-    right: 60vw;
+    // position: absolute;
+    // top: 5%;
+    // right: 60vw;
     color: black;
     letter-spacing: 0.15rem;
     width: 25vw;
     height: 25vw;
     font-size: 4vw;
-    font-family: proxima nova;
+    font-family: ProximaNova;
     text-align: center;
     display: inline-block;
     border-radius: 50%;
     border-color: rgb(6,59,111,0.1);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.ForumButton:hover{
+    background-color:rgb(191, 231, 243);
+}
+}
+.HelpCenterText{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    font-size: 6vw;
+    position: fixed;
+    // top: 80px;
+    margin: 0%;
+    text-align: center;
+    color: black;
+    font-family: ProximaNova;
     background-color: white;
-    cursor: cell;
+    padding: 5% 3% 0px 3%;
+    overflow-wrap: break-word;
 }
-}
+
+
+
+
+// }
 
