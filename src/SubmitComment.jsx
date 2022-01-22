@@ -39,12 +39,7 @@ const SubmitComment = () => {
         SetSubject('');
         SetComment('');
       }
-    
-    const ForumButton = ({buttonText}) => {
-        return (
-        <button>{buttonText}</button>
-        );
-      }
+
     
     
     return (
@@ -52,7 +47,7 @@ const SubmitComment = () => {
         <Header />
         <div className='webContainer'>
         <div className='commentContainer'>
-        <h1 className='submitHeader'>Submit Commment</h1>
+        <h1 className='submitHeader'>Submit Comment</h1>
         <div className='subjectContainer'>
         <label className='subjectLabel'>Subject</label>
         <input value={subject} type="text" name='subject' className='subectTextField' onChange={(event) => SetSubject(event.target.value)} />
@@ -77,8 +72,8 @@ const SubmitComment = () => {
         <label className='commentLabel'>Comment</label>
         <input value={comment} type="text" name='comment' className='commentTextField' onChange={(event) => SetComment(event.target.value)} /> 
         </div>
-        <Link to ="/Forum"><button className="submitButton" onClick={handleSubmit}>Submit</button></Link> 
         <button className="resetButton" onClick={handleReset}>Reset</button> 
+        <Link to ="/Forum"><button className="submitButton" onClick={handleSubmit}>Submit</button></Link> 
         </div>
         </div>
       </>
