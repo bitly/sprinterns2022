@@ -1,20 +1,20 @@
 .webContainer{
     height: auto;
     top:0px;
-    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
 
     .commentContainer{
-        margin-top: 3%;
-        margin-left: 15%;
         width: 70%;
+        height: auto;
         color: black;
         border-radius: 6%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: rgba(32, 130, 228, 0.1);
-        padding: 2%;
-    //fonts
-    //padding
+        padding: 3%;
+
         .submitHeader{
             text-align: center;
             color: black;
@@ -26,13 +26,17 @@
             border: 2px solid rgb(122, 122, 122);
             border-radius: 6px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-family: ProximaNova;
+
         }
     
         input[type=text]:focus {
             border: 2px solid red;
             border-radius: 4px;
             background-color: cadetblue;
-            border: 8px solid #555;
+            border: 8px solid rgb(190, 190, 190);
+            font-family: ProximaNova;
+
         }
     
         .subjectContainer{
@@ -46,7 +50,7 @@
                 font-family: sans-serif;
                 text-align: center;
                 color: black;
-                font-family: proxima nova;
+                font-family: ProximaNova;
             }
         }
 
@@ -54,6 +58,7 @@
             .firstNameTextField{
                 width: 70vw;
                 height: 30px;
+                font-family: ProximaNova;
             }
         
             .firstNameLabel{
@@ -61,7 +66,7 @@
                 font-family: sans-serif;
                 text-align: center;
                 color: black;
-                font-family: proxima nova;
+                font-family: ProximaNova;
             }
         }
 
@@ -69,6 +74,8 @@
             .lastNameTextField{
                 width: 70vw;
                 height: 30px;
+                font-family: ProximaNova;
+
             }
         
             .lastNameLabel{
@@ -76,7 +83,7 @@
                 font-family: sans-serif;
                 text-align: center;
                 color: black;
-                font-family: proxima nova;
+                font-family: ProximaNova;
             }
         }
 
@@ -84,6 +91,7 @@
             .emailTextField{
                 width: 70vw;
                 height: 30px;
+                font-family: ProximaNova;
             }
         
             .emailLabel{
@@ -91,7 +99,7 @@
                 font-family: sans-serif;
                 text-align: center;
                 color: black;
-                font-family: proxima nova;
+                font-family: ProximaNova;
             }
         }
 
@@ -99,6 +107,7 @@
             .commentTextField{
                 width: 70vw;
                 height: 8vw;
+                font-family: ProximaNova;
             }
         
             .commentLabel{
@@ -106,7 +115,7 @@
                 font-family: sans-serif;
                 text-align: center;
                 color: black;
-                font-family: proxima nova;
+                font-family: ProximaNova;
             }
         }
     
@@ -124,7 +133,7 @@
             color: white;
             background-color: #063B6F;
             border-color: #063B6F;
-            font-family: proxima nova;
+            font-family: ProximaNova;
             font-weight: bold;
     
         }
@@ -140,7 +149,7 @@
             color: white;
             background-color: #063B6F;
             border-color: #063B6F;
-            font-family: proxima nova;
+            font-family: ProximaNova;
             font-weight: bold;
     
         }
