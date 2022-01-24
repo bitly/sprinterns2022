@@ -13,12 +13,14 @@ const Comment = ({name,email,date,subject,commentText}) => {
   return (
   <div className="comments">
   <div className='labelContainer'>
-  <div className="date">{date}</div>
   <div className="name">{name}</div>
   <div className="email">{email}</div>
+  <div className="date">{date}</div>
   </div>
+  <div className="subjectContainer">
   <div className="subject">{subject}</div>
   <div className="commentText">{commentText}</div>
+  </div>
   </div>
   );
 }

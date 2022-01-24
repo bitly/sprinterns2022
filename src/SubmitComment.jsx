@@ -49,7 +49,7 @@ const SubmitComment = () => {
         <div className='commentContainer'>
         <h1 className='submitHeader'>Submit Comment</h1>
         <div className='subjectContainer'>
-        <label className='subjectLabel'>Subject</label>
+        <label className='subjectLabel'>Subject of Comment</label>
         <input value={subject} type="text" name='subject' className='subectTextField' onChange={(event) => SetSubject(event.target.value)} />
         </div> 
         <br />
@@ -64,16 +64,18 @@ const SubmitComment = () => {
         </div>
         <br />
         <div className='emailContainer'>
-        <label className='emailLabel'>Email</label>
+        <label className='emailLabel'>Email Address</label>
         <input value={email} type="text" name= 'email' className='emailTextField' onChange={(event) => setEmail(event.target.value)} /> 
         </div>
         <br />
         <div className='commentTextContainer'>
-        <label className='commentLabel'>Comment</label>
+        <label className='commentLabel'>Your Comment</label>
         <input value={comment} type="text" name='comment' className='commentTextField' onChange={(event) => SetComment(event.target.value)} /> 
-        </div>
+        </div> 
+        <div className='buttonContainer'>
         <button className="resetButton" onClick={handleReset}>Reset</button> 
         <Link to ="/Forum"><button className="submitButton" onClick={handleSubmit}>Submit</button></Link> 
+        </div>
         </div>
         </div>
       </>

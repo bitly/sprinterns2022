@@ -44,6 +44,7 @@ def all_comments_queries():
    data = cursor.fetchall()
    conn.close()
    return json.dumps(data)
+
    
 @app.route("/savedetails", methods = ['POST'])
 def new_comment_query():   
@@ -100,3 +101,14 @@ def quote():
             response = requests.delete('https://api-ssl.bitly.com/v4' + endpoint, headers={"Authorization": "Bearer " + auth_token})
     
     return (response.json())   
+
+@app.route("/<comment_id>/delete", methods = ['DELETE'])
+def delete_comment_query(comment_id):
+ 
+    query = ''' DELETE FROM comments_table WHERE comment_id = ?'''
+    arg = (comment_id)
+    query_db(query,arg) 
+
+    return "Delete Comment Successful"
+   
+#    return jsonify.(statusCode = 204)

@@ -18,9 +18,14 @@ const HelpCenter = () => {
   return (
     <>
     <Header />
-    {/* <div className='webContainer'> */}
-    <div className="HelpCenterText"> Shortening links can be confusing. What can we help with? </div>
-    <div className="ButtonContainer">
+    {/* <div className='webContainer'>
+    <div className="HelpCenterText"> Shortening links can be confusing. What can we help with? </div> */}
+
+    <div className="HelpCenterText"> 
+        <h1 > Shortening links can be confusing. What can we help with? </h1>
+    </div> 
+
+    <div className="Buttonss">
         <Link to = "/Forum"><ForumButton buttonText="FORUM"></ForumButton></Link>
         <Link to ="/APIInfo"><FAQButton buttonText="FAQ"></FAQButton></Link> 
     {/* </div> */}

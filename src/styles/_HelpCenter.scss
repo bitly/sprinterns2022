@@ -1,85 +1,153 @@
 
-// @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");.webContainer{
-//     height: auto;
-//     background-color: white;
+// // @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");.webContainer{
+// //     height: auto;
+// //     background-color: white;
 
-.ButtonContainer{
-    background-color: rgba(6, 59, 111, 0.3);
+// .HelpCenterText{
+//     position: fixed;
+//     display: flex;
+//     justify-content: center;
+//     font-size: 6vw;
+//     margin: 0%;
+//     text-align: center;
+//     color: black;
+//     font-family: ProximaNova;
+//     background-color: white;
+//     padding: 5% 3% 0px 3%;
+//     overflow-wrap: break-word;
+// }
+
+// .ButtonContainer{
+//     background-color: rgba(6, 59, 111, 0.3);
+//     position: fixed;
+//     bottom: 0px;
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-around;
+//     padding-top: 5%;
+//     padding-bottom: 5%;
+
+
+// .FAQButton{
+//     // position: absolute;
+//     // top: 5%;
+//     // left: 60vw;
+//     color: black;
+//     letter-spacing: 0.15rem;
+//     width: 25vw;
+//     height: 25vw;
+//     font-size: 4vw;
+//     font-family: ProximaNova;
+//     text-align: center;
+//     display: inline-block;
+//     border-radius: 50%;
+//     border-color: rgb(6,59,111,0.1);
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//     background-color: whitesmoke;
+//     cursor: pointer;
+//     overflow: visible;
+// }
+
+// .FAQButton:hover{
+//     background-color:rgb(191, 231, 243);
+// }
+
+// .ForumButton{
+//     // position: absolute;
+//     // top: 5%;
+//     // right: 60vw;
+//     color: black;
+//     letter-spacing: 0.15rem;
+//     width: 25vw;
+//     height: 25vw;
+//     font-size: 4vw;
+//     font-family: ProximaNova;
+//     text-align: center;
+//     display: inline-block;
+//     border-radius: 50%;
+//     border-color: rgb(6,59,111,0.1);
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//     background-color: whitesmoke;
+//     cursor: pointer;
+// }
+
+// .ForumButton:hover{
+//     background-color:rgb(191, 231, 243);
+// }
+// }
+
+
+.HelpCenterText{
+    // position: absolute;
+    font-size: 2.5vw;
+    text-align: center;
+    text-decoration: bold;
+    color: rgba(0, 0, 0, 0.776);
+    font-family: ProximaNova;
+    // position: fixed;
+    // top: 14%;
+    background-color:white;
+    // max-height: 50%;
+    // overflow: hidden;
+
+}
+    h1 {
+        display: block;
+        font-size: 2.5em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        font-family: ProximaNova;;
+        padding-top: 40px;
+        padding-bottom: 40px;
+}
+
+.Buttonss{
     position: fixed;
     bottom: 0px;
+    background-color: rgb(6,59,111,0.3);
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding-top: 5%;
-    padding-bottom: 5%;
-
-
-
-.FAQButton{
-    // position: absolute;
-    // top: 5%;
-    // left: 60vw;
-    color: black;
-    letter-spacing: 0.15rem;
-    width: 25vw;
-    height: 25vw;
-    font-size: 4vw;
-    font-family: ProximaNova;
-    text-align: center;
-    display: inline-block;
-    border-radius: 50%;
-    border-color: rgb(6,59,111,0.1);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: whitesmoke;
-    cursor: pointer;
-    overflow: visible;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .ForumButton{
+        color: #000000;
+        letter-spacing: 0.15rem;
+        width: 25vw;
+        height: 25vw;
+        font-size: 4vw;
+        font-family: ProximaNova;;
+        text-align: center;
+        display: inline-block;
+        border-radius: 50%;
+        border-color: rgb(6,59,111,0.1);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        background-color: whitesmoke;
+    }
+    .ForumButton:hover{
+        background-color: rgb(241, 171, 145);
+    }
+    .FAQButton{
+        color: #0C0C0C;
+        letter-spacing: 0.15rem;
+        width: 25vw;
+        height: 25vw;
+        font-size: 4vw;
+        font-family: ProximaNova;;
+        text-align: center;
+        display: inline-block;
+        border-radius: 50%;
+        border-color: rgb(6,59,111,0.1);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        cursor: pointer;
+        overflow: visible;
+        background-color: whitesmoke;
+    }
+    .FAQButton:hover{
+        background-color: rgb(241, 171, 145);
+    }
 }
-
-.FAQButton:hover{
-    background-color:rgb(191, 231, 243);
-}
-
-.ForumButton{
-    // position: absolute;
-    // top: 5%;
-    // right: 60vw;
-    color: black;
-    letter-spacing: 0.15rem;
-    width: 25vw;
-    height: 25vw;
-    font-size: 4vw;
-    font-family: ProximaNova;
-    text-align: center;
-    display: inline-block;
-    border-radius: 50%;
-    border-color: rgb(6,59,111,0.1);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: whitesmoke;
-    cursor: pointer;
-}
-
-.ForumButton:hover{
-    background-color:rgb(191, 231, 243);
-}
-}
-.HelpCenterText{
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    font-size: 6vw;
-    position: fixed;
-    // top: 80px;
-    margin: 0%;
-    text-align: center;
-    color: black;
-    font-family: ProximaNova;
-    background-color: white;
-    padding: 5% 3% 0px 3%;
-    overflow-wrap: break-word;
-}
-
-
-
-
-// }
-
