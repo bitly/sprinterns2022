@@ -1,16 +1,18 @@
 .webContainer{
-        height: auto;
-        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-        font-family: proxima nova;
+    height: auto;
+    top: 0px;
+    width: 100%;
+    padding-top: 3%;
 
-//display fex
       
 .Forum{
     overflow-y:auto;
     overflow: -moz-scrollbars-vertical; 
+    width: 100%;
+
 
     .ForumHeader{
-        // font-family: proxima nova;
+        font-family: ProximaNova;
         padding: 10px;
         height: 40px;
         color: black;
@@ -26,7 +28,7 @@
         padding: 5px;
         background-color: #063B6F;
         letter-spacing: 0.15rem;
-        // font-family: proxima nova;
+        font-family: ProximaNova;
         text-align: center;
         color: white;
         // font-size: large;
@@ -46,21 +48,23 @@
         margin-left: 6%;
         margin-bottom: 5%;
         padding:3%;
+        display: flex;
 
         .labelContainer{
-            display: inline-flex;
+            font-family: ProximaNova;
+
             .name::before{
                 font-weight: bold;
                 text-decoration: underline;
                 font-size: large;
                 color: black;
                 content: "Name: ";
-                font-family: proxima nova;
+                font-family: ProximaNova;
             }
     
             .name{
-                font-family: proxima nova;
-                margin-left: 4%;
+                font-family: ProximaNova;
+                margin-top: 70px;
             }
 
             .email::before{
@@ -69,13 +73,12 @@
                 font-size: large;
                 color: black;
                 content: "Email: ";
-                // font-family: proxima nova;
+                font-family: ProximaNova;
                 display: inline-flex;
             }
     
             .email{
-                // font-family: proxima nova;
-                margin-left: 10%;
+                font-family: ProximaNova;
                 display: inline-flex;    
             }
 
@@ -85,43 +88,42 @@
                 font-size: large;
                 color: black;
                 content: "Date: ";
-                font-family: proxima nova;
+                font-family: ProximaNova;
             }
     
             .date{
                 content: "Date: ";
-                font-family: proxima nova;
+                font-family: ProximaNova;
             }
 
         }
 
-        .subject{
-            content: "Subject: ";
-            border-bottom: 3px solid black;
-            // margin-top: 2%;
-            font-family: proxima nova;
-            margin-top: 2%;
-        }
-            
-        .subject::before{
-            font-weight: bold;
-            font-size: large;
-            color: black;
-            content: "Subject: ";
-            font-family: proxima nova;
-        }                
-            
-    
-        
+        .subjectContainer{
+            // margin-left: 200px;
+            margin-left: 20px;
+            width: 80%;
+            .subject{
+                content: "Subject: ";
+                border-bottom: 3px solid black;
+                font-family: ProximaNova;
+            }
+                
+            .subject::before{
+                font-weight: bold;
+                font-size: large;
+                color: black;
+                content: "Subject: ";
+                font-family: ProximaNova;
+            }                
+                
             .commentText{
-                height: 60px;
+                height: 80%;
                 background-color: white;
                 border-color: rgb(6,59,111,0.1);
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                font-family: proxima nova;
-                // margin-bottom: 5%;
-    
+                font-family: ProximaNova;    
             }
+        }
 
 
         .avatar{
