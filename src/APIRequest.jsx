@@ -4,14 +4,23 @@ const APIRequest = ({method}) => {
     return <div className = "APIRequest">
         <div className = "APIRequest__title" >{method.title}</div>
         <div className = "APIRequest__endpoint">API Endpoint</div>
-        <div className = "APIRequest__method" >{method.type}</div>
-        <div className = "APIRequest__path" >{method.path}</div>
+       
+        <div className = "APIRequest__bluebox">
+            <div className = "APIRequest__method" >{method.type}</div>
+            <div className = "APIRequest__path" >{method.path}</div>
+        </div>
+
         <div className = "APIRequest__accesstoken">Access Token</div>
-        <form><input className = "APIRequest__accesstokenfield"></input></form>
+        <div><form><input className = "APIRequest__accesstokenfield"></input></form></div>
+       
         <div className = "APIRequest__pathparameters">Path Parameters</div>
         <div className = "APIRequest__rbschema">Request Body Schema</div>
-        <button className = "APIRequest__tryme">Try Me!</button>
-        <button className = "APIRequest__reset">Reset</button>
+       
+        <div className = "APIRequest__buttonscontainer">
+            <div><button className = "APIRequest__tryme">Try Me!</button></div>
+            <div><button className = "APIRequest__reset">Reset</button></div>
+        </div>
+
         <div className = "APIRequest__responsejson">Response JSON</div>
     </div>
 }

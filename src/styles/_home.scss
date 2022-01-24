@@ -10,57 +10,129 @@
     display:flex;
 }
 
-//change padding for the whole thing to shift it out
 .APIRequest{
     width: 100%;
     font-family: 'Poppins';
-    font-style: normal;
+    font-style: normal; 
+    padding: 60px 0px 0px 90px;
 
     &__title{
-        font-size: 20px;
+        font-size: 47px;
+        //some sidebar link tites don't fit fully across the page
     }
 
     &__endpoint{
+        font-size: 20px; //make font a little bigger
+        margin-top: 30px;
+    }
+
+    &__bluebox{
+        //fix the padding, border radius to make it a light blue box
+        display: flex;
+        margin-right: 580px;
+        padding: 8px;
+        border-radius: 10px;
+        border-color: rgb(228, 237, 241);
+        background-color:rgb(228, 237, 241);
     }
 
     &__method{
+        font-size: 15px;
+        color: white;
+        margin-left: 20px;
+        padding: 10px 24px;
+        background-color: green;
+        border-radius: 8px;
+        //to make the color border, change margin and create backgroud color
     }
 
     &__path{
+        font-size: 15px;
+        margin-left: 30px;
     }
 
     &__accesstoken{
+        font-size: 20px; //make font a little bigger
+        margin-top: 40px;
     }
 
     &__accesstokenfield{
         //change to light blue and make it bigger
         //make the border color the same blue color so it just looks blue
+        width: 45%; 
+        padding: 8px;
+        border-radius: 10px;
+        border-color:rgb(228, 237, 241); //fix this color so it matches the sidebar light blue color
+        background-color:rgb(228, 237, 241);
+
+        
     }
 
     &__pathparameters{
+        font-size: 30px;
+        margin-top: 50px;
     }
 
     &__rbschema{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    &__buttonscontainer{
+        display: flex;
+        margin-top: 50px;
     }
 
     &__tryme{
-        //make the button bigger
-        //change the font type 
-        //change the font color to white
-        //make the whole button and border dark blue
+       background-color: rgb(6, 34, 56);
+       font-size: 20px;
+       color: white;
+       padding: 14px 40px;
+       border-radius: 10px;
     }
 
     &__reset{
-        //make the button bigger
-        //change the font type 
-        //change the font color to white
-        //make the whole button and border dark blue
+        background-color: rgb(6, 34, 56);
+        font-size: 20px;
+        color: white;
+        padding: 14px 40px;
+        border-radius: 10px;
+        margin-left: 60px;
     }
 
     &__responseJSON{
-        //create a blue box
+        font-size: 20px;
+        //use flex to shift this to the right side of the page
+        //make it a blue box (see Figma)
     }
 
 }
+
+//***********************************************************************
+//***********REFER HERE FOR METHOD BUTTON COLORS TO MATCH SIDEBAR********
+//***********************************************************************
+
+// .sidebar-type {
+    
+//     &--green, &--blue, &--orange, &--red {
+//         display: inline-block;
+//         width: 110px;
+//     }
+//     &--green h4 {
+//         background-color: #75C0AD;
+//     }
+    
+//     &--blue h4 {
+//         background-color: #61B3DE;
+//     }
+    
+//     &--orange h4 {
+//         background-color: #E2986A;
+//     }
+    
+//     &--red h4 {
+//         background-color: #E47F7F;
+//     }
+// }
 
 
