@@ -39,7 +39,7 @@ const KadiatouComponent = () => {
 
           </div>
 
-          <Link to ="/home"><button className="button">return</button></Link>
+          <Link to ="/home"><button className="button">Team</button></Link>
 
       </ div>
     );

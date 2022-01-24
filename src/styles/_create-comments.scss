@@ -1,0 +1,166 @@
+.webContainers{
+    height: auto;
+    top:0px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+
+    .commentContainers{
+        width: 70%;
+        height: auto;
+        color: #063B6F;
+        border-radius: 6%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: rgba(32, 130, 228, 0.1);
+        padding: 1%;
+        margin-top: 20px;
+
+        .submitHeaders{
+            text-align: center;
+            margin-top: -2%;
+            font-family: ProximaNova;
+        }
+    
+        input[type=text] {
+            border: 2px solid rgb(122, 122, 122);
+            border-radius: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-family: ProximaNova;
+
+        }
+    
+        input[type=text]:focus {
+            border-radius: 30px;
+            background-color: cadetblue;
+            border: 8px;
+            font-family: ProximaNova;
+
+        }
+    
+        .subjectContainers{
+            padding-left: 15px;
+            .subectTextFields{
+                width: 65vw;
+                height: 30px;
+            }
+        
+            .subjectLabels{
+                letter-spacing: 0.15rem;
+                font-family: sans-serif;
+                text-align: center;
+                font-family: ProximaNova;
+            }
+        }
+
+        .firstNameContainers{
+            padding-left: 15px;
+            .firstNameTextFields{
+                width: 65vw;
+                height: 30px;
+                font-family: ProximaNova;
+            }
+        
+            .firstNameLabels{
+                letter-spacing: 0.15rem;
+                font-family: sans-serif;
+                text-align: center;
+                font-family: ProximaNova;
+            }
+        }
+
+        .lastNameContainers{
+            padding-left: 15px;
+            .lastNameTextFields{
+                width: 65vw;
+                height: 30px;
+                font-family: ProximaNova;
+
+            }
+        
+            .lastNameLabels{
+                letter-spacing: 0.15rem;
+                font-family: sans-serif;
+                text-align: center;
+                font-family: ProximaNova;
+            }
+        }
+
+        .emailContainers{
+            padding-left: 15px;
+            .emailTextFields{
+                width: 65vw;
+                height: 30px;
+                font-family: ProximaNova;
+            }
+        
+            .emailLabels{
+                letter-spacing: 0.15rem;
+                font-family: sans-serif;
+                text-align: center;
+                font-family: ProximaNova;
+            }
+        }
+
+        .commentTextContainers{
+            padding-left: 15px;
+            padding-bottom: 15px;
+            .commentTextFields{
+                width: 65vw;
+                height: 8vw;
+                font-family: ProximaNova;
+            }
+        
+            .commentLabels{
+                letter-spacing: 0.15rem;
+                font-family: sans-serif;
+                text-align: center;
+                font-family: ProximaNova;
+            }
+        }
+        
+        .buttonContainers{
+            display: flex;
+            justify-content: space-evenly;
+            .submitButtons{
+                border-radius: 30px;
+                letter-spacing: 0.15rem;
+                font-family: sans-serif;
+                text-align: center;
+                color: white;
+                background-color: #063B6F;
+                border-color: #063B6F;
+                font-family: ProximaNova;
+                font-weight: bold;
+                height: 40px;
+                width: 100px;
+                cursor: pointer;
+
+            }
+    
+            .submitButtons:hover{
+                color: orange;
+            }
+    
+            .resetButtons{
+                border-radius: 30px;
+                letter-spacing: 0.15rem;
+                font-family: sans-serif;
+                text-align: center;
+                color: white;
+                background-color: #063B6F;
+                border-color: #063B6F;
+                font-family: ProximaNova;
+                font-weight: bold;    
+                height: 40px;
+                width: 100px;
+                cursor: pointer;
+
+            }
+    
+            .resetButtons:hover{
+                color: orange;
+            }
+
+        }
+    }
+}

@@ -6,11 +6,7 @@ import json
 import sqlite3
 from flask import g
 
-<<<<<<< HEAD
 DATABASE = 'api-explorer.db'
-
-=======
->>>>>>> ea95e54 (changes)
 
 app = Flask(__name__)
 app.secret_key = "secret"
@@ -93,15 +89,7 @@ def quote():
     
     return (response.json())   
 
-@app.route("/getComments", methods = ['GET'])
-def all_comments_queries():
- 
-   conn = sqlite3.connect(DATABASE)
-   cursor = conn.cursor()
-   cursor.execute('''SELECT * FROM comments_table ''')
-   data = cursor.fetchall()
-   conn.close()
-   return json.dumps(data)
+
 
 @app.route("/savedetails", methods = ['POST'])
 def new_comment_query():   

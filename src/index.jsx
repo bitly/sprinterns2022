@@ -10,7 +10,6 @@ import './styles/main.scss';
 import Home from './Home.jsx';
 import Team from './Team.jsx';
 import APIinfo from './APIinfo.jsx';
-<<<<<<< HEAD
 import SwaggerParser from "@apidevtools/swagger-parser";
 import CommentsPage from './CommentsPage.jsx';
 import AngesComponent from './wintern-bios/2022/AngesComponent.jsx';
@@ -18,11 +17,9 @@ import KadiatouComponent from './wintern-bios/2022/KadiatouComponent.jsx';
 import LaurenComponent from './wintern-bios/2022/LaurenComponent.jsx';
 import SkylerComponent from './wintern-bios/2022/SkylerComponent.jsx';
 import MargaretComponent from './wintern-bios/2022/MargaretComponent.jsx';
-=======
 import HelpCenter from './HelpCenter.jsx';
 import Forum from './Forum.jsx';
 import CreateComment from './CreateComment.jsx';
->>>>>>> ea95e54 (changes)
 
 
 import Header from './Header.jsx';
@@ -57,7 +54,6 @@ useEffect(() => {
           <Route path="/team-2022">
             <Team year={2022} />
           </Route>
-<<<<<<< HEAD
           <Route path="/allComments">
             <CommentsPage />
             </Route>
@@ -81,9 +77,6 @@ useEffect(() => {
             <Header />
             <MargaretComponent />
             </Route>
-          <Route path="/allComments">
-            <CommentsPage />
-=======
           <Route path="/HelpCenter">
             < HelpCenter />
           </Route>
@@ -92,7 +85,6 @@ useEffect(() => {
           </Route>
           <Route path="/CreateComment">
             < CreateComment />
->>>>>>> ea95e54 (changes)
           </Route>
           <Route path="/">
               {api ? <Home api={api} /> : <div>Loading ...</div>}
