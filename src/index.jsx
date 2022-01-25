@@ -79,6 +79,7 @@ useEffect(() => {
             </Route>
           <Route path="/allComments">
             <CommentsPage />
+            </Route>
           <Route path="/HelpCenter">
             <HelpCenter />
             </Route>
