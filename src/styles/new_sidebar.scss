@@ -9,15 +9,15 @@
 }
 
 .sidebar-new{
-    width: 23%;
     background: #F2F8FC;
     padding-bottom: 200px;
     overflow: scroll;
     display: inline-block;
     font-family: 'Poppins', sans-serif; 
     color: black;
-    height: 800px; /* USE THIS TO ADJUST FIXED CONTAINER HEIGHT */
-    } 
+    height: 800px; 
+    font-size: 16px;
+} 
 
 .sidebar-new-object h5 {
     color: black;
@@ -27,6 +27,7 @@
     display: inline;
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif; 
+    font-size: 16px;
 
 }
 
@@ -47,6 +48,7 @@
         display: inline-block;
         width: 110px;
     }
+
     &--green h4 {
         background-color: #75C0AD;
     }
@@ -77,7 +79,7 @@
     border-radius: 15px;
     margin-left: 20px;
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 16px;
     width: 50px;
     display: inline;
 
@@ -86,7 +88,6 @@
 
 .sidebar-new-object:hover {
     background-color: #D0EAFE;
-    //border-left: #163B6B 5px solid;
     box-shadow:5px 0px 0px 0px #163B6B inset;
 
   }
