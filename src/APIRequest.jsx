@@ -17,6 +17,7 @@ const APIRequest = ({method}) => {
 }
         const [pathParams, setPathParams] = useState ({})
         const [response, setResponse] = useState ({})
+        const [accesstoken, setAccessToken] = useState ("")
         useEffect(() => {
             setPathParams({})
             setResponse({})
@@ -32,7 +33,15 @@ const APIRequest = ({method}) => {
             </div>
 
             <div className = "APIRequest__accesstoken">Access Token</div>
-            <div><form><input className = "APIRequest__accesstokenfield"></input></form></div>
+            <div><form><input 
+            className = "APIRequest__accesstokenfield" 
+            onChange={(event) => {
+                setAccessToken(event.target.value)
+            } 
+            }
+            value = {accesstoken}
+            /> 
+            </form></div>
                 
             <div className = "APIRequest__pathparameters">Path Parameters</div>
 
@@ -65,13 +74,21 @@ const APIRequest = ({method}) => {
                 requestPath = requestPath.replace("{" + key + "}", pathParams[key])
             }
                 axios
-                    .post('api', {apiEndpoint: requestPath, authToken: "", params: {}, Method: method.type.toUpperCase()})
+                    .post('api', {apiEndpoint: requestPath, authToken: accesstoken, params: {}, Method: method.type.toUpperCase()})
                     .then((response) => {
                         setResponse(response.data)
                     })
            
         }}> Try it! </button></div>
-                <div><button className = "APIRequest__reset">Reset</button></div>
+                <div><button 
+                className = "APIRequest__reset"
+                onClick = {() => {
+                    setPathParams({})
+                    setResponse({}) 
+                }
+                }
+                >Reset</button></div>
+
             </div>
         </div>
 
