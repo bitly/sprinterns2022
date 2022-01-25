@@ -16,7 +16,7 @@ import friendsdrawing from '../../assets/bio-photos/skyler-other-pics/friends-dr
 import minecraftsteve from '../../assets/bio-photos/skyler-other-pics/minecraftsteve.gif';
 import animatedcap from '../../assets/bio-photos/skyler-other-pics/animatedcap.gif';
 import mcsheep from '../../assets/bio-photos/skyler-other-pics/mcsheep.gif';
-import qrcode3dbitly from '../../assets/bio-photos/skyler-other-pics/qrcode3dbitly.jpg';
+import qrcode3dbitly from '../../assets/bio-photos/skyler-other-pics/bity-logo-qrcode.png';
 import mcparrot from '../../assets/bio-photos/skyler-other-pics/mcparrot.gif';
 
 const SkylerComponent = () => {
@@ -49,7 +49,7 @@ const SkylerComponent = () => {
         <img className = "qrcodecss" src={qrcode3dbitly}/>
         </div>
         <br/>
-        <a class="button-qrcode3d" href="https://go.echo3d.co/Rerj" target="_blank"><p>See a 3D/AR model of the Bitly logo!</p></a>
+        <a class="button-qrcode3d" href="https://go.echo3d.co/V8Ze" target="_blank"><p>See a 3D/AR model of the Bitly logo!</p></a>
         <br />
 
         <h1 className='code'> Code <span class="waving-hand">👩🏻‍💻</span></h1>

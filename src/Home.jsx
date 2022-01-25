@@ -15,11 +15,16 @@ const getSidebarData = (api) => {
       const method = methods[methodType];
       const title = method.summary;
       if (!title) break
-      data.push({
-        title: title,
-        type: methodType,
-        path: route
-      })
+      if (method.parameters) { 
+        const hasOnlyPathParams = method.parameters.filter(param => param.in === "query").length === 0
+        if (hasOnlyPathParams && !method.requestBody) {
+          data.push({
+            title: title,
+            type: methodType,
+            path: route
+          }) 
+        }
+      }
     }
   }
   return data;
