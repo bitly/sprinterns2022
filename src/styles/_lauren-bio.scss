@@ -1,115 +1,140 @@
-.laurenbio{
+.laurenbioLAUREN{
     background-image: url("https://i.pinimg.com/550x/3e/1d/4d/3e1d4d582968807c7a83d60d04188054.jpg");
     min-height: 1800px;
 
-    .github{
-        width: 200px;
-        height: 200px;
-        margin: 0px 10px -250px 100px;
-    }
+}
 
-    .linkedin{
-        width: 200px;
-        height: 200px;
-        margin: 0px 10px -250px 400px;
-    }
+.photocontainerLAUREN{
+    display: flex;
+    justify-content: space-between;
+}
 
-    .laurenpic{
-        float: left;
-        margin: 50px 19px 10px 400px;
-        width: 200px;
-        height: 200px;
-        border-radius: 100%;
-        overflow: hidden; 
-        border-style: dotted;
-        border-color: white;
-    }
+.githubLAUREN{
+    flex: 1;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 50px 0px 0px 90px;
+    border-style: dotted;
+    border-color: #718ED4;
+}
 
-    .fullname{
-        font-family: "Noto Sans, sans-serif";
-        font-size: to-upper-case($string: "");
-        font-size: 200%;
-        color: white;
-        margin: 270px 19px 10px 400px;
-    }
+.laurenpicLAUREN{
+    flex: 1;
+    float: left;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100%;
+    overflow: hidden; 
+    border-style: dotted;
+    border-color: #718ED4;
+    margin-top: 50px;
+}
 
-    .grade{
-        font-family: 'Courier New', Courier, monospace;
-        font-size: to-lower-case($string: "");
-        font-size: medium;
-        color:white;
-        margin: 2px 9px 10px 380px;
-    }
+.linkedinLAUREN{
+    flex: 1;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: 50px 90px 0px 0px;
+    border-style: dotted;
+    border-color: #718ED4;
+}
 
-    .major{
-        font-family: 'Courier New', Courier, monospace;
-        font-size: to-lower-case($string: "");
-        font-size: medium;
-        color: white;
-        margin: 2px 9px 10px 380px;
-    }
 
-    .location{
-        font-family: 'Courier New', Courier, monospace;
-        font-size: to-lower-case($string: "");
-        font-size: medium;
-        color: white;
-        margin: 2px 9px 10px 380px;
-    }
+.fullnameLAUREN{
+    font-family: "Noto Sans, sans-serif";
+    font-size: to-upper-case($string: "");
+    font-size: 200%;
+    color: white;
+    text-align: center;
+}
 
-    .aboutme{
-        font-family: 'Courier New', Courier, monospace;
-        color: white;
-        background-color: rgb(93, 102, 179);
-        border-radius:100px;
-        font-size: 15px;
-        padding: 50px;
-        margin: 30px 20px 15px 20px;
-        border-style: dotted;
-    }
+.gradeLAUREN{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: to-lower-case($string: "");
+    font-size: medium;
+    color:white;
+    text-align: center;
+}
 
-    .whyCS{
-        font-family: 'Courier New', Courier, monospace;
-        color: white;
-        background-color: rgb(93, 102, 179);
-        border-radius:100px;
-        font-size: 15px;
-        padding: 50px;
-        margin: 15px 20px 15px 20px;
-        border-style: dotted;
-    }
+.majorLAUREN{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: to-lower-case($string: "");
+    font-size: medium;
+    color: white;
+    text-align: center;
+}
 
-    .bitly{
-        font-family: 'Courier New', Courier, monospace;
-        color: white;
-        background-color: rgb(93, 102, 179);
-        border-radius:100px;
-        font-size: 15px;
-        padding: 50px;
-        margin: 15px 20px 15px 20px;
-        border-style: dotted;
-    }
+.locationLAUREN{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: to-lower-case($string: "");
+    font-size: medium;
+    color: white;
+    text-align: center;
+}
 
-    .hobbies{
-        font-family: 'Courier New', Courier, monospace;
-        color: white;
-        background-color: rgb(93, 102, 179);
-        border-radius:100px;
-        font-size: 15px;
-        padding: 50px;
-        margin: 15px 20px 15px 20px;
-        border-style: dotted;
-    }
+.aboutmeLAUREN{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: rgb(93, 102, 179);
+    border-radius:100px;
+    font-size: 15px;
+    padding: 50px;
+    margin: 30px 20px 15px 20px;
+    border-style: dotted;
+    border-color: white;
+}
 
-    .media{
-        font-family: 'Courier New', Courier, monospace;
-        color: white;
-        background-color: rgb(93, 102, 179);
-        border-radius:100px;
-        font-size: 15px;
-        padding: 50px;
-        margin: 15px 20px 15px 20px;
-        border-style: dotted;
-    }
+.whyCSLAUREN{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: rgb(93, 102, 179);
+    border-radius:100px;
+    font-size: 15px;
+    padding: 50px;
+    margin: 15px 20px 15px 20px;
+    border-style: dotted;
+    border-color: white;
+
+    
+}
+
+.bitlyLAUREN{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: rgb(93, 102, 179);
+    border-radius:100px;
+    font-size: 15px;
+    padding: 50px;
+    margin: 15px 20px 15px 20px;
+    border-style: dotted;
+    border-color: white;
+
+}
+
+.hobbiesLAUREN{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: rgb(93, 102, 179);
+    border-radius:100px;
+    font-size: 15px;
+    padding: 50px;
+    margin: 15px 20px 15px 20px;
+    border-style: dotted;
+    border-color: white;
+
+}
+
+.mediaLAUREN{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: rgb(93, 102, 179);
+    border-radius:100px;
+    font-size: 15px;
+    padding: 50px;
+    margin: 15px 20px 15px 20px;
+    border-style: dotted;
+    border-color: white;
 
 }

@@ -33,7 +33,8 @@ const [selectedMethod, setSelectedMethod] = useState(null);
         <>
         <Header />  
         <div className = "main_container">
-          <Sidebar onClick = {(type, path
+          <div className = "sidebarside">
+              <Sidebar onClick = {(type, path
           ) => {
             const methodData = api.paths[path][type]
             setSelectedMethod({
@@ -45,7 +46,11 @@ const [selectedMethod, setSelectedMethod] = useState(null);
               description: methodData.description,
             })
           }} items = {sidebarData}/>
-          {selectedMethod && <APIRequest method = {selectedMethod}/>} 
+          </div>
+
+          <div className = "apiside">
+            {selectedMethod && <APIRequest method = {selectedMethod}/>} 
+          </div>
         </div>
     </>
   );
