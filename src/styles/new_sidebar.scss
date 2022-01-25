@@ -33,6 +33,7 @@
 
 .sidebar-title {
     display: inline-block;
+    width: 200px;
 }
 
 .sidebar-new-object {
@@ -47,6 +48,7 @@
     &--green, &--blue, &--orange, &--red {
         display: inline-block;
         width: 110px;
+        vertical-align: top;
     }
 
     &--green h4 {

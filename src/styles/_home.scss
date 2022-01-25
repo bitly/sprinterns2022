@@ -16,20 +16,18 @@
     }
 
     .apiside{
-        display: flex;
         flex-wrap: wrap;
         flex-basis: 0;
         flex-grow: 999;
         min-inline-size: 50%;
 
         .leftside{
-            flex-basis: 50%;
-            flex-grow: 1;
+            width: 800px;
         }
 
         .rightside{
-            flex-basis: 0;
-            flex-grow: 999;
+            margin-left: 42px;
+            width: 900px;
         }
 
     }
@@ -165,7 +163,7 @@
         color: black; 
         font-weight: bold;
         background-color:#EDF5FA;
-        margin: 245px 30px 0px 45px;
+        margin: 30px 30px 0px 45px;
         padding: 10px 0px 10px 20px;
         border-radius: 10px 10px 0px 0px;
 
@@ -176,7 +174,7 @@
         color: white; 
         background-color: #163B6B;
         margin: 0px 30px 0px 45px;
-        padding: 10px 0px 500px 20px;
+        padding: 10px 10px 10px 10px;
         border-radius: 0px 0px 10px 10px;
 
     }
