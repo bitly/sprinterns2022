@@ -17,7 +17,7 @@ app.secret_key = "secret"
 def get_db():
     db = getattr(g, '_database', None)
     if db is None:
-        db = g._database = sqlite3.connect(DATABASE)
+        db = g._database = sqlite3.connect(DATABASE, isolation_level = None)
         db.row_factory = dict_factory
     return db
 
@@ -53,6 +53,30 @@ def all_comments_queries():
     
     return json.dumps(data)
 
+@app.route("/comments", methods = ['POST'])
+def new_comment_query():    
+
+    first_name = request.json["f_name"]  
+    last_name = request.json["l_name"]  
+    email = request.json["email"] 
+    subject = request.json["subject"] 
+    comment = request.json["comment"] 
+
+    query = '''INSERT INTO comments_table (first_name, last_name, email, subject, comment) VALUES (?,?,?,?,?) ''' 
+    arg = (first_name, last_name, email, subject, comment)
+    query_db(query,arg)
+
+    return jsonify(statusCode = 201)
+
+
+@app.route("/comments/<comment_id>", methods = ['DELETE'])
+def delete_comment_query(comment_id): 
+
+    query = ''' DELETE FROM comments_table WHERE comment_id = ?'''
+    arg = (comment_id)
+    query_db(query,arg)
+
+    return jsonify(statusCode = 204)
 
 
 @app.route('/api', methods=['GET', 'POST', 'PATCH', 'DELETE'])   
