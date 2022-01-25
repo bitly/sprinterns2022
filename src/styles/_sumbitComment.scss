@@ -13,6 +13,7 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: rgba(32, 130, 228, 0.1);
         padding: 1%;
+        margin-top: 20px;
 
         .submitHeader{
             text-align: center;
@@ -138,6 +139,8 @@
                 font-weight: bold;
                 height: 40px;
                 width: 100px;
+                cursor: pointer;
+
             }
     
             .submitButton:hover{
@@ -156,6 +159,8 @@
                 font-weight: bold;    
                 height: 40px;
                 width: 100px;
+                cursor: pointer;
+
             }
     
             .resetButton:hover{
