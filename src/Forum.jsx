@@ -3,6 +3,7 @@ import Header from './Header.jsx';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
+
 const PostButton = ({buttonText}) => {
   return (
   <button className='NewComment'>{buttonText}</button>
@@ -28,6 +29,8 @@ const Comment = ({name,email,date,subject,commentText}) => {
 const Forum = () => {  
   const [comments,setComments] = useState([])
 
+
+
   useEffect(()=>{
     const getComments = () => {
       const SERVER_URL = ""
@@ -41,21 +44,39 @@ const Forum = () => {
     getComments();
   },[]) 
 
-  
-// const handleRomve = asynch (id) = () => {
-//     try{
-//       const SERVER_URL = ""
-//       const res = await axios.delete(SERVER_URL )
-
+// const deletePost = async (e) => {
+//     const SERVER_URL = ""
+//     e.preventDefault();
+//     try {
+//       await axios.delete(SERVER_URL+ '/comments/<comment_id>');
+//       writeStatus("Post succesfully deleted");
+//       setTimeout(() => writeStatus(""), 3000);
+//     } catch (err) {
+//         writeStatus("Post deletion failed");
 //     }
+//   };
+
+  // deleteRow = (id, e) => {  
+  //   const SERVER_URL = ""   
+  //   axios
+  //     .delete(SERVER_URL + '/comments/<comment_id>')  
+  //     .then(res => {  
+  //       console.log(res);  
+  //       console.log(res.data);  
+    
+  //       const posts = this.state.posts.filter(item => item.id !== id);  
+  //       this.setState({ posts });  
+  //     })  
   // }
-    // axios 
-      // .delete(SERVER_URL + 'savedetails'/ {data: {id}})
-      // // .post(SERVER_URL + 'savedetails', {f_name: first_name, l_name: last_name, email: email, subject: subject, comment: comment})
-      // .then((res) => {   
-      //   // setResponse(res.data)
-      // })   
-  // } 
+
+  // const handleRemove = () => {
+  //   const SERVER_URL = ""
+  //   axios 
+  //     .delete(SERVER_URL + '/comments/<comment_id>', {data: {id}})
+  //     .then((res) => {   
+  //       console.log(res.data);
+  //      })   
+  //   } 
 
   return (
     <>
@@ -66,7 +87,11 @@ const Forum = () => {
         <Link to ="/Submit"><PostButton buttonText="Post New Comment"></PostButton></Link> 
         </h1>
         {comments.map( (commentArray) => {
-          return <Comment name = {commentArray[1]+commentArray[2]} email = {commentArray[3]} date ={commentArray[4]} subject = {commentArray[5]} commentText = {commentArray[6]}></Comment> 
+          return <Comment name = {commentArray[1]+commentArray[2]} email = {commentArray[3]} date ={commentArray[4]} subject = {commentArray[5]} commentText = {commentArray[6]}>
+            {/* <button onClick={deletePost}></button> */}
+              {/* <button onClick={(e) => this.deleteRow(Comment.id, e)}>Delete</button>   */}
+              {/* <button onClick={deleteRow} params={}></button> */}
+          </Comment> 
         })}
       </div>
     </div>
@@ -91,3 +116,10 @@ export default Forum;
 //create some state
 //save data into response
 //save data, map data into components, return name is equal to variable, map function 
+
+
+        {/* <Link to ="/APIInfo"><button className='FAQButtonActual'>?</button></Link> */}
+        {/* <Link to ="/"><button className='ReturnButtonActual'>Return Home</button></Link> */}
+        {/* {comments.map( (commentArray) => {
+          return <Comment name = {commentArray[1]+commentArray[2]} email = {commentArray[3]} date ={commentArray[4]} subject = {commentArray[5]} commentText = {commentArray[6]}></Comment> 
+        })} */}

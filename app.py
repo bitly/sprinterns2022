@@ -46,7 +46,7 @@ def all_comments_queries():
    return json.dumps(data)
 
    
-@app.route("/savedetails", methods = ['POST'])
+@app.route("/comments", methods = ['POST'])
 def new_comment_query():   
  
    first_name = request.json["f_name"] 
@@ -102,7 +102,7 @@ def quote():
     
     return (response.json())   
 
-@app.route("/<comment_id>/delete", methods = ['DELETE'])
+@app.route("/comments/<comment_id>/delete", methods = ['DELETE'])
 def delete_comment_query(comment_id):
  
     query = ''' DELETE FROM comments_table WHERE comment_id = ?'''

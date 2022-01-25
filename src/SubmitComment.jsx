@@ -1,9 +1,6 @@
 import React from 'react';
 import Header from './Header.jsx';
-import ReactDOM from 'react-dom';
-import KVInputs from "./KVInputs.jsx";
 import axios from 'axios';
-import ReactJson from 'react-json-view';
 import { Link } from 'react-router-dom';
 
 
@@ -26,7 +23,7 @@ const SubmitComment = () => {
     const handleSubmit = () => {
         const SERVER_URL = ""
         axios
-          .post(SERVER_URL + 'savedetails', {f_name: first_name, l_name: last_name, email: email, subject: subject, comment: comment})
+          .post(SERVER_URL + 'comments', {f_name: first_name, l_name: last_name, email: email, subject: subject, comment: comment})
           .then((res) => {   
             // setResponse(res.data)
           })   
@@ -39,7 +36,19 @@ const SubmitComment = () => {
         SetSubject('');
         SetComment('');
       }
-
+    
+    deleteRow = (id, e) => {  
+        const SERVER_URL = ""   
+        axios
+          .delete(SERVER_URL + '/comments/<comment_id>')  
+          .then(res => {  
+            console.log(res);  
+            console.log(res.data);  
+        
+            const posts = this.state.posts.filter(item => item.id !== id);  
+            this.setState({ posts });  
+          })  
+      }
     
     
     return (
@@ -74,6 +83,7 @@ const SubmitComment = () => {
         </div> 
         <div className='buttonContainer'>
         <button className="resetButton" onClick={handleReset}>Reset</button> 
+        <button className="btn btn-danger" onClick={(e) => this.deleteRow(post.id, e)}>Delete</button>  
         <Link to ="/Forum"><button className="submitButton" onClick={handleSubmit}>Submit</button></Link> 
         </div>
         </div>

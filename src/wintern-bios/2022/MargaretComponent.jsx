@@ -60,7 +60,7 @@ const MargaretComponent = () => {
           <li>GOT and ASOIF (but let's just forget the last season)</li>
           <li>MHA</li>
           <li>Star Wars</li>
-          <li>Much More... it never ends</li>
+          {/* <li>Much More... it never ends</li> */}
       </a>
       <img className='tooMuch' src={infinity}/>
       <h2 className='centerFacts'>Facts</h2>

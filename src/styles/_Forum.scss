@@ -1,10 +1,28 @@
 .webContainer{
     height: auto;
-    top: 0px;
+    // top: 0px;
     width: 100%;
-    padding-top: 3%;
 
-      
+    .FAQButtonActual{
+        position: sticky;
+        bottom:0px;
+        right: 0px;
+        border-radius: 50%;
+        padding: 1%;
+        background-color: blue;
+        color: white;
+        font-size: xx-large;
+    }
+    .ReturnButtonActual{
+        position: sticky;
+        top:0px;
+        right: 50px;
+        border-radius: 50%;
+        background-color: pink;
+        color: white;
+        font-size: xx-large;
+    }
+
 .Forum{
     overflow-y:auto;
     overflow: -moz-scrollbars-vertical; 
@@ -21,7 +39,6 @@
         letter-spacing: 0.15rem;
         font-size: xx-large;
         text-align: center;
-        border-radius: 5%;
     }
 
     .NewComment{
@@ -45,10 +62,11 @@
         border-color:black;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: rgba(32, 130, 228, 0.1);
-        margin-left: 6%;
+        margin-left: 7%;
         margin-bottom: 5%;
         padding:3%;
         display: flex;
+        padding-bottom: 40px;
 
         .labelContainer{
             font-family: ProximaNova;
@@ -65,6 +83,7 @@
             .name{
                 font-family: ProximaNova;
                 margin-top: 70px;
+                padding-bottom: 10px;
             }
 
             .email::before{
@@ -79,7 +98,9 @@
     
             .email{
                 font-family: ProximaNova;
-                display: inline-flex;    
+                display: inline-flex;  
+                padding-bottom: 10px;
+  
             }
 
             .date::before{
@@ -99,11 +120,9 @@
         }
 
         .subjectContainer{
-            // margin-left: 200px;
             margin-left: 20px;
             width: 80%;
             .subject{
-                content: "Subject: ";
                 border-bottom: 3px solid black;
                 font-family: ProximaNova;
             }
@@ -121,7 +140,8 @@
                 background-color: white;
                 border-color: rgb(6,59,111,0.1);
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                font-family: ProximaNova;    
+                font-family: ProximaNova; 
+                padding-bottom: 10px;
             }
         }
 
@@ -134,8 +154,12 @@
             border-radius: 50%;
         }
     }
-
+    .returnButton{
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        height: 20px;
+        background-color: purple;
+    }
 }
-
-
 }
