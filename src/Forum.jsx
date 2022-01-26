@@ -1,27 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Component } from 'react';
 import Header from './Header.jsx';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { NULL } from 'node-sass';
 
 const PostButton = ({buttonText}) => {
   return (
   <button className='NewComment'>{buttonText}</button>
-  );
-}
-
-const Comment = ({name,email,date,subject,commentText}) => {
-  return (
-  <div className="comments">
-  <div className='labelContainer'>
-  <div className="name">{name}</div>
-  <div className="email">{email}</div>
-  <div className="date">{date}</div>
-  </div>
-  <div className="subjectContainer">
-  <div className="subject">{subject}</div>
-  <div className="commentText">{commentText}</div>
-  </div>
-  </div>
   );
 }
 
@@ -41,22 +26,34 @@ const Forum = () => {
     getComments();
   },[]) 
 
-  
-// const handleRomve = asynch (id) = () => {
-//     try{
-//       const SERVER_URL = ""
-//       const res = await axios.delete(SERVER_URL )
-
-//     }
+  // const handleDelete = () => {
+  //   const SERVER_URL = ""
+  //   axios
+  //     .delete(SERVER_URL + 'comments/<comment_id>')
+  //     .then((res) => {  
+  //       // setComments(null)
+  //       // setComments(res.data)
+  //       console.log(res.data);
+  //     })  
   // }
-    // axios 
-      // .delete(SERVER_URL + 'savedetails'/ {data: {id}})
-      // // .post(SERVER_URL + 'savedetails', {f_name: first_name, l_name: last_name, email: email, subject: subject, comment: comment})
-      // .then((res) => {   
-      //   // setResponse(res.data)
-      // })   
-  // } 
 
+  const Comment = ({name,email,date,subject,commentText}) => {
+    return (
+    <div className="comments">
+    <div className='labelContainer'>
+    <div className="name">{name}</div>
+    <div className="email">{email}</div>
+    <div className="date">{date}</div>
+    </div>
+    <div className="subjectContainer">
+    <div className="subject">{subject}</div>
+    <div className="commentText">{commentText}</div>
+    {/* <button onClick={handleDelete}>Delete</button> */}
+    <button>Delete</button>
+    </div>
+    </div>
+    );
+  }
   return (
     <>
     <Header />
