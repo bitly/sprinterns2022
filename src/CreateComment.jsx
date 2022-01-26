@@ -26,7 +26,7 @@ const CreateComment = () => {
     const handleSubmit = () => {
         const SERVER_URL = ""
         axios
-          .post(SERVER_URL + 'savedetails', {f_name: first_name, l_name: last_name, email: email, subject: subject, comment: comment})
+          .post(SERVER_URL + 'comments', {f_name: first_name, l_name: last_name, email: email, subject: subject, comment: comment})
           .then((res) => {   
             setResponse(res.data)
           })   

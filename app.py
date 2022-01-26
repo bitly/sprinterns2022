@@ -91,7 +91,7 @@ def quote():
 
 
 
-@app.route("/savedetails", methods = ['POST'])
+@app.route("/comments", methods = ['POST'])
 def new_comment_query():   
  
    first_name = request.json["f_name"] 

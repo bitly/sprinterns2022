@@ -10,6 +10,7 @@ const PostButton = ({buttonText}) => {
     <button className='NewComment'>{buttonText}</button>
     );
 }
+
 const FAQsButton = ({children}) => {
     return (
     <button className='FAQsButton'>{children}</button>
@@ -71,8 +72,8 @@ const Forum = () => {
               return <Comment name = {comment.first_name + comment.last_name} email = {comment.email} date ={comment.created_date} subject = {comment.subject} commentText = {comment.comment}></Comment> 
             })}
             {/* <Link to ="/HelpCenter"><button className="returnButton">return</button></Link> */}
-            <Link to ="/HelpCenter"><button id="foot"><button class="button-os"><a href="#">return</a></button></button></Link>
-            <Link to ="/APIInfo"><FAQsButton>FAQS</FAQsButton></Link>
+            <Link to ="/HelpCenter"><button id="foot"><button class="button-os"><a href="#">return to home</a></button></button></Link>
+            <Link to ="/APIInfo"><button className='FAQsButton'>?</button></Link>
           </div>
           </div>
         </>
