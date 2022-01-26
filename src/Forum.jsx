@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const PostButton = ({buttonText}) => {
   return (
-  <button className='NewComment'>{buttonText}</button>
+  <button className='NewCommentButton'>{buttonText}</button>
   );
 }
 
@@ -44,53 +44,16 @@ const Forum = () => {
     getComments();
   },[]) 
 
-// const deletePost = async (e) => {
-//     const SERVER_URL = ""
-//     e.preventDefault();
-//     try {
-//       await axios.delete(SERVER_URL+ '/comments/<comment_id>');
-//       writeStatus("Post succesfully deleted");
-//       setTimeout(() => writeStatus(""), 3000);
-//     } catch (err) {
-//         writeStatus("Post deletion failed");
-//     }
-//   };
-
-  // deleteRow = (id, e) => {  
-  //   const SERVER_URL = ""   
-  //   axios
-  //     .delete(SERVER_URL + '/comments/<comment_id>')  
-  //     .then(res => {  
-  //       console.log(res);  
-  //       console.log(res.data);  
-    
-  //       const posts = this.state.posts.filter(item => item.id !== id);  
-  //       this.setState({ posts });  
-  //     })  
-  // }
-
-  // const handleRemove = () => {
-  //   const SERVER_URL = ""
-  //   axios 
-  //     .delete(SERVER_URL + '/comments/<comment_id>', {data: {id}})
-  //     .then((res) => {   
-  //       console.log(res.data);
-  //      })   
-  //   } 
-
   return (
     <>
     <Header />
     <div className='webContainer'>
       <div className= "Forum">
         <h1 className="ForumHeader">Help Center Forum
-        <Link to ="/Submit"><PostButton buttonText="Post New Comment"></PostButton></Link> 
+        <Link to ="Submit"><PostButton buttonText="Post New Comment"></PostButton></Link> 
         </h1>
         {comments.map( (commentArray) => {
           return <Comment name = {commentArray[1]+commentArray[2]} email = {commentArray[3]} date ={commentArray[4]} subject = {commentArray[5]} commentText = {commentArray[6]}>
-            {/* <button onClick={deletePost}></button> */}
-              {/* <button onClick={(e) => this.deleteRow(Comment.id, e)}>Delete</button>   */}
-              {/* <button onClick={deleteRow} params={}></button> */}
           </Comment> 
         })}
       </div>

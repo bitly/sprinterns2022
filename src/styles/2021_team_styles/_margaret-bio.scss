@@ -30,8 +30,7 @@
 
     .profilePic {
         position: absolute;
-        //display: inline-block;
-        top: 144px;
+        top: 89px;
         left: 347px;
         max-width: 230px;
         max-height: 250px;
@@ -64,12 +63,10 @@
             position: relative;    
             background-color: purple;
             display: flex;
-            padding: 10px;
             justify-content: center;
             align-items: center;
-            max-width: 300px;
             max-height: 300px;
-            top: 145px;
+            top: 219px;
             left: 220px;
             color: white;
             letter-spacing: 0.15rem;
@@ -87,8 +84,8 @@
         background-color: rgba(0, 0, 0, 0.5);
         color: white;
         font-size: x-small;
-        top: 299px;
-        left: 363px;
+        top: 257px;
+        left: 343px;
     }
 
     .bellaImg{
@@ -540,7 +537,7 @@
     .centerFacts{
         position: absolute;
         left: 550px;
-        top: 1480px;
+        top: 1451px;
         width: 350px;
         text-align: center;
         font-family: sans-s3rif;
@@ -574,6 +571,7 @@
         position: absolute;
         background-color: rgba(0, 0, 0, 0.5);
         color: white;
+        // height: 100px;
         font-size: 1rem;
         top: 1800px;
         left: 560px;

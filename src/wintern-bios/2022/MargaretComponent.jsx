@@ -13,25 +13,25 @@ import quinn from '../../assets/miscellaneous/quinn.png';
 const MargaretComponent = () => {
  return (
     <div className='backgroundMe'>  
-      <h1 className='borderName'>  MARGARET DIAZ </h1>
+      <p className='borderName'>  MARGARET DIAZ </p>
       <img className='profilePic' src={img}/>
-      <h2 className='profileName'>(⊙⊙) Hover over the images for a surprise (⊙⊙)</h2>
+      <p className='profileName'>(⊙⊙) Hover over the images for a surprise (⊙⊙)</p>
       <p className= 'aboutME'>I am a sophomore at Hunter College majoring in Computer Science. I recently moved to the city after transferring from Bryn Mawr College in PA. My first expereince with coding was the creative code sketchbook Processing. I love the trial and error process of coding and debugging, it's like solving a jigsaw puzzle! My dream job is to become a software engineer and I am thankful to every opportunity that brings me closer to this path. I am incredibly grateful to my family. 
         My parents had to sacrafice so much to provide for me and my siblings and as a first generation college student a life goal of mine is to graduate, complete my masters, and buy my family a big house! I also would like to retire on a farm, foster pets and have a pet pig (they love to cuddle!)</p>
       <img className='bellaImg' src={bella}/>
-      <h2 className='bellaName'> 💜 Bella 🧡</h2>
+      <p className='bellaName'> 💜 Bella 🧡</p>
       <img className='broadyImg' src={broady}/>
-      <h2 className='broadyName'> 💚 Broady 🤎 </h2>
+      <p className='broadyName'> 💚 Broady 🤎 </p>
       <img className='jasonImg' src={jason}/>
-      <h2 className='jasonName'> 💛 Jason 🤍 </h2>
+      <p className='jasonName'> 💛 Jason 🤍 </p>
       <img className='winnieImg' src={winnie}/>
-      <h2 className='winnieName'> 💙 Winnie 💜 </h2>
+      <p className='winnieName'> 💙 Winnie 💜 </p>
       <img className='sharonImg' src={sharon}/>
-      <h2 className='sharonName'> 🧡 Sharon 💚 </h2>
+      <p className='sharonName'> 🧡 Sharon 💚 </p>
       <img className='stevieImg' src={stevie}/>
-      <h2 className='stevieName'> 🤎 Stevie 💛 </h2>
+      <p className='stevieName'> 🤎 Stevie 💛 </p>
       <img className='olddoggiesImg' src={olddoggies}/>
-      <h2 className='olddoggiesName'> 🤍 Steve + Sharon 💜</h2>
+      <p className='olddoggiesName'> 🤍 Steve + Sharon 💜</p>
       <a className='favoriteMusic'>♬ Favorite Songs ♬</a>
       <a className='clicktoplay'>♬Click to listen♬</a>
       <a href="https://www.youtube.com/watch?v=2d1wKn-oJnA" className='taylorButton' target="_blank">Taylor Swift</a>
@@ -46,8 +46,9 @@ const MargaretComponent = () => {
       <a href="https://www.youtube.com/watch?v=TmKh7lAwnBI"className='badBunny'target="_blank">Bad Bunny</a>
       <a href="https://www.youtube.com/watch?v=clwLKJ294u4"className='britneyButton'>Britney Spears</a>
       <a className='favoriteFacts'> Extra </a>
-          <h2 className='center'>FAVORITES:</h2>
+          <h1 className='center'>FAVORITES:</h1>
           <a className='myFavs'>
+            FAVORITES
           <li>Jigsaw puzzles</li>
           <li>Digital Art (it's not good but its fun!)</li>
           <li>Writing (it's also not good but its fun!)</li>
@@ -63,7 +64,7 @@ const MargaretComponent = () => {
           {/* <li>Much More... it never ends</li> */}
       </a>
       <img className='tooMuch' src={infinity}/>
-      <h2 className='centerFacts'>Facts</h2>
+      <h1 className='centerFacts'>Facts</h1>
       <a className ='Facts'>
       <ul>
         <li>I have eight siblings (but sadly never got a TLC show for it)</li>
@@ -71,7 +72,7 @@ const MargaretComponent = () => {
        </ul>
       </a>
       <img className='quinnImg' src={quinn}/>
-      <h2 className='quinnName'> The newest member of the Family: Quinn 💗 </h2>
+      <p className='quinnName'> The newest member of the Family: Quinn 💗 </p>
       </div>
  );
 }

@@ -1,6 +1,5 @@
 .webContainer{
     height: auto;
-    // top: 0px;
     width: 100%;
 
     .FAQButtonActual{
@@ -32,26 +31,23 @@
     .ForumHeader{
         font-family: ProximaNova;
         padding: 10px;
-        height: 40px;
         color: black;
         background-color: rgba(32, 130, 228, 0.3);
         color: black;
         letter-spacing: 0.15rem;
-        font-size: xx-large;
         text-align: center;
     }
 
-    .NewComment{
+    .NewCommentButton{
         padding: 5px;
         background-color: #063B6F;
         letter-spacing: 0.15rem;
         font-family: ProximaNova;
-        text-align: center;
         color: white;
-        // font-size: large;
         border-radius: 10%;
         text-align: center;
         margin-left: 2%;
+        margin-bottom: 2%;
         cursor: cell;
     }
 
@@ -70,6 +66,7 @@
 
         .labelContainer{
             font-family: ProximaNova;
+            margin-left: -3px;
 
             .name::before{
                 font-weight: bold;
@@ -82,7 +79,7 @@
     
             .name{
                 font-family: ProximaNova;
-                margin-top: 70px;
+                margin-top: 49px;
                 padding-bottom: 10px;
             }
 
@@ -120,7 +117,7 @@
         }
 
         .subjectContainer{
-            margin-left: 20px;
+            margin-left: 36px;
             width: 80%;
             .subject{
                 border-bottom: 3px solid black;
@@ -154,12 +151,5 @@
             border-radius: 50%;
         }
     }
-    .returnButton{
-        position: sticky;
-        top: 0px;
-        left: 0px;
-        height: 20px;
-        background-color: purple;
     }
-}
 }
